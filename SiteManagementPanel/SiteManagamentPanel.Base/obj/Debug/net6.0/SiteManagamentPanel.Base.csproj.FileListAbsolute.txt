@@ -1,0 +1,12 @@
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\bin\Debug\net6.0\SiteManagamentPanel.Base.deps.json
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\bin\Debug\net6.0\SiteManagamentPanel.Base.dll
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\bin\Debug\net6.0\SiteManagamentPanel.Base.pdb
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\obj\Debug\net6.0\SiteManagamentPanel.Base.csproj.AssemblyReference.cache
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\obj\Debug\net6.0\SiteManagamentPanel.Base.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\obj\Debug\net6.0\SiteManagamentPanel.Base.AssemblyInfoInputs.cache
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\obj\Debug\net6.0\SiteManagamentPanel.Base.AssemblyInfo.cs
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\obj\Debug\net6.0\SiteManagamentPanel.Base.csproj.CoreCompileInputs.cache
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\obj\Debug\net6.0\SiteManagamentPanel.Base.dll
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\obj\Debug\net6.0\refint\SiteManagamentPanel.Base.dll
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\obj\Debug\net6.0\SiteManagamentPanel.Base.pdb
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagamentPanel.Base\obj\Debug\net6.0\ref\SiteManagamentPanel.Base.dll

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SiteManagamentPanel.Base\SiteManagementPanel.Base.csproj" />
+    <ProjectReference Include="..\SiteManagementPanel.Schema\SiteManagementPanel.Schema.csproj" />
+  </ItemGroup>
+
+</Project>
