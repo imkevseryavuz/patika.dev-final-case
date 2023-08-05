@@ -22,10 +22,6 @@ public class MessageConfiguration : IEntityTypeConfiguration<Message>
         builder.Property(x => x.InsertUser).IsRequired(true).HasMaxLength(50);
         builder.Property(x => x.InsertDate).IsRequired(true);
 
-        //builder.Property(x => x.FromUserId).IsRequired(true);
-        //builder.Property(x => x.ToUserId).IsRequired(true);
-        //builder.Property(x => x.Content).IsRequired(true);
-        //builder.Property(x => x.IsRead).IsRequired(true);
 
         builder.HasOne(p => p.FromUser)
             .WithMany(p => p.FromMessages)

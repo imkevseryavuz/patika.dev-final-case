@@ -1,8 +1,3 @@
-C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.csproj.AssemblyReference.cache
-C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.AssemblyInfoInputs.cache
-C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.AssemblyInfo.cs
-C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.csproj.CoreCompileInputs.cache
 C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\bin\Debug\net6.0\SiteManagementPanel.Business.deps.json
 C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\bin\Debug\net6.0\SiteManagementPanel.Business.dll
 C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\bin\Debug\net6.0\SiteManagementPanel.Business.pdb
@@ -12,6 +7,11 @@ C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\bin\Deb
 C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\bin\Debug\net6.0\SiteManagementPanel.Base.pdb
 C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\bin\Debug\net6.0\SiteManagementPanel.Schema.pdb
 C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\bin\Debug\net6.0\SiteManagementPanel.Data.pdb
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.csproj.AssemblyReference.cache
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.AssemblyInfoInputs.cache
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.AssemblyInfo.cs
+C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.csproj.CoreCompileInputs.cache
 C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.csproj.CopyComplete
 C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\SiteManagementPanel.Business.dll
 C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\obj\Debug\net6.0\refint\SiteManagementPanel.Business.dll

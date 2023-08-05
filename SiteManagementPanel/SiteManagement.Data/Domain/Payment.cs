@@ -24,7 +24,6 @@ public class PaymentConfiguration : IEntityTypeConfiguration<Payment>
         builder.Property(x => x.InsertDate).IsRequired(true);
 
         builder.Property(x => x.ApartmentUserId).IsRequired(true);
-        //builder.Property(x => x.BillId).IsRequired(true);
         builder.Property(x => x.PaymentDate).IsRequired(true);
 
         builder.HasOne(p => p.Bill)

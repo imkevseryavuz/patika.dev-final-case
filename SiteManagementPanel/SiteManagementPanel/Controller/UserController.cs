@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SiteManagamentPanel.Base;
 using SiteManagementPanel.Business;
@@ -8,6 +9,7 @@ namespace SiteManagementPanel.Service.Controller
 {
     [Route("panel/api/[controller]")]
     [ApiController]
+    [Authorize(Roles ="Admin")]
     public class UserController : ControllerBase
     {
         private readonly IUserService service;
@@ -28,7 +30,6 @@ namespace SiteManagementPanel.Service.Controller
             var response = service.GetById(id);
             return response;
         }
-
 
         [HttpPost]
         public ApiResponse Post([FromBody] UserRequest request)

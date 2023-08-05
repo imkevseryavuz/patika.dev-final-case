@@ -61,6 +61,7 @@ public class Startup
         services.AddScoped<ITokenService, TokenService>();
         services.AddScoped<IBillService, BillService>();
         services.AddScoped<IMessageService, MessageService>();
+        services.AddScoped<IPaymentService, PaymentService>();
 
 
 

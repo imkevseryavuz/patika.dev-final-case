@@ -1,12 +1,9 @@
-﻿
-
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using SiteManagamentPanel.Base;
 using SiteManagamentPanel.Base.Jwt;
 using SiteManagamentPanel.Base.LogType;
 using SiteManagementPanel.Busines;
-using SiteManagementPanel.Data;
 using SiteManagementPanel.Data.Domain;
 using SiteManagementPanel.Data.Uow;
 using SiteManagementPanel.Schema;
@@ -34,6 +31,7 @@ public class TokenService : ITokenService
         {
             return new ApiResponse<TokenResponse>("Request was null");
         }
+
         if (string.IsNullOrEmpty(request.UserName) || string.IsNullOrEmpty(request.Password))
         {
             return new ApiResponse<TokenResponse>("Request was null");
@@ -42,34 +40,26 @@ public class TokenService : ITokenService
         request.UserName = request.UserName.Trim().ToLower();
         request.Password = request.Password.Trim();
 
-
         var user = _unitOfWork.UserRepository.Where(x => x.UserName.Equals(request.UserName)).FirstOrDefault();
+
         if (user is null)
         {
             Log(request.UserName, LogType.InValidUserName);
             return new ApiResponse<TokenResponse>("Invalid user informations");
         }
-        if (user.Password.ToLower() != CreateMD5(request.Password))
+
+        if (user.Password != request.Password)
         {
-            user.PasswordRetryCount++;
-            user.LastActivity = DateTime.UtcNow;
-
-            if (user.PasswordRetryCount > 3)
-                user.Status = 2;
-
-            _unitOfWork.UserRepository.Update(user);
-            _unitOfWork.Complete();
-
-            Log(request.UserName, LogType.WrongPassword);
+            Log(request.UserName, LogType.InValidUserName);
             return new ApiResponse<TokenResponse>("Invalid user informations");
         }
-
 
         if (user.Status != 1)
         {
             Log(request.UserName, LogType.InValidUserStatus);
             return new ApiResponse<TokenResponse>("Invalid user status");
         }
+
         if (user.PasswordRetryCount > 3)
         {
             Log(request.UserName, LogType.PasswordRetryCountExceded);
@@ -79,10 +69,8 @@ public class TokenService : ITokenService
         user.LastActivity = DateTime.UtcNow;
         user.Status = 1;
 
-
         _unitOfWork.UserRepository.Update(user);
         _unitOfWork.Complete();
-
 
         string token = Token(user);
 
@@ -97,6 +85,7 @@ public class TokenService : ITokenService
 
         return new ApiResponse<TokenResponse>(response);
     }
+
     private string Token(User user)
     {
         Claim[] claims = GetClaims(user);
@@ -141,16 +130,6 @@ public class TokenService : ITokenService
         _userLogService.Insert(request);
     }
 
-    private string CreateMD5(string input)
-    {
-        using (System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create())
-        {
-            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
-            byte[] hashBytes = md5.ComputeHash(inputBytes);
-
-            return Convert.ToHexString(hashBytes).ToLower();
-
-        }
-    }
+    
 }
 

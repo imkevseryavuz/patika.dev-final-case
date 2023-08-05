@@ -28,7 +28,9 @@ public class MapperConfig : Profile
         CreateMap<Payment, PaymentResponse>()
             .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.ApartmentUser.User.FirstName + " " + src.ApartmentUser.User.LastName))
             .ForMember(dest => dest.ApartmentNumber, opt => opt.MapFrom(src => src.ApartmentUser.Apartment.ApartmentNumber));
-
+        CreateMap<CreditCardRequest, Payment>();
+        CreateMap<CreditCardRequest, PaymentResponse>();
+        
         //Mesaj
         CreateMap<MessageRequest, Message>();
         CreateMap<Message, MessageResponse>()

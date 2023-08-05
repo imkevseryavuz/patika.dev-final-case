@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SiteManagamentPanel.Base;
 using SiteManagementPanel.Business;
 using SiteManagementPanel.Schema;
@@ -7,7 +8,7 @@ namespace SiteManagementPanel.Service.Controller;
 
 [Route("panel/api/[controller]")]
 [ApiController]
-
+[Authorize(Roles ="Admin")]
 public class ApartmentController : ControllerBase
 {
     private readonly IApartmentService service;

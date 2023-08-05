@@ -1430,3 +1430,2032 @@ QueryString:
 StatusCode: 200 
 Response Body: {"success":true,"message":"Success","response":[]}
 2023-08-05 03:08:20.888 [INF] -------------Request-End------------
+2023-08-05 16:05:11.702 [INF] Application is starting...
+2023-08-05 16:05:44.294 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 16:05:44.305 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 16:05:44.308 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 16:05:45.297 [FTL] Path=/panel/api/Payment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IPaymentService' while attempting to activate 'SiteManagementPanel.Service.Controller.PaymentController'.
+2023-08-05 16:05:45.413 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 6a0eaa88-332e-4a84-ae92-8182e8932bd7 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-05 16:05:46.062 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 6a0eaa88-332e-4a84-ae92-8182e8932bd7 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-05 16:05:46.073 [ERR] Connection ID "17942340925644603514", Request ID "8000007b-0002-f900-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 6a0eaa88-332e-4a84-ae92-8182e8932bd7 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-05 16:07:10.005 [INF] Application is starting...
+2023-08-05 16:07:31.706 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 16:07:31.711 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 16:07:31.715 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 16:07:37.433 [INF] -------------Request-Begin------------
+2023-08-05 16:07:37.433 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+Request Body: 
+2023-08-05 16:07:37.433 [INF] 
+
+2023-08-05 16:07:37.434 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 16:07:37.434 [INF] -------------Request-End------------
+2023-08-05 16:25:24.986 [INF] Application is starting...
+2023-08-05 16:25:35.839 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 16:25:35.846 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 16:25:35.848 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 16:25:39.995 [INF] -------------Request-Begin------------
+2023-08-05 16:25:39.996 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+Request Body: 
+2023-08-05 16:25:39.996 [INF] 
+
+2023-08-05 16:25:39.996 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 16:25:39.996 [INF] -------------Request-End------------
+2023-08-05 16:26:29.361 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 16:26:29.361 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 16:26:29.362 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 16:26:30.722 [ERR] Failed executing DbCommand (790ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 50), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Payment] ([ApartmentUserId], [BillId], [InsertDate], [InsertUser], [PaymentDate])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Payment]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-05 16:26:31.267 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Payment_ApartmentUser_ApartmentUserId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentUser", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:5eba861e-c3c8-4b64-8278-6df75138a5fa
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Payment_ApartmentUser_ApartmentUserId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentUser", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:5eba861e-c3c8-4b64-8278-6df75138a5fa
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-05 16:26:31.490 [INF] -------------Request-Begin------------
+2023-08-05 16:26:31.490 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+Request Body: {
+  "cardNumber": "1234567891234568",
+  "cardHolderName": "Kevser Yavuz",
+  "expiryMonth": "06",
+  "expiryYear": "2023",
+  "cvv": "045",
+  "amount": 100,
+  "apartmentUserId": 1,
+  "billId": 3
+}
+2023-08-05 16:26:31.490 [INF] 
+
+2023-08-05 16:26:31.491 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"An error occurred during payment."}
+2023-08-05 16:26:31.491 [INF] -------------Request-End------------
+2023-08-05 17:22:51.827 [INF] Application is starting...
+2023-08-05 17:23:47.569 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:23:47.575 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:23:47.577 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:23:51.576 [INF] -------------Request-Begin------------
+2023-08-05 17:23:51.576 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=2&billId=1 
+Request Body: {
+  "cardNumber": "123456",
+  "cardHolderName": "Kevser yavuz",
+  "expiryMonth": "06",
+  "expiryYear": "2023",
+  "cvv": "058",
+  "amount": 150,
+  "apartmentUserId": 2,
+  "billId": 1
+}
+2023-08-05 17:23:51.576 [INF] 
+
+2023-08-05 17:23:51.577 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=2&billId=1 
+StatusCode: 400 
+Response Body: Bill not found
+2023-08-05 17:23:51.577 [INF] -------------Request-End------------
+2023-08-05 17:43:17.274 [INF] Application is starting...
+2023-08-05 17:43:31.193 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:43:31.198 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:43:31.199 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:43:35.187 [INF] -------------Request-Begin------------
+2023-08-05 17:43:35.187 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/user/1 
+QueryString:  
+Request Body: 
+2023-08-05 17:43:35.187 [INF] 
+
+2023-08-05 17:43:35.188 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/user/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Success","response":null}
+2023-08-05 17:43:35.188 [INF] -------------Request-End------------
+2023-08-05 17:43:49.157 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:43:49.157 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:43:49.158 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:43:49.258 [INF] -------------Request-Begin------------
+2023-08-05 17:43:49.258 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/user/2 
+QueryString:  
+Request Body: 
+2023-08-05 17:43:49.258 [INF] 
+
+2023-08-05 17:43:49.258 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/user/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Success","response":null}
+2023-08-05 17:43:49.258 [INF] -------------Request-End------------
+2023-08-05 17:44:22.075 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:44:22.076 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:44:22.076 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:44:22.641 [ERR] Failed executing DbCommand (124ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 50), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Message] ([Content], [FromUserId], [InsertDate], [InsertUser], [IsRead], [ToUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [Message]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-05 17:44:22.837 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Message_User_FromUserId". The conflict occurred in database "SiteManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:c831f7a3-acbb-4f0f-bd8a-474d896dccf0
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Message_User_FromUserId". The conflict occurred in database "SiteManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:c831f7a3-acbb-4f0f-bd8a-474d896dccf0
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-05 17:44:23.027 [ERR] MessageService.SendMessage
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Message_User_FromUserId". The conflict occurred in database "SiteManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:c831f7a3-acbb-4f0f-bd8a-474d896dccf0
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SiteManagementPanel.Data.Uow.UnitOfWork.Complete() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Uow\UnitOfWork.cs:line 28
+   at SiteManagementPanel.Business.MessageService.SendMessage(MessageRequest messageRequest) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Message\MessageService.cs:line 34
+2023-08-05 17:44:23.108 [INF] -------------Request-Begin------------
+2023-08-05 17:44:23.110 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+Request Body: {
+  "fromUserId": 2,
+  "toUserId": 2,
+  "content": "Bu bir deneme mesajıdır."
+}
+2023-08-05 17:44:23.112 [INF] 
+
+2023-08-05 17:44:23.112 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error occurred while saving the entity changes. See the inner exception for details.","response":null}
+2023-08-05 17:44:23.112 [INF] -------------Request-End------------
+2023-08-05 17:46:07.373 [INF] Application is starting...
+2023-08-05 17:46:14.976 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:46:14.981 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:46:14.985 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:46:18.248 [INF] -------------Request-Begin------------
+2023-08-05 17:46:18.248 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+Request Body: 
+2023-08-05 17:46:18.249 [INF] 
+
+2023-08-05 17:46:18.250 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}]}
+2023-08-05 17:46:18.250 [INF] -------------Request-End------------
+2023-08-05 17:46:31.320 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:46:31.320 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:46:31.320 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:46:31.641 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-05 17:46:31.710 [INF] -------------Request-Begin------------
+2023-08-05 17:46:31.710 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+Request Body: 
+2023-08-05 17:46:31.710 [INF] 
+
+2023-08-05 17:46:31.710 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:46:31.710 [INF] -------------Request-End------------
+2023-08-05 17:46:58.009 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:46:58.009 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:46:58.009 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:46:58.542 [ERR] Failed executing DbCommand (201ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 50), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Message] ([Content], [FromUserId], [InsertDate], [InsertUser], [IsRead], [ToUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [Message]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-05 17:46:58.623 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Message_User_FromUserId". The conflict occurred in database "SiteManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f2cb6062-267c-4843-b62a-46bd18a00f6c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Message_User_FromUserId". The conflict occurred in database "SiteManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f2cb6062-267c-4843-b62a-46bd18a00f6c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-05 17:46:58.834 [ERR] MessageService.SendMessage
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Message_User_FromUserId". The conflict occurred in database "SiteManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f2cb6062-267c-4843-b62a-46bd18a00f6c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SiteManagementPanel.Data.Uow.UnitOfWork.Complete() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Uow\UnitOfWork.cs:line 28
+   at SiteManagementPanel.Business.MessageService.SendMessage(MessageRequest messageRequest) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Message\MessageService.cs:line 34
+2023-08-05 17:46:58.873 [ERR] Inner Exception Details:
+Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Message_User_FromUserId". The conflict occurred in database "SiteManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f2cb6062-267c-4843-b62a-46bd18a00f6c
+Error Number:547,State:0,Class:16
+2023-08-05 17:46:58.882 [INF] -------------Request-Begin------------
+2023-08-05 17:46:58.882 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+Request Body: {
+  "fromUserId": 2,
+  "toUserId": 2,
+  "content": "deneme mesajı"
+}
+2023-08-05 17:46:58.884 [INF] 
+
+2023-08-05 17:46:58.885 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error occurred while saving the entity changes.","response":null}
+2023-08-05 17:46:58.885 [INF] -------------Request-End------------
+2023-08-05 17:48:35.470 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:48:35.474 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:48:35.474 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:48:35.655 [INF] -------------Request-Begin------------
+2023-08-05 17:48:35.655 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+Request Body: {
+  "userName": "Deneme",
+  "email": "deneme@deneme.com",
+  "password": "123456",
+  "firstName": "deneme",
+  "lastName": "deneme",
+  "tcNo": "1234567895",
+  "phone": "25252525",
+  "vehiclePlateNumber": "25684",
+  "role": 2,
+  "status": 1
+}
+2023-08-05 17:48:35.655 [INF] 
+
+2023-08-05 17:48:35.655 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-08-05 17:48:35.655 [INF] -------------Request-End------------
+2023-08-05 17:48:52.192 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:48:52.193 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:48:52.193 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:48:52.209 [INF] -------------Request-Begin------------
+2023-08-05 17:48:52.209 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/3 
+QueryString:  
+Request Body: 
+2023-08-05 17:48:52.209 [INF] 
+
+2023-08-05 17:48:52.209 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/3 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:48:52.209 [INF] -------------Request-End------------
+2023-08-05 17:48:56.607 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:48:56.607 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:48:56.607 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:48:56.618 [INF] -------------Request-Begin------------
+2023-08-05 17:48:56.618 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/3 
+QueryString:  
+Request Body: 
+2023-08-05 17:48:56.618 [INF] 
+
+2023-08-05 17:48:56.618 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/3 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:48:56.618 [INF] -------------Request-End------------
+2023-08-05 17:49:04.100 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:49:04.100 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:49:04.101 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:49:04.112 [INF] -------------Request-Begin------------
+2023-08-05 17:49:04.112 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/3 
+QueryString:  
+Request Body: 
+2023-08-05 17:49:04.112 [INF] 
+
+2023-08-05 17:49:04.112 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/3 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:49:04.112 [INF] -------------Request-End------------
+2023-08-05 17:49:07.837 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:49:07.837 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:49:07.837 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:49:07.847 [INF] -------------Request-Begin------------
+2023-08-05 17:49:07.848 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/4 
+QueryString:  
+Request Body: 
+2023-08-05 17:49:07.848 [INF] 
+
+2023-08-05 17:49:07.848 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/4 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:49:07.848 [INF] -------------Request-End------------
+2023-08-05 17:49:12.296 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:49:12.296 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:49:12.296 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:49:12.312 [INF] -------------Request-Begin------------
+2023-08-05 17:49:12.313 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/5 
+QueryString:  
+Request Body: 
+2023-08-05 17:49:12.313 [INF] 
+
+2023-08-05 17:49:12.313 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/5 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:49:12.313 [INF] -------------Request-End------------
+2023-08-05 17:49:28.693 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:49:28.694 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:49:28.694 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:49:28.727 [INF] -------------Request-Begin------------
+2023-08-05 17:49:28.727 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+Request Body: 
+2023-08-05 17:49:28.727 [INF] 
+
+2023-08-05 17:49:28.727 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"},{"email":"deneme@deneme.com","firstName":"deneme","lastName":"deneme","tcNo":"1234567895","phone":"25252525","vehiclePlateNumber":"25684"}]}
+2023-08-05 17:49:28.727 [INF] -------------Request-End------------
+2023-08-05 17:50:30.131 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:50:30.131 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:50:30.131 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:50:30.181 [INF] -------------Request-Begin------------
+2023-08-05 17:50:30.181 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/6 
+QueryString:  
+Request Body: 
+2023-08-05 17:50:30.181 [INF] 
+
+2023-08-05 17:50:30.181 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/6 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:50:30.181 [INF] -------------Request-End------------
+2023-08-05 17:50:34.668 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:50:34.668 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:50:34.670 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:50:34.677 [INF] -------------Request-Begin------------
+2023-08-05 17:50:34.677 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/7 
+QueryString:  
+Request Body: 
+2023-08-05 17:50:34.677 [INF] 
+
+2023-08-05 17:50:34.677 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/7 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:50:34.677 [INF] -------------Request-End------------
+2023-08-05 17:50:38.745 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:50:38.745 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:50:38.745 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:50:38.750 [INF] -------------Request-Begin------------
+2023-08-05 17:50:38.750 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/8 
+QueryString:  
+Request Body: 
+2023-08-05 17:50:38.750 [INF] 
+
+2023-08-05 17:50:38.750 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/8 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:50:38.750 [INF] -------------Request-End------------
+2023-08-05 17:50:53.662 [INF] Application is starting...
+2023-08-05 17:51:12.215 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:51:12.222 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:51:12.225 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:51:14.916 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-05 17:51:15.966 [INF] -------------Request-Begin------------
+2023-08-05 17:51:15.966 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/5 
+QueryString:  
+Request Body: 
+2023-08-05 17:51:15.966 [INF] 
+
+2023-08-05 17:51:15.966 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/5 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:51:15.966 [INF] -------------Request-End------------
+2023-08-05 17:56:11.700 [INF] Application is starting...
+2023-08-05 17:56:28.314 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:56:28.319 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:56:28.322 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:57:24.821 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-05 17:57:31.132 [INF] -------------Request-Begin------------
+2023-08-05 17:57:31.133 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+Request Body: 
+2023-08-05 17:57:31.133 [INF] 
+
+2023-08-05 17:57:31.133 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:57:31.133 [INF] -------------Request-End------------
+2023-08-05 17:58:21.277 [INF] Application is starting...
+2023-08-05 17:58:42.638 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 17:58:42.643 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 17:58:42.645 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 17:59:35.370 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-05 17:59:36.372 [INF] -------------Request-Begin------------
+2023-08-05 17:59:36.372 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+Request Body: 
+2023-08-05 17:59:36.372 [INF] 
+
+2023-08-05 17:59:36.373 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 17:59:36.373 [INF] -------------Request-End------------
+2023-08-05 17:59:57.929 [INF] Application is starting...
+2023-08-05 18:00:11.758 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 18:00:11.763 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 18:00:11.765 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 18:02:59.756 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-05 18:03:15.094 [INF] -------------Request-Begin------------
+2023-08-05 18:03:15.094 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+Request Body: 
+2023-08-05 18:03:15.094 [INF] 
+
+2023-08-05 18:03:15.095 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 18:03:15.095 [INF] -------------Request-End------------
+2023-08-05 18:11:36.101 [INF] Application is starting...
+2023-08-05 18:11:53.637 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 18:11:53.642 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 18:11:53.645 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 18:11:58.644 [INF] -------------Request-Begin------------
+2023-08-05 18:11:58.645 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+Request Body: 
+2023-08-05 18:11:58.645 [INF] 
+
+2023-08-05 18:11:58.645 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"deneme@deneme.com","firstName":"deneme","lastName":"deneme","tcNo":"1234567895","phone":"25252525","vehiclePlateNumber":"25684"}}
+2023-08-05 18:11:58.645 [INF] -------------Request-End------------
+2023-08-05 18:13:42.337 [INF] Application is starting...
+2023-08-05 18:15:43.567 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 18:15:43.572 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 18:15:43.574 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 18:15:47.052 [INF] -------------Request-Begin------------
+2023-08-05 18:15:47.053 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+Request Body: {
+  "fromUserId": 1,
+  "toUserId": 2,
+  "content": "bu bir deneme mesajıdır."
+}
+2023-08-05 18:15:47.054 [INF] 
+
+2023-08-05 18:15:47.054 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Success","response":null}
+2023-08-05 18:15:47.054 [INF] -------------Request-End------------
+2023-08-05 18:32:53.345 [INF] Application is starting...
+2023-08-05 18:33:12.804 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 18:33:12.813 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 18:33:12.819 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 18:33:19.661 [INF] -------------Request-Begin------------
+2023-08-05 18:33:19.661 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Deneme",
+  "password": "123456"
+}
+2023-08-05 18:33:19.661 [INF] 
+
+2023-08-05 18:33:19.662 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 18:33:19.662 [INF] -------------Request-End------------
+2023-08-05 18:33:28.312 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 18:33:28.312 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 18:33:28.312 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 18:33:28.333 [INF] LogAuthorizationFilter.OnAuthorization
+2023-08-05 18:33:28.333 [INF] LogResourceFilter.OnResourceExecuting
+2023-08-05 18:33:28.334 [INF] LogActionFilter.OnActionExecuting
+2023-08-05 18:33:28.335 [INF] LogActionFilter.OnActionExecuted
+2023-08-05 18:33:28.335 [INF] LogResultFilter.OnResultExecuting
+2023-08-05 18:33:28.337 [INF] LogResultFilter.OnResultExecuted
+2023-08-05 18:33:28.338 [INF] LogResourceFilter.OnResourceExecuted
+2023-08-05 18:33:28.338 [INF] -------------Request-Begin------------
+2023-08-05 18:33:28.338 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/HeartBeat 
+QueryString:  
+Request Body: 
+2023-08-05 18:33:28.338 [INF] 
+
+2023-08-05 18:33:28.339 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/HeartBeat 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Hello"}
+2023-08-05 18:33:28.339 [INF] -------------Request-End------------
+2023-08-05 18:33:30.561 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 18:33:30.561 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 18:33:30.561 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 18:33:30.565 [INF] LogAuthorizationFilter.OnAuthorization
+2023-08-05 18:33:30.565 [INF] LogResourceFilter.OnResourceExecuting
+2023-08-05 18:33:30.570 [INF] LogActionFilter.OnActionExecuting
+2023-08-05 18:33:30.570 [INF] LogActionFilter.OnActionExecuted
+2023-08-05 18:33:30.570 [INF] LogResultFilter.OnResultExecuting
+2023-08-05 18:33:30.570 [INF] LogResultFilter.OnResultExecuted
+2023-08-05 18:33:30.571 [INF] LogResourceFilter.OnResourceExecuted
+2023-08-05 18:33:30.571 [INF] -------------Request-Begin------------
+2023-08-05 18:33:30.571 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/HeartBeat 
+QueryString:  
+Request Body: 
+2023-08-05 18:33:30.571 [INF] 
+
+2023-08-05 18:33:30.571 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/HeartBeat 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Hello"}
+2023-08-05 18:33:30.572 [INF] -------------Request-End------------
+2023-08-05 18:34:49.236 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 18:34:49.239 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 18:34:49.239 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 18:34:49.454 [INF] -------------Request-Begin------------
+2023-08-05 18:34:49.454 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Deneme",
+  "password": "123456"
+}
+2023-08-05 18:34:49.454 [INF] 
+
+2023-08-05 18:34:49.454 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 18:34:49.454 [INF] -------------Request-End------------
+2023-08-05 18:54:39.143 [INF] Application is starting...
+2023-08-05 18:55:02.883 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 18:55:02.891 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 18:55:02.894 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 18:55:08.710 [INF] -------------Request-Begin------------
+2023-08-05 18:55:08.710 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "Deneme",
+  "password": "123456"
+}
+2023-08-05 18:55:08.710 [INF] 
+
+2023-08-05 18:55:08.711 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 18:55:08.711 [INF] -------------Request-End------------
+2023-08-05 19:21:53.029 [INF] Application is starting...
+2023-08-05 19:22:32.804 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:22:32.809 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:22:32.811 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:22:43.686 [INF] -------------Request-Begin------------
+2023-08-05 19:22:43.686 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 19:22:43.686 [INF] 
+
+2023-08-05 19:22:43.687 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:22:43.687 [INF] -------------Request-End------------
+2023-08-05 19:22:55.094 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:22:55.095 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:22:55.095 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:22:55.209 [INF] -------------Request-Begin------------
+2023-08-05 19:22:55.209 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:22:55.210 [INF] 
+
+2023-08-05 19:22:55.210 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:22:55.210 [INF] -------------Request-End------------
+2023-08-05 19:22:57.620 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:22:57.620 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:22:57.620 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:22:57.659 [INF] -------------Request-Begin------------
+2023-08-05 19:22:57.660 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:22:57.660 [INF] 
+
+2023-08-05 19:22:57.660 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:22:57.660 [INF] -------------Request-End------------
+2023-08-05 19:22:58.248 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:22:58.248 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:22:58.248 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:22:58.300 [INF] -------------Request-Begin------------
+2023-08-05 19:22:58.300 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:22:58.300 [INF] 
+
+2023-08-05 19:22:58.300 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:22:58.300 [INF] -------------Request-End------------
+2023-08-05 19:22:58.659 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:22:58.659 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:22:58.659 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:22:58.676 [INF] -------------Request-Begin------------
+2023-08-05 19:22:58.676 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:22:58.676 [INF] 
+
+2023-08-05 19:22:58.677 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:22:58.677 [INF] -------------Request-End------------
+2023-08-05 19:22:58.852 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:22:58.852 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:22:58.852 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:22:58.917 [INF] -------------Request-Begin------------
+2023-08-05 19:22:58.917 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:22:58.917 [INF] 
+
+2023-08-05 19:22:58.917 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:22:58.917 [INF] -------------Request-End------------
+2023-08-05 19:22:59.126 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:22:59.126 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:22:59.127 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:22:59.148 [INF] -------------Request-Begin------------
+2023-08-05 19:22:59.148 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:22:59.148 [INF] 
+
+2023-08-05 19:22:59.148 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:22:59.148 [INF] -------------Request-End------------
+2023-08-05 19:22:59.291 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:22:59.291 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:22:59.291 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:22:59.318 [INF] -------------Request-Begin------------
+2023-08-05 19:22:59.318 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:22:59.318 [INF] 
+
+2023-08-05 19:22:59.318 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:22:59.318 [INF] -------------Request-End------------
+2023-08-05 19:22:59.580 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:22:59.580 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:22:59.580 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:22:59.638 [INF] -------------Request-Begin------------
+2023-08-05 19:22:59.638 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:22:59.638 [INF] 
+
+2023-08-05 19:22:59.638 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:22:59.639 [INF] -------------Request-End------------
+2023-08-05 19:22:59.786 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:22:59.786 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:22:59.786 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:22:59.820 [INF] -------------Request-Begin------------
+2023-08-05 19:22:59.820 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:22:59.820 [INF] 
+
+2023-08-05 19:22:59.820 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:22:59.820 [INF] -------------Request-End------------
+2023-08-05 19:23:02.536 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:23:02.536 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:23:02.536 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:23:02.553 [INF] -------------Request-Begin------------
+2023-08-05 19:23:02.553 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:23:02.553 [INF] 
+
+2023-08-05 19:23:02.554 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:23:02.554 [INF] -------------Request-End------------
+2023-08-05 19:24:12.566 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:24:12.626 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:24:12.626 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:24:12.634 [INF] -------------Request-Begin------------
+2023-08-05 19:24:12.635 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "",
+  "password": ""
+}
+2023-08-05 19:24:12.635 [INF] 
+
+2023-08-05 19:24:12.635 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Request was null","response":null}
+2023-08-05 19:24:12.635 [INF] -------------Request-End------------
+2023-08-05 19:24:14.742 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:24:14.743 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:24:14.743 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:24:14.746 [INF] -------------Request-Begin------------
+2023-08-05 19:24:14.747 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "",
+  "password": ""
+}
+2023-08-05 19:24:14.747 [INF] 
+
+2023-08-05 19:24:14.747 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Request was null","response":null}
+2023-08-05 19:24:14.747 [INF] -------------Request-End------------
+2023-08-05 19:25:52.005 [INF] Application is starting...
+2023-08-05 19:26:17.876 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:26:17.881 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:26:17.883 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:27:30.591 [INF] -------------Request-Begin------------
+2023-08-05 19:27:30.592 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "deneme",
+  "password": "123456"
+}
+2023-08-05 19:27:30.592 [INF] 
+
+2023-08-05 19:27:30.593 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:27:30.593 [INF] -------------Request-End------------
+2023-08-05 19:33:44.112 [INF] Application is starting...
+2023-08-05 19:34:16.670 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:34:16.676 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:34:16.678 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:34:34.648 [INF] -------------Request-Begin------------
+2023-08-05 19:34:34.648 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "123456"
+}
+2023-08-05 19:34:34.649 [INF] 
+
+2023-08-05 19:34:34.649 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:34:34.649 [INF] -------------Request-End------------
+2023-08-05 19:34:42.155 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:34:42.156 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:34:42.156 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:35:57.982 [INF] -------------Request-Begin------------
+2023-08-05 19:35:57.982 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 19:35:57.982 [INF] 
+
+2023-08-05 19:35:57.982 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:35:57.982 [INF] -------------Request-End------------
+2023-08-05 19:36:03.295 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:36:03.295 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:36:03.295 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:38:04.331 [INF] -------------Request-Begin------------
+2023-08-05 19:38:04.331 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 19:38:04.331 [INF] 
+
+2023-08-05 19:38:04.331 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:38:04.331 [INF] -------------Request-End------------
+2023-08-05 19:38:08.354 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:38:08.354 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:38:08.354 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:40:33.652 [INF] -------------Request-Begin------------
+2023-08-05 19:40:33.652 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 19:40:33.652 [INF] 
+
+2023-08-05 19:40:33.652 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 19:40:33.652 [INF] -------------Request-End------------
+2023-08-05 19:42:10.741 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:42:10.742 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:42:10.742 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:45:28.108 [INF] -------------Request-Begin------------
+2023-08-05 19:45:28.108 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 19:45:28.108 [INF] 
+
+2023-08-05 19:45:28.108 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-05T19:50:18.3256295+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImtldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IktldnNlciB5YXZ1eiIsImV4cCI6MTY5MTI1NDIxMSwiaXNzIjoiU2l0ZU1hbmFnZW1lbnRQYW5lbEFwaSIsImF1ZCI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkifQ.ejEahfr4HUtJF19e2wAQxGWl4ol5onNmfkbsmexyRHo","userName":"kevser"}}
+2023-08-05 19:45:28.109 [INF] -------------Request-End------------
+2023-08-05 19:46:18.508 [INF] Application is starting...
+2023-08-05 19:46:50.218 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:46:50.225 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:46:50.227 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:47:00.224 [INF] -------------Request-Begin------------
+2023-08-05 19:47:00.224 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 19:47:00.224 [INF] 
+
+2023-08-05 19:47:00.225 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user status","response":null}
+2023-08-05 19:47:00.225 [INF] -------------Request-End------------
+2023-08-05 19:48:07.130 [INF] Application is starting...
+2023-08-05 19:48:57.741 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:48:57.747 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:48:57.749 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:49:09.380 [INF] -------------Request-Begin------------
+2023-08-05 19:49:09.380 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 19:49:09.380 [INF] 
+
+2023-08-05 19:49:09.381 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-05T19:54:09.3559551+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImtldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IktldnNlciB5YXZ1eiIsImV4cCI6MTY5MTI1NDQ0OCwiaXNzIjoiU2l0ZU1hbmFnZW1lbnRQYW5lbEFwaSIsImF1ZCI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkifQ.PhRcKTkR7PQX9kEKUdbGqGTcPAj1MQd9XmV3_-GG6Aw","userName":"kevser"}}
+2023-08-05 19:49:09.381 [INF] -------------Request-End------------
+2023-08-05 19:51:18.114 [INF] Application is starting...
+2023-08-05 19:51:43.902 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:51:43.910 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:51:43.912 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:51:50.910 [INF] -------------Request-Begin------------
+2023-08-05 19:51:50.910 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 19:51:50.910 [INF] 
+
+2023-08-05 19:51:50.910 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-05T19:56:50.8963643+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImtldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IktldnNlciB5YXZ1eiIsImV4cCI6MTY5MTI1NDYxMCwiaXNzIjoiU2l0ZU1hbmFnZW1lbnRQYW5lbEFwaSIsImF1ZCI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkifQ.J2UcCCPuILn9yxh4TWlWc2rzEzeOrmnaHLbHYll3zLs","userName":"kevser"}}
+2023-08-05 19:51:50.911 [INF] -------------Request-End------------
+2023-08-05 19:52:01.812 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:52:01.812 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:52:01.812 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:52:01.960 [INF] -------------Request-Begin------------
+2023-08-05 19:52:01.960 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "123456"
+}
+2023-08-05 19:52:01.960 [INF] 
+
+2023-08-05 19:52:01.961 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-05T19:57:01.9598735+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImtldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IktldnNlciB5YXZ1eiIsImV4cCI6MTY5MTI1NDYyMSwiaXNzIjoiU2l0ZU1hbmFnZW1lbnRQYW5lbEFwaSIsImF1ZCI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkifQ.Dd9HyMarbVcAwyjwEA_qx21Rjt-Nh9VLTHk-FqnFsDU","userName":"kevser"}}
+2023-08-05 19:52:01.961 [INF] -------------Request-End------------
+2023-08-05 19:53:19.899 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:53:19.899 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:53:19.899 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:53:19.967 [INF] -------------Request-Begin------------
+2023-08-05 19:53:19.967 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "1234567"
+}
+2023-08-05 19:53:19.967 [INF] 
+
+2023-08-05 19:53:19.967 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-05T19:58:19.967211+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImtldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IktldnNlciB5YXZ1eiIsImV4cCI6MTY5MTI1NDY5OSwiaXNzIjoiU2l0ZU1hbmFnZW1lbnRQYW5lbEFwaSIsImF1ZCI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkifQ.0wRUcjLGnis_t5cuOU9IpuwpHi3L2OVwYO1nygGCmkw","userName":"kevser"}}
+2023-08-05 19:53:19.968 [INF] -------------Request-End------------
+2023-08-05 19:57:51.278 [INF] Application is starting...
+2023-08-05 19:58:16.721 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:58:16.727 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:58:16.730 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:59:05.943 [INF] Application is starting...
+2023-08-05 19:59:33.699 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 19:59:33.704 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 19:59:33.708 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 19:59:59.782 [INF] -------------Request-Begin------------
+2023-08-05 19:59:59.782 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 19:59:59.782 [INF] 
+
+2023-08-05 19:59:59.783 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-05T20:04:56.3118385+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImtldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IktldnNlciB5YXZ1eiIsImV4cCI6MTY5MTI1NTA5NCwiaXNzIjoiU2l0ZU1hbmFnZW1lbnRQYW5lbEFwaSIsImF1ZCI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkifQ.iehKPHzfvU-q1qZAkB7xYLGl61p0xPmPSYM2YSzYAUI","userName":"kevser"}}
+2023-08-05 19:59:59.783 [INF] -------------Request-End------------
+2023-08-05 20:00:08.967 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:00:08.973 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:00:08.973 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:00:14.390 [INF] -------------Request-Begin------------
+2023-08-05 20:00:14.390 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "123456"
+}
+2023-08-05 20:00:14.390 [INF] 
+
+2023-08-05 20:00:14.390 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 20:00:14.390 [INF] -------------Request-End------------
+2023-08-05 20:01:19.471 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:01:19.473 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:01:19.473 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:01:20.099 [INF] -------------Request-Begin------------
+2023-08-05 20:01:20.099 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 20:01:20.099 [INF] 
+
+2023-08-05 20:01:20.099 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 20:01:20.099 [INF] -------------Request-End------------
+2023-08-05 20:01:36.317 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:01:36.317 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:01:36.317 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:01:36.461 [INF] -------------Request-Begin------------
+2023-08-05 20:01:36.461 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+Request Body: 
+2023-08-05 20:01:36.461 [INF] 
+
+2023-08-05 20:01:36.461 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"},{"email":"deneme@deneme.com","firstName":"deneme","lastName":"deneme","tcNo":"1234567895","phone":"25252525","vehiclePlateNumber":"25684"}]}
+2023-08-05 20:01:36.461 [INF] -------------Request-End------------
+2023-08-05 20:01:47.810 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:01:47.811 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:01:47.811 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:01:47.906 [INF] -------------Request-Begin------------
+2023-08-05 20:01:47.906 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+Request Body: 
+2023-08-05 20:01:47.906 [INF] 
+
+2023-08-05 20:01:47.907 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"deneme@deneme.com","firstName":"deneme","lastName":"deneme","tcNo":"1234567895","phone":"25252525","vehiclePlateNumber":"25684"}}
+2023-08-05 20:01:47.907 [INF] -------------Request-End------------
+2023-08-05 20:01:56.712 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:01:56.712 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:01:56.712 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:01:56.730 [INF] -------------Request-Begin------------
+2023-08-05 20:01:56.730 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/1 
+QueryString:  
+Request Body: 
+2023-08-05 20:01:56.730 [INF] 
+
+2023-08-05 20:01:56.730 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}}
+2023-08-05 20:01:56.730 [INF] -------------Request-End------------
+2023-08-05 20:02:12.345 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:02:12.345 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:02:12.345 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:02:12.565 [INF] -------------Request-Begin------------
+2023-08-05 20:02:12.565 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+Request Body: 
+2023-08-05 20:02:12.565 [INF] 
+
+2023-08-05 20:02:12.565 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 20:02:12.566 [INF] -------------Request-End------------
+2023-08-05 20:08:24.406 [INF] Application is starting...
+2023-08-05 20:08:44.049 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:08:44.056 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:08:44.060 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:08:51.150 [INF] -------------Request-Begin------------
+2023-08-05 20:08:51.150 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/user/2 
+QueryString:  
+Request Body: 
+2023-08-05 20:08:51.150 [INF] 
+
+2023-08-05 20:08:51.152 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/user/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Success","response":null}
+2023-08-05 20:08:51.152 [INF] -------------Request-End------------
+2023-08-05 20:09:08.765 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:09:08.765 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:09:08.766 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:09:09.247 [INF] -------------Request-Begin------------
+2023-08-05 20:09:09.247 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/1/mark-as-read 
+QueryString:  
+Request Body: 
+2023-08-05 20:09:09.247 [INF] 
+
+2023-08-05 20:09:09.247 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/1/mark-as-read 
+QueryString:  
+StatusCode: 404 
+Response Body: Message not found
+2023-08-05 20:09:09.248 [INF] -------------Request-End------------
+2023-08-05 20:10:48.712 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:10:48.720 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:10:48.721 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:10:49.158 [INF] -------------Request-Begin------------
+2023-08-05 20:10:49.158 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+Request Body: 
+2023-08-05 20:10:49.158 [INF] 
+
+2023-08-05 20:10:49.158 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+StatusCode: 204 
+Response Body: 
+2023-08-05 20:10:49.158 [INF] -------------Request-End------------
+2023-08-05 20:11:28.103 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:11:28.107 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:11:28.109 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:11:28.127 [INF] -------------Request-Begin------------
+2023-08-05 20:11:28.127 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3 
+QueryString:  
+Request Body: 
+2023-08-05 20:11:28.127 [INF] 
+
+2023-08-05 20:11:28.127 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3 
+QueryString:  
+StatusCode: 200 
+Response Body: Success
+2023-08-05 20:11:28.127 [INF] -------------Request-End------------
+2023-08-05 20:32:41.661 [INF] Application is starting...
+2023-08-05 20:32:55.445 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:32:55.450 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:32:55.452 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:32:59.939 [INF] -------------Request-Begin------------
+2023-08-05 20:32:59.939 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+Request Body: 
+2023-08-05 20:32:59.939 [INF] 
+
+2023-08-05 20:32:59.939 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+StatusCode: 204 
+Response Body: 
+2023-08-05 20:32:59.939 [INF] -------------Request-End------------
+2023-08-05 20:33:58.014 [INF] Application is starting...
+2023-08-05 20:34:09.898 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:34:09.902 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:34:09.904 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:34:13.466 [INF] -------------Request-Begin------------
+2023-08-05 20:34:13.466 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+Request Body: 
+2023-08-05 20:34:13.466 [INF] 
+
+2023-08-05 20:34:13.466 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+StatusCode: 204 
+Response Body: 
+2023-08-05 20:34:13.466 [INF] -------------Request-End------------
+2023-08-05 20:37:48.740 [INF] Application is starting...
+2023-08-05 20:38:10.500 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:38:10.517 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:38:10.521 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:38:14.523 [INF] -------------Request-Begin------------
+2023-08-05 20:38:14.524 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+Request Body: 
+2023-08-05 20:38:14.524 [INF] 
+
+2023-08-05 20:38:14.525 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+StatusCode: 204 
+Response Body: 
+2023-08-05 20:38:14.525 [INF] -------------Request-End------------
+2023-08-05 20:40:59.871 [INF] Application is starting...
+2023-08-05 20:41:09.248 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:41:09.255 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:41:09.258 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:41:12.888 [INF] -------------Request-Begin------------
+2023-08-05 20:41:12.888 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+Request Body: 
+2023-08-05 20:41:12.888 [INF] 
+
+2023-08-05 20:41:12.888 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+StatusCode: 404 
+Response Body: bu bir deneme mesajıdır.
+2023-08-05 20:41:12.888 [INF] -------------Request-End------------
+2023-08-05 20:42:36.387 [INF] Application is starting...
+2023-08-05 20:43:08.241 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:43:08.246 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:43:08.248 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:43:12.522 [INF] -------------Request-Begin------------
+2023-08-05 20:43:12.522 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+Request Body: 
+2023-08-05 20:43:12.523 [INF] 
+
+2023-08-05 20:43:12.523 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+StatusCode: 404 
+Response Body: bu bir deneme mesajıdır.
+2023-08-05 20:43:12.523 [INF] -------------Request-End------------
+2023-08-05 20:44:14.721 [INF] Application is starting...
+2023-08-05 20:44:50.502 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:44:50.508 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:44:50.510 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:44:58.419 [INF] -------------Request-Begin------------
+2023-08-05 20:44:58.419 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+Request Body: 
+2023-08-05 20:44:58.419 [INF] 
+
+2023-08-05 20:44:58.419 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+StatusCode: 204 
+Response Body: 
+2023-08-05 20:44:58.419 [INF] -------------Request-End------------
+2023-08-05 20:49:03.285 [INF] Application is starting...
+2023-08-05 20:49:15.334 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 20:49:15.339 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 20:49:15.342 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 20:49:19.202 [INF] -------------Request-Begin------------
+2023-08-05 20:49:19.203 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+Request Body: 
+2023-08-05 20:49:19.203 [INF] 
+
+2023-08-05 20:49:19.203 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/3/mark-as-read 
+QueryString:  
+StatusCode: 204 
+Response Body: 
+2023-08-05 20:49:19.203 [INF] -------------Request-End------------
+2023-08-05 22:14:44.363 [INF] Application is starting...
+2023-08-05 22:15:23.535 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 22:15:23.548 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 22:15:23.554 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 22:15:24.104 [INF] -------------Request-Begin------------
+2023-08-05 22:15:24.104 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 22:15:24.104 [INF] 
+
+2023-08-05 22:15:24.104 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-08-05 22:15:24.104 [INF] -------------Request-End------------
+2023-08-05 22:15:48.768 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 22:15:48.768 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 22:15:48.768 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 22:16:12.093 [INF] Application is starting...
+2023-08-05 22:16:24.531 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 22:16:24.538 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 22:16:24.540 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 22:16:27.866 [INF] -------------Request-Begin------------
+2023-08-05 22:16:27.866 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+Request Body: 
+2023-08-05 22:16:27.866 [INF] 
+
+2023-08-05 22:16:27.866 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"},{"email":"deneme@deneme.com","firstName":"deneme","lastName":"deneme","tcNo":"1234567895","phone":"25252525","vehiclePlateNumber":"25684"}]}
+2023-08-05 22:16:27.866 [INF] -------------Request-End------------
+2023-08-05 22:16:52.374 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 22:16:52.374 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 22:16:52.374 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 22:16:54.184 [INF] -------------Request-Begin------------
+2023-08-05 22:16:54.185 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 22:16:54.185 [INF] 
+
+2023-08-05 22:16:54.185 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-05T22:21:54.1658164+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImtldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IktldnNlciB5YXZ1eiIsImV4cCI6MTY5MTI2MzMxMywiaXNzIjoiU2l0ZU1hbmFnZW1lbnRQYW5lbEFwaSIsImF1ZCI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkifQ.eWp_o78p8rDTGmLC1SMZRtXI56ILxdxQ12WOcUUAr0A","userName":"kevser"}}
+2023-08-05 22:16:54.185 [INF] -------------Request-End------------
+2023-08-05 22:17:25.663 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 22:17:25.667 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 22:17:25.667 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 22:17:26.235 [INF] -------------Request-Begin------------
+2023-08-05 22:17:26.235 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 22:17:26.235 [INF] 
+
+2023-08-05 22:17:26.236 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"userName":"Kevser","transactionDate":"2023-08-04T22:00:29.385","logType":"string"},{"userName":"kevser","transactionDate":"2023-08-04T22:21:24.2277672","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:22:05.9976326","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:25:11.967585","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:26:50.6421829","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:27:23.5211215","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:27:26.6571984","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:27:26.7686695","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:27:37.5014912","logType":"WrongPass"},{"userName":"Kevser","transactionDate":"2023-08-04T22:28:00.877","logType":"string"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:40.9764649","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:44.8412464","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:45.607904","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:46.0526189","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:46.2299722","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:46.4591813","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:46.6545698","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:46.9203614","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:47.0973643","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:47.3915614","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:47.5416063","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:47.8009993","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-04T22:28:48.0897058","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-05T16:22:43.4670308","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-05T16:34:34.4370378","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-05T16:35:52.6358173","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-05T16:37:32.8899051","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-05T16:40:33.6398341","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-05T16:43:59.1783013","logType":"WrongPass"},{"userName":"kevser","transactionDate":"2023-08-05T16:45:15.5883117","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-05T16:46:59.7584691","logType":"InValidUserStatus"},{"userName":"kevser","transactionDate":"2023-08-05T16:49:08.9133002","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-05T16:51:50.7349024","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-05T16:52:01.9504131","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-05T16:53:19.9614146","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-05T16:58:28.7118252","logType":"InValidUserName"},{"userName":"kevser","transactionDate":"2023-08-05T16:59:55.4624755","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-05T17:00:12.3128681","logType":"InValidUserName"},{"userName":"kevser","transactionDate":"2023-08-05T19:16:53.9619974","logType":"LogedIn"}]}
+2023-08-05 22:17:26.237 [INF] -------------Request-End------------
+2023-08-05 22:17:44.821 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 22:17:44.822 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 22:17:44.822 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 22:17:44.893 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-05 22:17:44.935 [INF] -------------Request-Begin------------
+2023-08-05 22:17:44.935 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog/1 
+QueryString:  
+Request Body: 
+2023-08-05 22:17:44.935 [INF] 
+
+2023-08-05 22:17:44.935 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"userName":"Kevser","transactionDate":"2023-08-04T22:00:29.385","logType":"string"}}
+2023-08-05 22:17:44.935 [INF] -------------Request-End------------
