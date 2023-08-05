@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -31,10 +31,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SiteManagamentPanel.Base\SiteManagementPanel.Base.csproj" />
     <ProjectReference Include="..\SiteManagement.Data\SiteManagementPanel.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controller\" />
+    <ProjectReference Include="..\SiteManagementPanel.Business\SiteManagementPanel.Business.csproj" />
   </ItemGroup>
 
 </Project>

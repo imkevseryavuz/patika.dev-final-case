@@ -1,11 +1,9 @@
-﻿
-using Serilog;
+﻿using Serilog;
 using SiteManagamentPanel.Base;
-using SiteManagement.Data.Domain;
-using SiteManagement.Data.Repository;
 using SiteManagementPanel.Data.Domain;
+using SiteManagementPanel.Data.Repository;
 
-namespace SiteManagement.Data.Uow;
+namespace SiteManagementPanel.Data.Uow;
 
 public class UnitOfWork : IUnitOfWork
 {
@@ -15,13 +13,13 @@ public class UnitOfWork : IUnitOfWork
     {
         this.dbContext = dbContext;
         ApartmentRepository= new GenericRepository<Apartment>(dbContext);
-        ApartmentStatusRepository= new GenericRepository<ApartmentStatus>(dbContext);
         ApartmentTypeRepository = new GenericRepository<ApartmentType>(dbContext);
         BlockRepository = new GenericRepository<Block>(dbContext);
         BillRepository= new GenericRepository<Bill>(dbContext);
         PaymentRepository= new GenericRepository<Payment>(dbContext);
         UserRepository= new GenericRepository<User>(dbContext);
         UserLogRepository= new GenericRepository<UserLog>(dbContext);
+        MessageRepository=new GenericRepository<Message>(dbContext);
     }
 
 
@@ -54,9 +52,6 @@ public class UnitOfWork : IUnitOfWork
 
 
     public IGenericRepository<Apartment> ApartmentRepository { get; private set; }
-
-    public IGenericRepository<ApartmentStatus> ApartmentStatusRepository { get; private set; }
-
     public IGenericRepository<ApartmentType> ApartmentTypeRepository { get; private set; }
     public IGenericRepository<Block> BlockRepository { get; private set; }
     public IGenericRepository<Bill> BillRepository { get; private set; }
@@ -64,4 +59,6 @@ public class UnitOfWork : IUnitOfWork
 
     public IGenericRepository<User> UserRepository { get; private set; }
     public IGenericRepository<UserLog> UserLogRepository { get; private set; }
+
+    public IGenericRepository<Message> MessageRepository { get; private set; }
 }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eZGzskFSvMSllMNefjwkeXg04Lwm4RXNDWmZ3v9T4FY=",
+  "Source": "SiteManagementPanel.Service",
+  "BasePath": "_content/SiteManagementPanel.Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

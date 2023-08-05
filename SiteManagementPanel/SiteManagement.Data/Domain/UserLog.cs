@@ -1,13 +1,10 @@
-﻿
-
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore;
 using SiteManagamentPanel.Base;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SiteManagement.Data;
+namespace SiteManagementPanel.Data.Domain;
 
-[Table("UserLog")]
+
 public class UserLog : IdBaseModel
 {
     public string UserName { get; set; }
@@ -20,6 +17,7 @@ public class UserLogConfiguration : IEntityTypeConfiguration<UserLog>
 {
     public void Configure(EntityTypeBuilder<UserLog> builder)
     {
+        builder.ToTable(nameof(UserLog));
         builder.Property(x => x.Id).IsRequired(true).UseIdentityColumn();
         builder.Property(x => x.InsertUser).IsRequired(true).HasMaxLength(50);
         builder.Property(x => x.InsertDate).IsRequired(true);

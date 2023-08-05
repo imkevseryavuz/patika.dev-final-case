@@ -11,4 +11,8 @@
     <ProjectReference Include="..\SiteManagementPanel.Schema\SiteManagementPanel.Schema.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Payment\" />
+  </ItemGroup>
+
 </Project>

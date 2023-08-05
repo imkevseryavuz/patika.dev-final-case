@@ -1,16 +1,20 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using SiteManagamentPanel.Base;
 using SiteManagamentPanel.Base.Jwt;
-using SiteManagement.Data;
-using SiteManagement.Data.Uow;
-using System.Text;
-using Serilog;
+using SiteManagementPanel.Busines;
+using SiteManagementPanel.Business;
+using SiteManagementPanel.Data;
+using SiteManagementPanel.Data.Uow;
+using SiteManagementPanel.Schema;
 using SiteManagementPanel.Service;
+using System.Text;
 
-namespace SipayApi;
+namespace SiteManagamentPanel;
 
 public class Startup
 {
@@ -29,15 +33,17 @@ public class Startup
 
         services.AddControllers();
 
+        
         JwtConfig = Configuration.GetSection("JwtConfig").Get<JwtConfig>();
         services.Configure<JwtConfig>(Configuration.GetSection("JwtConfig"));
 
         //dbcontext
 
+
             var dbConfig = Configuration.GetConnectionString("MsSqlConnection");
             services.AddDbContext<SiteManagementDbContext>(opts =>
             opts.UseSqlServer(dbConfig));
-        
+
 
 
 
@@ -49,16 +55,13 @@ public class Startup
         });
         services.AddSingleton(config.CreateMapper());
 
-        services.AddScoped<ICustomerService, CustomerService>();
-        services.AddScoped<IAccountService, AccountService>();
-        services.AddScoped<ITransactionService, TransactionService>();
-        services.AddScoped<IUserLogService, UserLogService>();
+        services.AddScoped<IApartmentService, ApartmentService>();
         services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IUserLogService, UserLogService>();
         services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<IBillService, BillService>();
+        services.AddScoped<IMessageService, MessageService>();
 
-        services.AddSingleton<SingletonService>();
-        services.AddScoped<ScopedService>();
-        services.AddTransient<TransientService>();
 
 
         services.AddAuthentication(x =>
@@ -118,7 +121,7 @@ public class Startup
         {
             app.UseDeveloperExceptionPage();
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sipay v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SiteManagement v1"));
         }
 
         app.UseMiddleware<HeartBeatMiddleware>();
@@ -143,44 +146,5 @@ public class Startup
         {
             endpoints.MapControllers();
         });
-
-
-
-        app.Use((context, next) =>
-        {
-
-            if (!string.IsNullOrEmpty(context.Request.Path) && context.Request.Path.Value.Contains("favicon"))
-            {
-                return next();
-            }
-            var singletenService = context.RequestServices.GetRequiredService<SingletonService>();
-            var scopedService = context.RequestServices.GetRequiredService<ScopedService>();
-            var transientService = context.RequestServices.GetRequiredService<TransientService>();
-
-            singletenService.Counter++;
-            scopedService.Counter++;
-            transientService.Counter++;
-
-            return next();
-        });
-
-        app.Run(async context =>
-        {
-            var singletenService = context.RequestServices.GetRequiredService<SingletonService>();
-            var scopedService = context.RequestServices.GetRequiredService<ScopedService>();
-            var transientService = context.RequestServices.GetRequiredService<TransientService>();
-
-            if (!string.IsNullOrEmpty(context.Request.Path) && !context.Request.Path.Value.Contains("favicon"))
-            {
-                singletenService.Counter++;
-                scopedService.Counter++;
-                transientService.Counter++;
-            }
-
-            await context.Response.WriteAsync($"SingletonService: {singletenService.Counter}\n");
-            await context.Response.WriteAsync($"TransientService: {transientService.Counter}\n");
-            await context.Response.WriteAsync($"ScopedService: {scopedService.Counter}\n");
-        });
-
     }
 }

@@ -10,6 +10,6 @@ public class PaymentResponse
     public int ApartmentNumber { get; set; }
     public string Type { get; set; } //"OrtakGider", "Aidat", "Elektrik", "Su", "Doğalgaz"
     public decimal Amount { get; set; }
-    public string Month { get; set; }
-    public int Year { get; set; }
+    
+    public DateTime PaymentDate { get; set; }
 }

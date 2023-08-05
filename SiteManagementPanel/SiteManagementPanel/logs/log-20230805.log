@@ -1,0 +1,1432 @@
+2023-08-05 00:00:21.192 [INF] Application is starting...
+2023-08-05 00:00:31.463 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:00:31.472 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:00:31.477 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:00:34.699 [ERR] ApartmentService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentUser' specified in string based include path 'ApartmentUser.User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 30
+2023-08-05 00:00:34.788 [INF] -------------Request-Begin------------
+2023-08-05 00:00:34.788 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:00:34.788 [INF] 
+
+2023-08-05 00:00:34.789 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentUser' specified in string based include path 'ApartmentUser.User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-05 00:00:34.789 [INF] -------------Request-End------------
+2023-08-05 00:04:24.084 [INF] Application is starting...
+2023-08-05 00:04:30.717 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:04:30.728 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:04:30.731 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:04:35.426 [INF] -------------Request-Begin------------
+2023-08-05 00:04:35.426 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:04:35.426 [INF] 
+
+2023-08-05 00:04:35.427 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A ","statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-05 00:04:35.427 [INF] -------------Request-End------------
+2023-08-05 00:06:14.775 [INF] Application is starting...
+2023-08-05 00:06:24.783 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:06:24.794 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:06:24.797 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:06:27.384 [ERR] ApartmentService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'Status' specified in string based include path 'Status'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 30
+2023-08-05 00:06:27.501 [INF] -------------Request-Begin------------
+2023-08-05 00:06:27.501 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:06:27.501 [INF] 
+
+2023-08-05 00:06:27.502 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'Status' specified in string based include path 'Status'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-05 00:06:27.502 [INF] -------------Request-End------------
+2023-08-05 00:07:15.021 [INF] Application is starting...
+2023-08-05 00:07:21.910 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:07:21.921 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:07:21.928 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:07:24.521 [ERR] ApartmentService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'TypeName' specified in string based include path 'Type.TypeName'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 30
+2023-08-05 00:07:24.648 [INF] -------------Request-Begin------------
+2023-08-05 00:07:24.648 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:07:24.649 [INF] 
+
+2023-08-05 00:07:24.649 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'TypeName' specified in string based include path 'Type.TypeName'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-05 00:07:24.649 [INF] -------------Request-End------------
+2023-08-05 00:07:48.811 [INF] Application is starting...
+2023-08-05 00:07:54.972 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:07:54.980 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:07:54.982 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:07:59.177 [INF] -------------Request-Begin------------
+2023-08-05 00:07:59.177 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:07:59.178 [INF] 
+
+2023-08-05 00:07:59.179 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A ","statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-05 00:07:59.180 [INF] -------------Request-End------------
+2023-08-05 00:13:44.305 [INF] Application is starting...
+2023-08-05 00:13:53.508 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:13:53.515 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:13:53.518 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:13:57.660 [INF] -------------Request-Begin------------
+2023-08-05 00:13:57.660 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:13:57.660 [INF] 
+
+2023-08-05 00:13:57.661 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A ","statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-05 00:13:57.661 [INF] -------------Request-End------------
+2023-08-05 00:18:03.706 [INF] Application is starting...
+2023-08-05 00:19:05.444 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:19:05.449 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:19:05.450 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:19:08.780 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-05 00:19:10.397 [INF] -------------Request-Begin------------
+2023-08-05 00:19:10.397 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/1 
+QueryString:  
+Request Body: 
+2023-08-05 00:19:10.398 [INF] 
+
+2023-08-05 00:19:10.398 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"firstName":null,"lastName":null,"blockName":"A ","statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}}
+2023-08-05 00:19:10.398 [INF] -------------Request-End------------
+2023-08-05 00:23:43.488 [INF] Application is starting...
+2023-08-05 00:23:56.088 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:23:56.092 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:23:56.093 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:24:00.453 [INF] -------------Request-Begin------------
+2023-08-05 00:24:00.454 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/2 
+QueryString:  
+Request Body: 
+2023-08-05 00:24:00.454 [INF] 
+
+2023-08-05 00:24:00.454 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-08-05 00:24:00.454 [INF] -------------Request-End------------
+2023-08-05 00:35:21.273 [INF] Application is starting...
+2023-08-05 00:35:34.180 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:35:34.185 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:35:34.188 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:35:35.357 [FTL] Path=/panel/api/User || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IUserService' while attempting to activate 'SiteManagementPanel.Service.Controller.UserController'.
+2023-08-05 00:35:35.548 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 103f9a22-a177-4e9a-a539-e4879b350eaa and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-05 00:35:36.279 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 103f9a22-a177-4e9a-a539-e4879b350eaa and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-05 00:35:36.289 [ERR] Connection ID "17942340925644603498", Request ID "8000006b-0002-f900-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 103f9a22-a177-4e9a-a539-e4879b350eaa and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-05 00:36:38.559 [INF] Application is starting...
+2023-08-05 00:36:51.332 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:36:51.337 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:36:51.339 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:36:56.965 [INF] -------------Request-Begin------------
+2023-08-05 00:36:56.965 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+Request Body: 
+2023-08-05 00:36:56.965 [INF] 
+
+2023-08-05 00:36:56.966 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","ownerName":null,"tenantName":null,"tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}]}
+2023-08-05 00:36:56.966 [INF] -------------Request-End------------
+2023-08-05 00:37:12.809 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:37:12.809 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:37:12.809 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:37:13.798 [INF] -------------Request-Begin------------
+2023-08-05 00:37:13.798 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:37:13.798 [INF] 
+
+2023-08-05 00:37:13.798 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 00:37:13.799 [INF] -------------Request-End------------
+2023-08-05 00:37:18.928 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:37:18.928 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:37:18.928 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:37:19.064 [INF] -------------Request-Begin------------
+2023-08-05 00:37:19.064 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:37:19.064 [INF] 
+
+2023-08-05 00:37:19.064 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 00:37:19.064 [INF] -------------Request-End------------
+2023-08-05 00:37:24.203 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:37:24.203 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:37:24.203 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:37:24.245 [INF] -------------Request-Begin------------
+2023-08-05 00:37:24.245 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:37:24.245 [INF] 
+
+2023-08-05 00:37:24.245 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 00:37:24.245 [INF] -------------Request-End------------
+2023-08-05 00:37:24.917 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:37:24.917 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:37:24.918 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:37:24.942 [INF] -------------Request-Begin------------
+2023-08-05 00:37:24.942 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:37:24.942 [INF] 
+
+2023-08-05 00:37:24.942 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 00:37:24.942 [INF] -------------Request-End------------
+2023-08-05 00:37:42.979 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:37:42.979 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:37:42.979 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:37:43.066 [INF] -------------Request-Begin------------
+2023-08-05 00:37:43.066 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:37:43.066 [INF] 
+
+2023-08-05 00:37:43.066 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 00:37:43.066 [INF] -------------Request-End------------
+2023-08-05 00:37:45.829 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:37:45.829 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:37:45.830 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:37:46.011 [INF] -------------Request-Begin------------
+2023-08-05 00:37:46.011 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:37:46.011 [INF] 
+
+2023-08-05 00:37:46.011 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 00:37:46.012 [INF] -------------Request-End------------
+2023-08-05 00:38:30.005 [INF] Application is starting...
+2023-08-05 00:38:37.677 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:38:37.682 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:38:37.684 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:38:42.568 [INF] -------------Request-Begin------------
+2023-08-05 00:38:42.568 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:38:42.569 [INF] 
+
+2023-08-05 00:38:42.569 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 00:38:42.570 [INF] -------------Request-End------------
+2023-08-05 00:38:49.764 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:38:49.764 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:38:49.764 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:38:50.074 [INF] -------------Request-Begin------------
+2023-08-05 00:38:50.074 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+Request Body: 
+2023-08-05 00:38:50.074 [INF] 
+
+2023-08-05 00:38:50.074 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","ownerName":null,"tenantName":null,"tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}]}
+2023-08-05 00:38:50.074 [INF] -------------Request-End------------
+2023-08-05 00:39:37.534 [INF] Application is starting...
+2023-08-05 00:39:43.522 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:39:43.533 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:39:43.536 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:39:47.383 [INF] -------------Request-Begin------------
+2023-08-05 00:39:47.383 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-05 00:39:47.384 [INF] 
+
+2023-08-05 00:39:47.384 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 00:39:47.384 [INF] -------------Request-End------------
+2023-08-05 00:40:09.251 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:40:09.257 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:40:09.257 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:40:09.505 [INF] -------------Request-Begin------------
+2023-08-05 00:40:09.505 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+Request Body: 
+2023-08-05 00:40:09.505 [INF] 
+
+2023-08-05 00:40:09.505 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"email":"kevser@mail.com","firstName":"Kevser","lastName":"yavuz","ownerName":null,"tenantName":null,"tcNo":"12345678945","phone":"5555","vehiclePlateNumber":"256556"}]}
+2023-08-05 00:40:09.506 [INF] -------------Request-End------------
+2023-08-05 00:58:00.925 [INF] Application is starting...
+2023-08-05 00:58:13.425 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 00:58:13.438 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 00:58:13.441 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 00:58:14.177 [FTL] Path=/panel/api/UserLog || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IUserLogService' while attempting to activate 'SiteManagementPanel.Service.Controller.UserLogController'.
+2023-08-05 00:58:14.439 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id ca8cfa4f-067d-436c-9eaf-cd47b9b70073 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-05 00:58:14.898 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id ca8cfa4f-067d-436c-9eaf-cd47b9b70073 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-05 00:58:14.909 [ERR] Connection ID "17798225728978813088", Request ID "800000a1-0000-f700-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id ca8cfa4f-067d-436c-9eaf-cd47b9b70073 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-05 00:59:51.204 [INF] Application is starting...
+2023-08-05 01:00:08.855 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:00:08.862 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:00:08.864 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:00:15.665 [INF] -------------Request-Begin------------
+2023-08-05 01:00:15.666 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 01:00:15.666 [INF] 
+
+2023-08-05 01:00:15.666 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 01:00:15.666 [INF] -------------Request-End------------
+2023-08-05 01:00:50.902 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:00:50.902 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:00:50.902 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:00:52.278 [INF] -------------Request-Begin------------
+2023-08-05 01:00:52.278 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "transactionDate": "2023-08-04T22:00:29.385Z",
+  "logType": "string"
+}
+2023-08-05 01:00:52.278 [INF] 
+
+2023-08-05 01:00:52.278 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-08-05 01:00:52.278 [INF] -------------Request-End------------
+2023-08-05 01:00:58.948 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:00:58.948 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:00:58.948 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:00:59.023 [INF] -------------Request-Begin------------
+2023-08-05 01:00:59.023 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 01:00:59.023 [INF] 
+
+2023-08-05 01:00:59.023 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 01:00:59.023 [INF] -------------Request-End------------
+2023-08-05 01:01:02.609 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:01:02.609 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:01:02.609 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:01:02.615 [INF] -------------Request-Begin------------
+2023-08-05 01:01:02.616 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 01:01:02.616 [INF] 
+
+2023-08-05 01:01:02.616 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 01:01:02.616 [INF] -------------Request-End------------
+2023-08-05 01:01:03.565 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:01:03.565 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:01:03.565 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:01:03.571 [INF] -------------Request-Begin------------
+2023-08-05 01:01:03.571 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 01:01:03.571 [INF] 
+
+2023-08-05 01:01:03.571 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 01:01:03.571 [INF] -------------Request-End------------
+2023-08-05 01:01:05.618 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:01:05.618 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:01:05.618 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:01:05.634 [INF] -------------Request-Begin------------
+2023-08-05 01:01:05.634 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 01:01:05.634 [INF] 
+
+2023-08-05 01:01:05.634 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 01:01:05.634 [INF] -------------Request-End------------
+2023-08-05 01:03:59.204 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:03:59.211 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:03:59.211 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:03:59.238 [INF] -------------Request-Begin------------
+2023-08-05 01:03:59.238 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 01:03:59.238 [INF] 
+
+2023-08-05 01:03:59.238 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 01:03:59.238 [INF] -------------Request-End------------
+2023-08-05 01:05:35.992 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:05:35.992 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:05:35.992 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:05:36.089 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-05 01:05:36.144 [INF] -------------Request-Begin------------
+2023-08-05 01:05:36.144 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog/1 
+QueryString:  
+Request Body: 
+2023-08-05 01:05:36.144 [INF] 
+
+2023-08-05 01:05:36.144 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"userName":"Kevser","transactionDate":"2023-08-04T22:00:29.385","logType":"string"}}
+2023-08-05 01:05:36.144 [INF] -------------Request-End------------
+2023-08-05 01:05:45.151 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:05:45.151 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:05:45.151 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:05:45.157 [INF] -------------Request-Begin------------
+2023-08-05 01:05:45.157 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 01:05:45.157 [INF] 
+
+2023-08-05 01:05:45.158 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 01:05:45.158 [INF] -------------Request-End------------
+2023-08-05 01:07:48.971 [INF] Application is starting...
+2023-08-05 01:08:14.044 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:08:14.051 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:08:14.053 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:08:19.234 [INF] -------------Request-Begin------------
+2023-08-05 01:08:19.235 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 01:08:19.235 [INF] 
+
+2023-08-05 01:08:19.235 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"userName":"Kevser","transactionDate":"2023-08-04T22:00:29.385","logType":"string"}]}
+2023-08-05 01:08:19.235 [INF] -------------Request-End------------
+2023-08-05 01:20:04.078 [INF] Application is starting...
+2023-08-05 01:20:24.908 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:20:24.913 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:20:24.916 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:20:25.335 [INF] LogAuthorizationFilter.OnAuthorization
+2023-08-05 01:20:25.335 [INF] LogResourceFilter.OnResourceExecuting
+2023-08-05 01:20:25.828 [INF] LogActionFilter.OnActionExecuting
+2023-08-05 01:20:25.831 [INF] LogActionFilter.OnActionExecuted
+2023-08-05 01:20:25.832 [INF] LogResultFilter.OnResultExecuting
+2023-08-05 01:20:25.853 [INF] LogResultFilter.OnResultExecuted
+2023-08-05 01:20:25.854 [INF] LogResourceFilter.OnResourceExecuted
+2023-08-05 01:20:25.858 [INF] -------------Request-Begin------------
+2023-08-05 01:20:25.859 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/HeartBeat 
+QueryString:  
+Request Body: 
+2023-08-05 01:20:25.859 [INF] 
+
+2023-08-05 01:20:25.859 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/HeartBeat 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Hello"}
+2023-08-05 01:20:25.859 [INF] -------------Request-End------------
+2023-08-05 01:21:19.491 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:21:19.491 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:21:19.491 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:21:24.419 [INF] -------------Request-Begin------------
+2023-08-05 01:21:24.419 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "12345"
+}
+2023-08-05 01:21:24.419 [INF] 
+
+2023-08-05 01:21:24.419 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:21:24.419 [INF] -------------Request-End------------
+2023-08-05 01:22:05.891 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:22:05.899 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:22:05.899 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:22:06.030 [INF] -------------Request-Begin------------
+2023-08-05 01:22:06.030 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "12345"
+}
+2023-08-05 01:22:06.030 [INF] 
+
+2023-08-05 01:22:06.030 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:22:06.030 [INF] -------------Request-End------------
+2023-08-05 01:25:11.895 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:25:11.895 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:25:11.895 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:25:11.977 [INF] -------------Request-Begin------------
+2023-08-05 01:25:11.978 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "12345"
+}
+2023-08-05 01:25:11.978 [INF] 
+
+2023-08-05 01:25:11.978 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:25:11.978 [INF] -------------Request-End------------
+2023-08-05 01:26:12.394 [INF] Application is starting...
+2023-08-05 01:26:46.469 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:26:46.474 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:26:46.475 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:26:50.832 [INF] -------------Request-Begin------------
+2023-08-05 01:26:50.832 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "12345"
+}
+2023-08-05 01:26:50.832 [INF] 
+
+2023-08-05 01:26:50.833 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:26:50.833 [INF] -------------Request-End------------
+2023-08-05 01:27:16.168 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:27:16.171 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:27:16.172 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:27:16.245 [INF] -------------Request-Begin------------
+2023-08-05 01:27:16.245 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": ""
+}
+2023-08-05 01:27:16.245 [INF] 
+
+2023-08-05 01:27:16.245 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Request was null","response":null}
+2023-08-05 01:27:16.245 [INF] -------------Request-End------------
+2023-08-05 01:27:23.403 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:27:23.403 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:27:23.403 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:27:23.526 [INF] -------------Request-Begin------------
+2023-08-05 01:27:23.526 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "1"
+}
+2023-08-05 01:27:23.526 [INF] 
+
+2023-08-05 01:27:23.526 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:27:23.526 [INF] -------------Request-End------------
+2023-08-05 01:27:26.622 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:27:26.622 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:27:26.622 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:27:26.661 [INF] -------------Request-Begin------------
+2023-08-05 01:27:26.661 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "1"
+}
+2023-08-05 01:27:26.661 [INF] 
+
+2023-08-05 01:27:26.661 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:27:26.661 [INF] -------------Request-End------------
+2023-08-05 01:27:26.752 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:27:26.752 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:27:26.752 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:27:26.774 [INF] -------------Request-Begin------------
+2023-08-05 01:27:26.774 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "1"
+}
+2023-08-05 01:27:26.774 [INF] 
+
+2023-08-05 01:27:26.774 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:27:26.774 [INF] -------------Request-End------------
+2023-08-05 01:27:37.486 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:27:37.486 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:27:37.486 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:27:37.511 [INF] -------------Request-Begin------------
+2023-08-05 01:27:37.511 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "kevser",
+  "password": "123456"
+}
+2023-08-05 01:27:37.511 [INF] 
+
+2023-08-05 01:27:37.511 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:27:37.511 [INF] -------------Request-End------------
+2023-08-05 01:27:52.699 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:27:52.699 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:27:52.699 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:27:52.802 [INF] -------------Request-Begin------------
+2023-08-05 01:27:52.802 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 01:27:52.802 [INF] 
+
+2023-08-05 01:27:52.802 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 01:27:52.802 [INF] -------------Request-End------------
+2023-08-05 01:28:14.190 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:14.190 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:14.190 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:14.238 [INF] -------------Request-Begin------------
+2023-08-05 01:28:14.238 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "transactionDate": "2023-08-04T22:28:00.877Z",
+  "logType": "string"
+}
+2023-08-05 01:28:14.238 [INF] 
+
+2023-08-05 01:28:14.238 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-08-05 01:28:14.238 [INF] -------------Request-End------------
+2023-08-05 01:28:26.454 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:26.454 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:26.455 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:26.481 [INF] -------------Request-Begin------------
+2023-08-05 01:28:26.481 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-05 01:28:26.481 [INF] 
+
+2023-08-05 01:28:26.481 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 01:28:26.481 [INF] -------------Request-End------------
+2023-08-05 01:28:40.949 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:40.949 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:40.949 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:40.980 [INF] -------------Request-Begin------------
+2023-08-05 01:28:40.981 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:40.981 [INF] 
+
+2023-08-05 01:28:40.981 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:40.981 [INF] -------------Request-End------------
+2023-08-05 01:28:44.831 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:44.831 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:44.831 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:44.846 [INF] -------------Request-Begin------------
+2023-08-05 01:28:44.846 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:44.846 [INF] 
+
+2023-08-05 01:28:44.846 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:44.846 [INF] -------------Request-End------------
+2023-08-05 01:28:45.593 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:45.593 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:45.593 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:45.628 [INF] -------------Request-Begin------------
+2023-08-05 01:28:45.628 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:45.628 [INF] 
+
+2023-08-05 01:28:45.628 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:45.628 [INF] -------------Request-End------------
+2023-08-05 01:28:46.041 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:46.041 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:46.041 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:46.061 [INF] -------------Request-Begin------------
+2023-08-05 01:28:46.061 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:46.061 [INF] 
+
+2023-08-05 01:28:46.061 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:46.061 [INF] -------------Request-End------------
+2023-08-05 01:28:46.217 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:46.217 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:46.217 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:46.236 [INF] -------------Request-Begin------------
+2023-08-05 01:28:46.236 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:46.236 [INF] 
+
+2023-08-05 01:28:46.236 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:46.237 [INF] -------------Request-End------------
+2023-08-05 01:28:46.445 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:46.446 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:46.446 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:46.464 [INF] -------------Request-Begin------------
+2023-08-05 01:28:46.464 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:46.464 [INF] 
+
+2023-08-05 01:28:46.465 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:46.465 [INF] -------------Request-End------------
+2023-08-05 01:28:46.621 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:46.621 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:46.621 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:46.664 [INF] -------------Request-Begin------------
+2023-08-05 01:28:46.665 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:46.665 [INF] 
+
+2023-08-05 01:28:46.665 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:46.665 [INF] -------------Request-End------------
+2023-08-05 01:28:46.895 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:46.896 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:46.896 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:46.925 [INF] -------------Request-Begin------------
+2023-08-05 01:28:46.925 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:46.925 [INF] 
+
+2023-08-05 01:28:46.925 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:46.925 [INF] -------------Request-End------------
+2023-08-05 01:28:47.063 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:47.063 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:47.063 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:47.127 [INF] -------------Request-Begin------------
+2023-08-05 01:28:47.127 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:47.127 [INF] 
+
+2023-08-05 01:28:47.127 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:47.127 [INF] -------------Request-End------------
+2023-08-05 01:28:47.367 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:47.367 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:47.367 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:47.401 [INF] -------------Request-Begin------------
+2023-08-05 01:28:47.401 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:47.401 [INF] 
+
+2023-08-05 01:28:47.401 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:47.401 [INF] -------------Request-End------------
+2023-08-05 01:28:47.527 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:47.527 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:47.527 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:47.549 [INF] -------------Request-Begin------------
+2023-08-05 01:28:47.550 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:47.550 [INF] 
+
+2023-08-05 01:28:47.550 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:47.550 [INF] -------------Request-End------------
+2023-08-05 01:28:47.787 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:47.788 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:47.788 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:47.810 [INF] -------------Request-Begin------------
+2023-08-05 01:28:47.811 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:47.811 [INF] 
+
+2023-08-05 01:28:47.811 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:47.811 [INF] -------------Request-End------------
+2023-08-05 01:28:47.955 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:28:47.955 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:28:47.955 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:28:48.095 [INF] -------------Request-Begin------------
+2023-08-05 01:28:48.095 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "123456"
+}
+2023-08-05 01:28:48.095 [INF] 
+
+2023-08-05 01:28:48.095 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Token/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-08-05 01:28:48.095 [INF] -------------Request-End------------
+2023-08-05 01:50:16.843 [INF] Application is starting...
+2023-08-05 01:54:38.693 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:54:38.700 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:54:38.702 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:54:39.321 [FTL] Path=/panel/api/Bill || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IBillService' while attempting to activate 'SiteManagementPanel.Service.Controller.BillController'.
+2023-08-05 01:54:39.491 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 8afbbeef-e904-4cac-adf7-aea234641601 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-05 01:54:39.790 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 8afbbeef-e904-4cac-adf7-aea234641601 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-05 01:54:39.804 [ERR] Connection ID "17870283327311708373", Request ID "800000d6-0001-f800-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 8afbbeef-e904-4cac-adf7-aea234641601 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-05 01:55:28.762 [INF] Application is starting...
+2023-08-05 01:55:37.527 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 01:55:37.532 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 01:55:37.534 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 01:55:41.895 [INF] -------------Request-Begin------------
+2023-08-05 01:55:41.895 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill 
+QueryString:  
+Request Body: 
+2023-08-05 01:55:41.896 [INF] 
+
+2023-08-05 01:55:41.896 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 01:55:41.896 [INF] -------------Request-End------------
+2023-08-05 03:07:30.117 [INF] Application is starting...
+2023-08-05 03:08:11.111 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-05 03:08:11.117 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-05 03:08:11.119 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-05 03:08:20.886 [INF] -------------Request-Begin------------
+2023-08-05 03:08:20.886 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+Request Body: 
+2023-08-05 03:08:20.887 [INF] 
+
+2023-08-05 03:08:20.887 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-05 03:08:20.888 [INF] -------------Request-End------------

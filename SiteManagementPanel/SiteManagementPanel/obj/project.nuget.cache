@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OPnWvaKrOTwy+5lA2vhaKwWdhQtmNG1TOfMw7RFbDC77CbMdz0uRF+twXG2WS0a8jfK+uwHvTYfO2e+WDy8Jbw==",
+  "dgSpecHash": "jOxxuLWnLaHPPLwBhTeloEcoGzM+OkW2WAVYUe9GgfunYEgWbJLRAhV6LGUuSt7wAmw2gxj7UYg8JMK0t9C1eg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel\\SiteManagementPanel.Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Kevser\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\docker.dotnet\\3.125.15\\docker.dotnet.3.125.15.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",
@@ -12,7 +13,7 @@
     "C:\\Users\\Kevser\\.nuget\\packages\\linqkit.core\\1.2.4\\linqkit.core.1.2.4.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.5\\microsoft.aspnetcore.authentication.jwtbearer.6.0.5.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
-    "C:\\Users\\Kevser\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\Kevser\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",

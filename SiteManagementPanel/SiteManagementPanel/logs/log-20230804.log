@@ -1,0 +1,1983 @@
+2023-08-04 18:19:17.521 [INF] Application is starting...
+2023-08-04 18:21:31.414 [INF] Application is starting...
+2023-08-04 18:22:06.281 [INF] Application is starting...
+2023-08-04 18:23:05.492 [INF] Application is starting...
+2023-08-04 18:23:26.740 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:23:26.745 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:23:26.747 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:23:28.447 [FTL] Path=/panel/api/Apartment || Method=POST || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:23:28.578 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id c126bc15-a778-4138-b0f9-f73c54334352 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:23:30.263 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id c126bc15-a778-4138-b0f9-f73c54334352 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:23:30.286 [ERR] Connection ID "18374686494167138375", Request ID "80000048-0003-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id c126bc15-a778-4138-b0f9-f73c54334352 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:23:57.550 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:23:57.552 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:23:57.552 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:23:57.665 [FTL] Path=/panel/api/Apartment || Method=POST || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:23:57.727 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 88254135-8e4d-49e1-ba60-c6c6fc1d1e84 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:23:57.731 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 88254135-8e4d-49e1-ba60-c6c6fc1d1e84 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:23:57.733 [ERR] Connection ID "18302628891539275947", Request ID "800000ac-0001-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 88254135-8e4d-49e1-ba60-c6c6fc1d1e84 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:24:06.786 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:24:06.786 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:24:06.786 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:24:06.873 [FTL] Path=/panel/api/Apartment || Method=POST || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:24:06.932 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id ef5705ff-628e-4b5c-9609-5018de662704 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:24:06.934 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id ef5705ff-628e-4b5c-9609-5018de662704 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:24:06.936 [ERR] Connection ID "18302628891539275947", Request ID "800000ad-0001-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id ef5705ff-628e-4b5c-9609-5018de662704 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:44:37.713 [INF] Application is starting...
+2023-08-04 18:44:52.013 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:44:52.024 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:44:52.027 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:44:53.056 [FTL] Path=/panel/api/Apartment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:44:53.154 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id d0e66e07-1764-4fbe-8a1b-2a2b3ca5a35d and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:44:53.489 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id d0e66e07-1764-4fbe-8a1b-2a2b3ca5a35d and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:44:53.514 [ERR] Connection ID "18374686481282236535", Request ID "8000007c-0000-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id d0e66e07-1764-4fbe-8a1b-2a2b3ca5a35d and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:47:44.370 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:47:44.371 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:47:44.371 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:47:44.507 [FTL] Path=/panel/api/Apartment || Method=POST || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:47:44.575 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 49445299-328b-4303-973e-b74426245539 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:47:44.578 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 49445299-328b-4303-973e-b74426245539 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:47:44.581 [ERR] Connection ID "18374686481282236541", Request ID "8000007e-0000-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 49445299-328b-4303-973e-b74426245539 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:48:25.254 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:48:25.254 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:48:25.254 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:48:25.354 [FTL] Path=/panel/api/Apartment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:48:25.433 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 6a95007e-4ba9-4daf-a935-450f693dd767 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:48:25.436 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 6a95007e-4ba9-4daf-a935-450f693dd767 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:48:25.437 [ERR] Connection ID "17870283331606675483", Request ID "8000001c-0002-f800-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 6a95007e-4ba9-4daf-a935-450f693dd767 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:50:35.552 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:50:35.553 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:50:35.553 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:50:35.643 [FTL] Path=/panel/api/Apartment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:50:35.725 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 85def3dc-342b-4500-8a2e-71bd96529717 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:50:35.728 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 85def3dc-342b-4500-8a2e-71bd96529717 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:50:35.731 [ERR] Connection ID "18302628900129210426", Request ID "8000003b-0003-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 85def3dc-342b-4500-8a2e-71bd96529717 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:51:08.413 [INF] Application is starting...
+2023-08-04 18:51:16.409 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:51:16.416 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:51:16.417 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:51:16.862 [FTL] Path=/panel/api/Apartment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:51:16.945 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id ec03d620-837c-45e6-b1a7-afb6e67b5f21 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:51:17.083 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id ec03d620-837c-45e6-b1a7-afb6e67b5f21 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:51:17.097 [ERR] Connection ID "18230571301796315236", Request ID "80000065-0002-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id ec03d620-837c-45e6-b1a7-afb6e67b5f21 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:55:29.730 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:55:29.734 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:55:29.735 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:55:29.875 [FTL] Path=/panel/api/Apartment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:55:29.973 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id d7df7baa-93ae-41d3-86ab-a63609a5dd95 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:55:29.979 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id d7df7baa-93ae-41d3-86ab-a63609a5dd95 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:55:29.983 [ERR] Connection ID "17870283327311708296", Request ID "80000089-0001-f800-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id d7df7baa-93ae-41d3-86ab-a63609a5dd95 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:56:18.026 [INF] Application is starting...
+2023-08-04 18:56:25.663 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:56:25.673 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:56:25.677 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:56:26.065 [FTL] Path=/panel/api/Apartment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:56:26.143 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id a0a1bf3c-b159-4a90-95d5-258351804784 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:56:26.217 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id a0a1bf3c-b159-4a90-95d5-258351804784 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:56:26.228 [ERR] Connection ID "18302628900129210430", Request ID "80000042-0003-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id a0a1bf3c-b159-4a90-95d5-258351804784 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:56:42.196 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:56:42.196 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:56:42.196 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:56:42.322 [FTL] Path=/panel/api/Apartment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:56:42.429 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 6d8562ad-617e-4e51-bd1a-72a7d2d79ed5 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:56:42.435 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 6d8562ad-617e-4e51-bd1a-72a7d2d79ed5 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:56:42.436 [ERR] Connection ID "18302628900129210430", Request ID "80000043-0003-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 6d8562ad-617e-4e51-bd1a-72a7d2d79ed5 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 18:57:41.956 [INF] Application is starting...
+2023-08-04 18:57:49.203 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 18:57:49.209 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 18:57:49.211 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 18:57:49.690 [FTL] Path=/panel/api/Apartment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 18:57:49.809 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id dcc11146-6fe9-4469-a9c4-4931d6b8751f and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:57:49.983 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id dcc11146-6fe9-4469-a9c4-4931d6b8751f and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 18:57:50.001 [ERR] Connection ID "18230571301796315240", Request ID "8000006c-0002-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id dcc11146-6fe9-4469-a9c4-4931d6b8751f and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 19:00:20.033 [INF] Application is starting...
+2023-08-04 19:00:30.539 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:00:30.545 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:00:30.547 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:00:31.026 [FTL] Path=/panel/api/Apartment/GetAll || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 19:00:31.114 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 403f8f6d-116f-4973-85b8-e6cea5428d1d and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 19:00:31.194 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 403f8f6d-116f-4973-85b8-e6cea5428d1d and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 19:00:31.208 [ERR] Connection ID "17942340921349636242", Request ID "80000095-0001-f900-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 403f8f6d-116f-4973-85b8-e6cea5428d1d and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 19:05:19.288 [INF] Application is starting...
+2023-08-04 19:05:40.598 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:05:40.604 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:05:40.608 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:05:41.038 [FTL] Path=/panel/api/Apartment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 19:05:41.128 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id a90021e7-4c21-46f6-9cd1-4a8fa945fdd1 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 19:05:41.233 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id a90021e7-4c21-46f6-9cd1-4a8fa945fdd1 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 19:05:41.249 [ERR] Connection ID "18158513707758387317", Request ID "80000079-0002-fc00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id a90021e7-4c21-46f6-9cd1-4a8fa945fdd1 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-04 19:06:14.334 [INF] Application is starting...
+2023-08-04 19:06:21.622 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:06:21.630 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:06:21.633 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:06:22.128 [FTL] Path=/panel/api/Apartment || Method=GET || Exception=Unable to resolve service for type 'SiteManagementPanel.Business.IApartmentService' while attempting to activate 'SiteManagementPanel.Service.Controller.ApartmentController'.
+2023-08-04 19:06:22.240 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id e047566e-aafc-4275-842b-2eab17523043 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 19:06:22.336 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id e047566e-aafc-4275-842b-2eab17523043 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 19:06:22.364 [ERR] Connection id "0HMSL0ITRSKHL", Request id "0HMSL0ITRSKHL:00000006": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id e047566e-aafc-4275-842b-2eab17523043 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-08-04 19:10:33.555 [INF] Application is starting...
+2023-08-04 19:10:48.950 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:10:48.964 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:10:48.968 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:14:34.663 [INF] Application is starting...
+2023-08-04 19:14:43.736 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:14:43.743 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:14:43.745 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:15:05.978 [INF] Application is starting...
+2023-08-04 19:15:15.590 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:15:15.596 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:15:15.599 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:17:04.718 [INF] Application is starting...
+2023-08-04 19:17:14.127 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:17:14.135 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:17:14.139 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:17:43.817 [INF] Application is starting...
+2023-08-04 19:28:42.656 [INF] Application is starting...
+2023-08-04 19:28:53.276 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:28:53.282 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:28:53.284 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:29:47.783 [INF] Application is starting...
+2023-08-04 19:29:57.674 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:29:57.685 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:29:57.691 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:30:30.019 [ERR] An error occurred using the connection to database 'SiteManagement' on server '127.0.0.1'.
+2023-08-04 19:30:30.175 [ERR] An exception occurred while iterating over the results of a query for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (5): Erişim engellendi.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (5): Erişim engellendi.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2023-08-04 19:31:16.511 [INF] Application is starting...
+2023-08-04 19:31:26.385 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:31:26.392 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:31:26.394 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:31:43.107 [INF] -------------Request-Begin------------
+2023-08-04 19:31:43.107 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 19:31:43.108 [INF] 
+
+2023-08-04 19:31:43.108 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":null,"statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-04 19:31:43.108 [INF] -------------Request-End------------
+2023-08-04 19:42:29.282 [INF] Application is starting...
+2023-08-04 19:46:33.229 [INF] Application is starting...
+2023-08-04 19:50:42.497 [INF] Application is starting...
+2023-08-04 19:51:41.650 [INF] Application is starting...
+2023-08-04 19:53:45.984 [INF] Application is starting...
+2023-08-04 19:55:51.737 [INF] Application is starting...
+2023-08-04 19:56:53.104 [INF] Application is starting...
+2023-08-04 19:58:17.591 [INF] Application is starting...
+2023-08-04 19:59:00.498 [INF] Application is starting...
+2023-08-04 19:59:11.217 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 19:59:11.224 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 19:59:11.227 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 19:59:20.539 [ERR] GenericService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentType' specified in string based include path 'ApartmentType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetAll(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 44
+2023-08-04 19:59:20.779 [INF] -------------Request-Begin------------
+2023-08-04 19:59:20.780 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 19:59:20.780 [INF] 
+
+2023-08-04 19:59:20.780 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentType' specified in string based include path 'ApartmentType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 19:59:20.780 [INF] -------------Request-End------------
+2023-08-04 20:02:49.121 [INF] Application is starting...
+2023-08-04 20:03:00.550 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 20:03:00.561 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 20:03:00.564 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 20:03:07.131 [ERR] GenericService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentType' specified in string based include path 'ApartmentType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetAll(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 44
+2023-08-04 20:03:07.238 [INF] -------------Request-Begin------------
+2023-08-04 20:03:07.239 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 20:03:07.239 [INF] 
+
+2023-08-04 20:03:07.239 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentType' specified in string based include path 'ApartmentType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 20:03:07.239 [INF] -------------Request-End------------
+2023-08-04 20:03:09.556 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 20:03:09.556 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 20:03:09.557 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 20:04:27.753 [INF] Application is starting...
+2023-08-04 20:04:37.540 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 20:04:37.552 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 20:04:37.572 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 20:09:39.548 [INF] Application is starting...
+2023-08-04 20:09:50.791 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 20:09:50.799 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 20:09:50.803 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 20:09:58.891 [INF] -------------Request-Begin------------
+2023-08-04 20:09:58.891 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 20:09:58.891 [INF] 
+
+2023-08-04 20:09:58.892 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":null,"statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-04 20:09:58.892 [INF] -------------Request-End------------
+2023-08-04 20:13:29.649 [INF] Application is starting...
+2023-08-04 20:19:24.713 [INF] Application is starting...
+2023-08-04 20:19:38.305 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 20:19:38.310 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 20:19:38.312 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 20:19:47.424 [INF] -------------Request-Begin------------
+2023-08-04 20:19:47.425 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 20:19:47.425 [INF] 
+
+2023-08-04 20:19:47.426 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":null,"statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2,"user":null,"building":null,"statusType":0,"apartmentType":null}]}
+2023-08-04 20:19:47.427 [INF] -------------Request-End------------
+2023-08-04 20:32:35.624 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 20:32:35.624 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 20:32:35.624 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 20:33:39.760 [INF] Application is starting...
+2023-08-04 20:34:16.290 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 20:34:16.296 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 20:34:16.300 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 20:36:06.434 [INF] Application is starting...
+2023-08-04 20:36:24.766 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 20:36:24.773 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 20:36:24.776 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 20:36:40.330 [ERR] Failed executing DbCommand (333ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (Size = 50), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Apartment] ([ApartmentNumber], [BillTypeId], [BuildingId], [FloorNumber], [InsertDate], [InsertUser], [Status], [TypeId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Apartment]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-04 20:36:40.468 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:0eff7e38-6218-4b87-b633-1cab55884004
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:0eff7e38-6218-4b87-b633-1cab55884004
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-04 20:36:40.594 [ERR] GenericService.Insert
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:0eff7e38-6218-4b87-b633-1cab55884004
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.Save() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 66
+   at SiteManagementPanel.Business.Generic.GenericService`3.Insert(TRequest request) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 79
+2023-08-04 20:37:37.865 [INF] Application is starting...
+2023-08-04 20:38:09.091 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 20:38:09.102 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 20:38:09.110 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 20:39:28.662 [ERR] Failed executing DbCommand (158ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (Size = 50), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Apartment] ([ApartmentNumber], [BillTypeId], [BuildingId], [FloorNumber], [InsertDate], [InsertUser], [Status], [TypeId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Apartment]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-04 20:39:28.832 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:abe27024-f797-4040-be1a-98bb12e3e2a8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:abe27024-f797-4040-be1a-98bb12e3e2a8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-04 22:19:11.240 [INF] Application is starting...
+2023-08-04 22:19:33.296 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 22:19:33.305 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 22:19:33.310 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 22:23:03.507 [INF] Application is starting...
+2023-08-04 22:23:19.504 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 22:23:19.519 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 22:23:19.523 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 22:42:38.797 [INF] Application is starting...
+2023-08-04 22:43:03.163 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 22:43:03.167 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 22:43:03.168 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 22:43:09.476 [INF] -------------Request-Begin------------
+2023-08-04 22:43:09.477 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 22:43:09.477 [INF] 
+
+2023-08-04 22:43:09.482 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":null,"statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2,"user":null,"building":null,"statusType":0,"apartmentType":null}]}
+2023-08-04 22:43:09.483 [INF] -------------Request-End------------
+2023-08-04 22:46:28.588 [INF] Application is starting...
+2023-08-04 22:46:37.975 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 22:46:37.982 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 22:46:37.984 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 22:46:43.409 [INF] -------------Request-Begin------------
+2023-08-04 22:46:43.409 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 22:46:43.410 [INF] 
+
+2023-08-04 22:46:43.411 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"blockName":null,"statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-04 22:46:43.411 [INF] -------------Request-End------------
+2023-08-04 22:50:49.243 [INF] Application is starting...
+2023-08-04 22:51:04.489 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 22:51:04.495 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 22:51:04.497 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 22:51:09.531 [ERR] GenericService.GetAll
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[SiteManagementPanel.Data.Domain.Apartment, SiteManagementPanel.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[SiteManagementPanel.Schema.ApartmentResponse, SiteManagementPanel.Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Apartment -> ApartmentResponse
+SiteManagementPanel.Data.Domain.Apartment -> SiteManagementPanel.Schema.ApartmentResponse
+
+Type Map configuration:
+Apartment -> ApartmentResponse
+SiteManagementPanel.Data.Domain.Apartment -> SiteManagementPanel.Schema.ApartmentResponse
+
+Destination Member:
+Status
+
+ ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at lambda_method73(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method73(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method73(Closure , List`1 , List`1 , ResolutionContext )
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetAll(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 45
+2023-08-04 22:51:09.960 [INF] -------------Request-Begin------------
+2023-08-04 22:51:09.960 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 22:51:09.961 [INF] 
+
+2023-08-04 22:51:09.961 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Error mapping types.\r\n\r\nMapping types:\r\nList`1 -> List`1\r\nSystem.Collections.Generic.List`1[[SiteManagementPanel.Data.Domain.Apartment, SiteManagementPanel.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[SiteManagementPanel.Schema.ApartmentResponse, SiteManagementPanel.Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]","response":null}
+2023-08-04 22:51:09.961 [INF] -------------Request-End------------
+2023-08-04 22:51:23.492 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 22:51:23.493 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 22:51:23.493 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 22:51:23.675 [ERR] GenericService.GetAll
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[SiteManagementPanel.Data.Domain.Apartment, SiteManagementPanel.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[SiteManagementPanel.Schema.ApartmentResponse, SiteManagementPanel.Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Apartment -> ApartmentResponse
+SiteManagementPanel.Data.Domain.Apartment -> SiteManagementPanel.Schema.ApartmentResponse
+
+Type Map configuration:
+Apartment -> ApartmentResponse
+SiteManagementPanel.Data.Domain.Apartment -> SiteManagementPanel.Schema.ApartmentResponse
+
+Destination Member:
+Status
+
+ ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at lambda_method73(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method73(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method73(Closure , List`1 , List`1 , ResolutionContext )
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetAll(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 45
+2023-08-04 22:51:23.677 [INF] -------------Request-Begin------------
+2023-08-04 22:51:23.677 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 22:51:23.677 [INF] 
+
+2023-08-04 22:51:23.677 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Error mapping types.\r\n\r\nMapping types:\r\nList`1 -> List`1\r\nSystem.Collections.Generic.List`1[[SiteManagementPanel.Data.Domain.Apartment, SiteManagementPanel.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[SiteManagementPanel.Schema.ApartmentResponse, SiteManagementPanel.Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]","response":null}
+2023-08-04 22:51:23.677 [INF] -------------Request-End------------
+2023-08-04 22:52:10.465 [INF] Application is starting...
+2023-08-04 22:52:18.813 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 22:52:18.819 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 22:52:18.821 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 22:52:22.844 [INF] -------------Request-Begin------------
+2023-08-04 22:52:22.844 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 22:52:22.844 [INF] 
+
+2023-08-04 22:52:22.845 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"buildingId":null,"status":"Empty","typeId":null,"floorNumber":2,"apartmentNumber":2,"user":[]}]}
+2023-08-04 22:52:22.845 [INF] -------------Request-End------------
+2023-08-04 22:55:34.562 [INF] Application is starting...
+2023-08-04 22:57:01.457 [INF] Application is starting...
+2023-08-04 22:57:08.938 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 22:57:08.944 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 22:57:08.946 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 22:57:13.307 [INF] -------------Request-Begin------------
+2023-08-04 22:57:13.307 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 22:57:13.308 [INF] 
+
+2023-08-04 22:57:13.309 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"buildingId":null,"status":"Empty","typeId":null,"floorNumber":2,"apartmentNumber":2,"user":[]}]}
+2023-08-04 22:57:13.309 [INF] -------------Request-End------------
+2023-08-04 23:04:48.207 [INF] Application is starting...
+2023-08-04 23:05:03.380 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:05:03.392 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:05:03.397 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:05:06.311 [ERR] GenericService.GetById
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentUser' specified in string based include path 'ApartmentUser'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetByIdWithInclude(Int32 id, String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 54
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetById(Int32 id, String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 59
+2023-08-04 23:05:06.614 [INF] -------------Request-Begin------------
+2023-08-04 23:05:06.614 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/2 
+QueryString:  
+Request Body: 
+2023-08-04 23:05:06.614 [INF] 
+
+2023-08-04 23:05:06.614 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentUser' specified in string based include path 'ApartmentUser'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:05:06.614 [INF] -------------Request-End------------
+2023-08-04 23:06:53.640 [INF] Application is starting...
+2023-08-04 23:07:04.661 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:07:04.679 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:07:04.686 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:07:07.352 [ERR] GenericService.GetById
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentUser' specified in string based include path 'ApartmentUser'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetByIdWithInclude(Int32 id, String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 54
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetById(Int32 id, String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 59
+2023-08-04 23:07:07.422 [INF] -------------Request-Begin------------
+2023-08-04 23:07:07.422 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/1 
+QueryString:  
+Request Body: 
+2023-08-04 23:07:07.423 [INF] 
+
+2023-08-04 23:07:07.423 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentUser' specified in string based include path 'ApartmentUser'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:07:07.423 [INF] -------------Request-End------------
+2023-08-04 23:08:16.287 [INF] Application is starting...
+2023-08-04 23:08:25.567 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:08:25.575 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:08:25.578 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:08:28.326 [ERR] GenericService.GetById
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetByIdWithInclude(Int32 id, String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 54
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetById(Int32 id, String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 59
+2023-08-04 23:08:28.393 [INF] -------------Request-Begin------------
+2023-08-04 23:08:28.393 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/2 
+QueryString:  
+Request Body: 
+2023-08-04 23:08:28.393 [INF] 
+
+2023-08-04 23:08:28.393 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:08:28.393 [INF] -------------Request-End------------
+2023-08-04 23:12:50.727 [INF] Application is starting...
+2023-08-04 23:13:13.976 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:13:13.981 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:13:13.985 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:13:17.382 [ERR] GenericService.GetById
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetByIdWithInclude(Int32 id, String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 54
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetById(Int32 id, String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 59
+2023-08-04 23:13:17.683 [INF] -------------Request-Begin------------
+2023-08-04 23:13:17.684 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/2 
+QueryString:  
+Request Body: 
+2023-08-04 23:13:17.684 [INF] 
+
+2023-08-04 23:13:17.685 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:13:17.685 [INF] -------------Request-End------------
+2023-08-04 23:13:23.486 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:13:23.486 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:13:23.486 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:13:23.653 [ERR] GenericService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetAll(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 44
+2023-08-04 23:13:23.666 [INF] -------------Request-Begin------------
+2023-08-04 23:13:23.666 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:13:23.666 [INF] 
+
+2023-08-04 23:13:23.666 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:13:23.666 [INF] -------------Request-End------------
+2023-08-04 23:14:12.619 [INF] Application is starting...
+2023-08-04 23:14:19.582 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:14:19.590 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:14:19.594 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:14:22.949 [ERR] GenericService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetAll(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 44
+2023-08-04 23:14:23.060 [INF] -------------Request-Begin------------
+2023-08-04 23:14:23.061 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:14:23.061 [INF] 
+
+2023-08-04 23:14:23.062 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:14:23.062 [INF] -------------Request-End------------
+2023-08-04 23:16:08.413 [INF] Application is starting...
+2023-08-04 23:16:18.167 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:16:18.180 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:16:18.182 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:16:20.962 [ERR] GenericService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetAll(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 44
+2023-08-04 23:16:21.063 [INF] -------------Request-Begin------------
+2023-08-04 23:16:21.064 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:16:21.064 [INF] 
+
+2023-08-04 23:16:21.064 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:16:21.064 [INF] -------------Request-End------------
+2023-08-04 23:17:30.130 [INF] Application is starting...
+2023-08-04 23:17:41.823 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:17:41.830 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:17:41.833 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:17:44.530 [ERR] GenericService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetAll(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 44
+2023-08-04 23:17:44.658 [INF] -------------Request-Begin------------
+2023-08-04 23:17:44.658 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:17:44.659 [INF] 
+
+2023-08-04 23:17:44.659 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:17:44.659 [INF] -------------Request-End------------
+2023-08-04 23:19:18.211 [INF] Application is starting...
+2023-08-04 23:19:39.088 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:19:39.094 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:19:39.096 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:19:41.810 [ERR] GenericService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetAll(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 44
+2023-08-04 23:19:41.880 [INF] -------------Request-Begin------------
+2023-08-04 23:19:41.880 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:19:41.881 [INF] 
+
+2023-08-04 23:19:41.883 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:19:41.883 [INF] -------------Request-End------------
+2023-08-04 23:20:39.118 [INF] Application is starting...
+2023-08-04 23:20:56.135 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:20:56.139 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:20:56.141 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:21:00.737 [INF] -------------Request-Begin------------
+2023-08-04 23:21:00.737 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:21:00.738 [INF] 
+
+2023-08-04 23:21:00.739 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":null,"statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2,"user":null,"building":null,"statusType":0,"apartmentType":null}]}
+2023-08-04 23:21:00.739 [INF] -------------Request-End------------
+2023-08-04 23:39:28.615 [INF] Application is starting...
+2023-08-04 23:39:40.818 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:39:40.830 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:39:40.837 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:39:48.843 [ERR] GenericService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.Generic.GenericService`3.GetAll(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 44
+2023-08-04 23:39:49.218 [INF] -------------Request-Begin------------
+2023-08-04 23:39:49.218 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:39:49.218 [INF] 
+
+2023-08-04 23:39:49.219 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:39:49.219 [INF] -------------Request-End------------
+2023-08-04 23:40:19.699 [INF] Application is starting...
+2023-08-04 23:40:26.478 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:40:26.482 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:40:26.484 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:40:31.190 [INF] -------------Request-Begin------------
+2023-08-04 23:40:31.191 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:40:31.191 [INF] 
+
+2023-08-04 23:40:31.191 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":null,"statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2,"user":null,"building":null,"statusType":0,"apartmentType":null}]}
+2023-08-04 23:40:31.191 [INF] -------------Request-End------------
+2023-08-04 23:41:33.966 [INF] Application is starting...
+2023-08-04 23:41:42.697 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:41:42.705 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:41:42.709 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:41:46.985 [INF] -------------Request-Begin------------
+2023-08-04 23:41:46.985 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:41:46.986 [INF] 
+
+2023-08-04 23:41:46.986 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":null,"statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2,"user":null}]}
+2023-08-04 23:41:46.986 [INF] -------------Request-End------------
+2023-08-04 23:42:43.919 [INF] Application is starting...
+2023-08-04 23:42:51.234 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:42:51.247 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:42:51.251 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:42:55.289 [INF] -------------Request-Begin------------
+2023-08-04 23:42:55.289 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:42:55.290 [INF] 
+
+2023-08-04 23:42:55.290 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":null,"statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-04 23:42:55.290 [INF] -------------Request-End------------
+2023-08-04 23:43:37.207 [INF] Application is starting...
+2023-08-04 23:43:46.693 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:43:46.708 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:43:46.712 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:43:49.872 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-04 23:43:51.495 [INF] -------------Request-Begin------------
+2023-08-04 23:43:51.495 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/1 
+QueryString:  
+Request Body: 
+2023-08-04 23:43:51.496 [INF] 
+
+2023-08-04 23:43:51.496 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"firstName":null,"lastName":null,"blockName":null,"statusName":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}}
+2023-08-04 23:43:51.496 [INF] -------------Request-End------------
+2023-08-04 23:49:34.974 [INF] Application is starting...
+2023-08-04 23:49:42.234 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:49:42.239 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:49:42.241 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:49:45.784 [ERR] TransactionService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentUser' specified in string based include path 'ApartmentUser.User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 30
+2023-08-04 23:49:46.021 [INF] -------------Request-Begin------------
+2023-08-04 23:49:46.021 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:49:46.022 [INF] 
+
+2023-08-04 23:49:46.022 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentUser' specified in string based include path 'ApartmentUser.User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:49:46.022 [INF] -------------Request-End------------
+2023-08-04 23:50:31.916 [INF] Application is starting...
+2023-08-04 23:50:41.218 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:50:41.226 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:50:41.229 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:50:45.313 [ERR] ApartmentService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentUser' specified in string based include path 'ApartmentUser.User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 30
+2023-08-04 23:50:45.460 [INF] -------------Request-Begin------------
+2023-08-04 23:50:45.460 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:50:45.461 [INF] 
+
+2023-08-04 23:50:45.461 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentUser' specified in string based include path 'ApartmentUser.User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:50:45.461 [INF] -------------Request-End------------
+2023-08-04 23:55:04.407 [INF] Application is starting...
+2023-08-04 23:55:53.120 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:55:53.125 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:55:53.128 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:55:55.667 [ERR] ApartmentService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 30
+2023-08-04 23:55:55.774 [INF] -------------Request-Begin------------
+2023-08-04 23:55:55.775 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:55:55.775 [INF] 
+
+2023-08-04 23:55:55.776 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'User' specified in string based include path 'User'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:55:55.776 [INF] -------------Request-End------------
+2023-08-04 23:57:33.474 [INF] Application is starting...
+2023-08-04 23:57:41.416 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-04 23:57:41.424 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-04 23:57:41.428 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-04 23:57:44.504 [ERR] ApartmentService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'Users' specified in string based include path 'ApartmentUsers.Users'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 30
+2023-08-04 23:57:44.584 [INF] -------------Request-Begin------------
+2023-08-04 23:57:44.585 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-04 23:57:44.585 [INF] 
+
+2023-08-04 23:57:44.586 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'Users' specified in string based include path 'ApartmentUsers.Users'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-04 23:57:44.586 [INF] -------------Request-End------------

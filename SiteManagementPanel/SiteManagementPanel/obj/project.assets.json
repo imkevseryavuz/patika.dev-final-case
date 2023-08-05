@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/11.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Dapper/2.0.123": {
         "type": "package",
         "compile": {
@@ -138,7 +154,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.6.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -2093,6 +2109,20 @@
           "bin/placeholder/SiteManagementPanel.Base.dll": {}
         }
       },
+      "SiteManagementPanel.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SiteManagementPanel.Base": "1.0.0",
+          "SiteManagementPanel.Schema": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SiteManagementPanel.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SiteManagementPanel.Business.dll": {}
+        }
+      },
       "SiteManagementPanel.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2108,10 +2138,39 @@
         "runtime": {
           "bin/placeholder/SiteManagementPanel.Data.dll": {}
         }
+      },
+      "SiteManagementPanel.Schema/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "11.0.0",
+          "SiteManagementPanel.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SiteManagementPanel.Schema.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SiteManagementPanel.Schema.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/11.0.0": {
+      "sha512": "+596AnKykYCk9RxXCEF4GYuapSebQtFVvIA1oVG1rrRkCLAC7AkWehJ0brCfYUbdDW3v1H/p0W3hob7JoXGjMw==",
+      "type": "package",
+      "path": "automapper/11.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.11.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
     "Dapper/2.0.123": {
       "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
       "type": "package",
@@ -2296,10 +2355,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.6.0": {
-      "sha512": "kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.6.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2322,7 +2381,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.6.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -6492,10 +6551,20 @@
       "path": "../SiteManagamentPanel.Base/SiteManagementPanel.Base.csproj",
       "msbuildProject": "../SiteManagamentPanel.Base/SiteManagementPanel.Base.csproj"
     },
+    "SiteManagementPanel.Business/1.0.0": {
+      "type": "project",
+      "path": "../SiteManagementPanel.Business/SiteManagementPanel.Business.csproj",
+      "msbuildProject": "../SiteManagementPanel.Business/SiteManagementPanel.Business.csproj"
+    },
     "SiteManagementPanel.Data/1.0.0": {
       "type": "project",
       "path": "../SiteManagement.Data/SiteManagementPanel.Data.csproj",
       "msbuildProject": "../SiteManagement.Data/SiteManagementPanel.Data.csproj"
+    },
+    "SiteManagementPanel.Schema/1.0.0": {
+      "type": "project",
+      "path": "../SiteManagementPanel.Schema/SiteManagementPanel.Schema.csproj",
+      "msbuildProject": "../SiteManagementPanel.Schema/SiteManagementPanel.Schema.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6510,6 +6579,7 @@
       "Microsoft.IO.RecyclableMemoryStream >= 2.3.2",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.18.1",
       "SiteManagementPanel.Base >= 1.0.0",
+      "SiteManagementPanel.Business >= 1.0.0",
       "SiteManagementPanel.Data >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "System.ServiceModel.Duplex >= 4.10.2",
@@ -6560,6 +6630,9 @@
             },
             "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj": {
               "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj"
+            },
+            "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj": {
+              "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj"
             }
           }
         }

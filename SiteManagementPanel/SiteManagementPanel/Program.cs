@@ -1,7 +1,7 @@
-
 using Serilog;
+using SiteManagamentPanel;
 
-namespace SipayApi;
+namespace SiteManagementPanel;
 
 public class Program
 {

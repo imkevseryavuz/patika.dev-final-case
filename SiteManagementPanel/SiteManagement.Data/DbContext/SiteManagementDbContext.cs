@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SiteManagement.Data;
-using SiteManagementPanel.Domain;
+using SiteManagementPanel.Data.Domain;
 
-namespace SiteManagement.Data;
+namespace SiteManagementPanel.Data;
 
 public class SiteManagementDbContext : DbContext
 {
@@ -11,10 +10,13 @@ public class SiteManagementDbContext : DbContext
 
     }
     public DbSet<Apartment> Apartments { get; set; }
-    public DbSet<ApartmentStatus> ApartmentStatuses { get; set; }
     public DbSet<ApartmentType> ApartmentTypes { get; set; }
+    public DbSet<ApartmentUser> ApartmentUsers { get; set; }
     public DbSet<Block> Blocks { get; set; }
     public DbSet<Bill> Bills { get; set; }
+    public DbSet<BillType> BillTypes { get; set; }
+    public DbSet<Building> Buildings { get; set; }
+    public DbSet<Message> Messages { get; set; }
     public DbSet<Payment> Payments { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<UserLog> UserLogs { get; set; }
@@ -22,10 +24,13 @@ public class SiteManagementDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new ApartmentConfiguration());
-        modelBuilder.ApplyConfiguration(new ApartmentStatusConfiguration());
         modelBuilder.ApplyConfiguration(new ApartmentTypeConfiguration());
+        modelBuilder.ApplyConfiguration(new ApartmentUserConfiguration());
         modelBuilder.ApplyConfiguration(new BlockConfiguration());
         modelBuilder.ApplyConfiguration(new BillConfiguration());
+        modelBuilder.ApplyConfiguration(new BillTypeConfiguration());
+        modelBuilder.ApplyConfiguration(new BuildingConfiguration());
+        modelBuilder.ApplyConfiguration(new MessageConfiguration());
         modelBuilder.ApplyConfiguration(new PaymentConfiguration());
 
         modelBuilder.ApplyConfiguration(new UserConfiguration());

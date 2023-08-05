@@ -9,13 +9,11 @@ public class UserRequest
     public string Password { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
-    public string OwnerName { get; set; }
-    public string TenantName { get; set; }
     public string TCNo { get; set; }
     public string Phone { get; set; }
     public string VehiclePlateNumber { get; set; }
 
-    public string Role { get; set; }
+    public int Role { get; set; }
     public int Status { get; set; } = 1;
 
 }
