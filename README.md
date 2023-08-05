@@ -8,14 +8,14 @@ Bir site yöneticisi, sitede yer alan dairelerin aidat ve ortak kullanım elektr
 - JWT Token
 - AutoMapper
 - Serilog
-
+---
 ### Migration Ekleme
 ```sh
 Add-Migration InitalSiteManagement
 
 update database
 ```
-
+---
 ### Projenin Katmanları
 
 - `SiteManagementPanel.Base`: BaseModelin, JWT ve Respons'un bulunduğu katmandır.
@@ -23,7 +23,7 @@ update database
 - `SiteManagementPanel.Business`: Servislerin tanımlandığı ve işlemlerin yapıldığı katmandır.
 - `SiteManagementPanel.Schema`: Request ve Response modellerin bulunduğu katmandır.
 - `SiteManagementPanel.Service`: API'nin bulunduğu kısımdır.
-
+---
 
 ### Proje Hakkında
 
