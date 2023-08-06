@@ -42,6 +42,28 @@ update database
 ---
 
 ### Örnek Kod Anlatımı
+Proje içeriside JWT Token kullanıldığı için, kullanıcı adı ve şifre girerek erişim sağlanmalıdır.
+
+
+### Endpoint
+
+```
+ POST  /panel/api/Message
+```
+
+```
+ GET   /panel/api/Message/user/{userId}
+```
+
+```
+ GET   /panel/api/Message/{messageId 
+```
+
+```
+POST   /panel/api/Message/{messageId}/mark-as-read
+```
+ 
+
 #### IMessageService
 ```C#
 public interface IMessageService
@@ -180,5 +202,8 @@ public class MessageController : ControllerBase
 - `var response = _messageService.MarkMessageAsRead(messageId)`: Bu satırda, messageId değeri `_messageService.MarkMessageAsRead()` yöntemine gönderilir. Bu, IMessageService arabirimine sahip bir hizmet sınıfı olan _messageService üzerinden belirli bir mesajın "okundu" olarak işaretlenmesini gerçekleştirir. MarkMessageAsRead yöntemi, işlemin sonucunu içeren bir ApiResponse nesnesi döndürür.
 - `return response.Success ? Ok(response.Message) : NotFound(response.Message)`: Son adımda, ApiResponse türündeki response nesnesinin Success özelliği kontrol edilir. Eğer Success özelliği `true` ise, işlem başarılı olduğu için mesajı Ok yöntemi aracılığıyla `HTTP 200 ("OK")` yanıtı olarak döndürülür ve `response.Message` içerisindeki mesaj gönderilir. Eğer `Success` özelliği `false` ise, yani işlem başarısız olduysa, `NotFound` yöntemi aracılığıyla `HTTP 404 ("Not Found")` yanıtı döndürülür ve response.Message içerisindeki hata mesajı gönderilir.
 
+---
 
+## LICENSE
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
