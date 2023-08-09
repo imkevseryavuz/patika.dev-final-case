@@ -9,6 +9,7 @@ public class MapperConfig : Profile
     {
         //Apartman
         CreateMap<ApartmentRequest, Apartment>();
+        CreateMap<UpdateApartmentRequest, Apartment>();
         CreateMap<Apartment, ApartmentResponse>()
             .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.ApartmentUsers.Select(p => p.User.FirstName).LastOrDefault()))
             .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.ApartmentUsers.Select(p => p.User.LastName).LastOrDefault()))

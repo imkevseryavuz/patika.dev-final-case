@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "coOgw3/RibvJ14FvpBlaQu77qpMWmMnytrGgVExjJpQ1x9lLLvROQqktTAjUedDOde2+0ML/cgb5QMd44pxcpA==",
+  "dgSpecHash": "R9iNmbDSP9lhyuDoWFQ0WdzoKY4tfR3Z3CttAzY4uyZSicfzDNN/Iw6HDkBn0x9Tf9PM8UEK+mTCbjZHTlpJDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj",
+  "projectFilePath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kevser\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

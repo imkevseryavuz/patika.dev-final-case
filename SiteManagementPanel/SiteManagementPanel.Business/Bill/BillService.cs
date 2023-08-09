@@ -70,29 +70,21 @@ public class BillService : GenericService<Bill, BillRequest, BillResponse>, IBil
     {
         try
         {
-            // ApartmentRequest modelini Apartment nesnesine dönüştürüyor
             var newBill = _mapper.Map<Bill>(request);
-
-            // ApartmentUser nesnesini veritabanından çekiyor
             var apartmentUser = _unitOfWork.ApartmentUserRepository.GetById(request.ApartmentId);
-
-            // ApartmentUser nesnesini Bill nesnesine ekliyor
             newBill.ApartmentUser = apartmentUser;
 
             _unitOfWork.BillRepository.Insert(newBill);
             _unitOfWork.Complete();
 
             return new ApiResponse(message: "Bill inserted successfully.");
-
         }
         catch (Exception ex)
-        {
-           
+        {       
             Log.Error(ex, "Error while inserting a bill.");
             return new ApiResponse(message: "An error occurred while inserting the bill. Error Details: " + ex.Message);
         }
     }
-
     public ApiResponse UpdateBillPaymentId(UpdateBillRequest request, int billId, int paymentId)
     {
         var bill = _unitOfWork.BillRepository.GetById(billId);

@@ -29,9 +29,9 @@ namespace SiteManagementPanel.Service.Controller
         public IActionResult ProcessCreditCardPayment([FromBody] CreditCardRequest creditCardRequest, int apartmentUserId, int billId)
         {
             ApiResponse paymentResponse = _paymentService.ProcessCreditCardPayment(creditCardRequest, apartmentUserId, billId);
-      
-                return Ok(paymentResponse.Message);
-           
+
+            return Ok(paymentResponse.Message);
+
         }
     }
 }

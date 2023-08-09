@@ -1,5 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SiteManagamentPanel.Base;
 using SiteManagementPanel.Business;
@@ -49,7 +48,7 @@ namespace SiteManagementPanel.Service.Controller
         [HttpDelete("{id}")]
         public ApiResponse Delete(int id)
         {
-            var response = service.Delete(id);
+            var response = service.DeleteUser(id);
             return response;
         }
     }

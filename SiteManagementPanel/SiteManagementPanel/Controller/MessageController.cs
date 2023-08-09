@@ -67,8 +67,8 @@ namespace SiteManagementPanel.Service.Controller
             }
             catch (Exception ex)
             {
-                
-                Log.Error(ex, "An error occurred while marking message as read.");            
+
+                Log.Error(ex, "An error occurred while marking message as read.");
                 var errorResponse = new ApiResponse("An error occurred while marking message as read. Error details: " + ex.Message);
                 return BadRequest(errorResponse);
             }

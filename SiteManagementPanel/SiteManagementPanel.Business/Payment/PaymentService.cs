@@ -64,9 +64,6 @@ public class PaymentService:IPaymentService
         _unitOfWork.Complete();
         return new ApiResponse("Payment processed successfully");
 
-
-
-
     }
 
 }

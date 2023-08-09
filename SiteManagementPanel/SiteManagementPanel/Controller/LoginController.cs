@@ -1,14 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SiteManagamentPanel.Base;
 using SiteManagementPanel.Busines;
-using SiteManagementPanel.Business;
 using SiteManagementPanel.Schema;
 
 
 namespace SiteManagementPanel.Service.Controller
 {
     [Route("panel/api/[controller]")]
-    [ApiController]  
+    [ApiController]
     public class LoginController : ControllerBase
     {
         private readonly ILoginService service;

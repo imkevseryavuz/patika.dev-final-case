@@ -22,11 +22,8 @@ public class Startup
     {
         Configuration = configuration;
     }
-
     public IConfiguration Configuration { get; }
-
     public static JwtConfig JwtConfig { get; private set; }
-
 
     public void ConfigureServices(IServiceCollection services)
     {
@@ -43,8 +40,6 @@ public class Startup
             var dbConfig = Configuration.GetConnectionString("MsSqlConnection");
             services.AddDbContext<SiteManagementDbContext>(opts =>
             opts.UseSqlServer(dbConfig));
-
-
 
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -88,12 +83,12 @@ public class Startup
 
         services.AddSwaggerGen(c =>
         {
-            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sim Api Management", Version = "v1.0" });
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Site Management Panel", Version = "v1.0" });
 
 
             var securityScheme = new OpenApiSecurityScheme
             {
-                Name = "Sim Management for IT Company",
+                Name = "Site Management Panel for IT Company",
                 Description = "Enter JWT Bearer token **_only_**",
                 In = ParameterLocation.Header,
                 Type = SecuritySchemeType.Http,
@@ -111,11 +106,7 @@ public class Startup
                 {securityScheme, new string[] { }}
             });
         });
-
-
     }
-
-
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
         if (env.IsDevelopment())
@@ -136,7 +127,6 @@ public class Startup
             Log.Information("-------------Request-End------------");
         };
         app.UseMiddleware<RequestLoggingMiddleware>(requestResponseHandler);
-
 
 
         app.UseAuthentication();

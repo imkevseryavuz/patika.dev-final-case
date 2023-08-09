@@ -1,18 +1,19 @@
 ﻿using AutoMapper;
 using Serilog;
 using SiteManagamentPanel.Base;
+using SiteManagementPanel.Business.Generic;
 using SiteManagementPanel.Data.Domain;
 using SiteManagementPanel.Data.Uow;
 using SiteManagementPanel.Schema;
 
 namespace SiteManagementPanel.Business;
 
-public class MessageService : IMessageService
+public class MessageService : GenericService<Message,MessageRequest,MessageResponse>, IMessageService
 {
     private readonly IMapper _mapper;
     private readonly IUnitOfWork _unitOfWork;
 
-    public MessageService(IMapper mapper, IUnitOfWork unitOfWork)
+    public MessageService(IMapper mapper, IUnitOfWork unitOfWork) : base( mapper, unitOfWork)
     {
         _mapper = mapper;
         _unitOfWork = unitOfWork;
@@ -40,7 +41,6 @@ public class MessageService : IMessageService
         {
             Log.Error(ex, "MessageService.SendMessage");
 
-            
             if (ex.InnerException != null)
             {
                 Log.Error(ex.InnerException, "Inner Exception Details:");
@@ -66,7 +66,7 @@ public class MessageService : IMessageService
         }
     }
     public ApiResponse<MessageResponse> GetMessageById(int messageId)
-    { 
+    {
         try
         {
             var message = _unitOfWork.MessageRepository.GetById(messageId);
@@ -97,19 +97,46 @@ public class MessageService : IMessageService
                 return new ApiResponse("Message not found");
             }
 
-            message.IsRead=!message.IsRead;
+            message.IsRead = !message.IsRead;
 
             _unitOfWork.MessageRepository.Update(message);
             _unitOfWork.Complete();
 
-            
-            return new ApiResponse(message:"Message is read");
+
+            return new ApiResponse(message: "Message is read");
         }
         catch (Exception ex)
         {
 
             Log.Error(ex, "MessageService.Update");
             return new ApiResponse(ex.Message);
+        }
+    }
+    public ApiResponse DeleteMessagesByUserId(int userId)
+    {
+        try
+        {
+            var messagesToDelete = _unitOfWork.MessageRepository.Where(m => m.FromUserId == userId || m.ToUserId == userId).ToList();
+
+            if (messagesToDelete.Count == 0)
+            {
+                return new ApiResponse { Success = false, Message = "No messages found for the user." };
+            }
+
+            foreach (var message in messagesToDelete)
+            {
+                _unitOfWork.MessageRepository.Delete(message);
+            }
+
+            _unitOfWork.Complete();
+
+            return new ApiResponse { Success = true, Message = "Messages deleted successfully." };
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex, "Error while deleting messages.");
+
+            return new ApiResponse { Success = false, Message = "An error occurred while deleting messages. Error Details: " + ex.Message };
         }
     }
 }

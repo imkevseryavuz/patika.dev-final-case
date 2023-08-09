@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {}
+    "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {
+    "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj",
+        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj",
         "projectName": "SiteManagementPanel.Base",
-        "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj",
+        "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj",
         "packagesPath": "C:\\Users\\Kevser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\obj\\",
+        "outputPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using SiteManagamentPanel.Base;
 using SiteManagementPanel.Business;
-using SiteManagementPanel.Data;
 using SiteManagementPanel.Schema;
 using System.Security.Claims;
 

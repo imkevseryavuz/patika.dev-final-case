@@ -1,6 +1,4 @@
-﻿
-
-namespace SiteManagementPanel.Schema;
+﻿namespace SiteManagementPanel.Schema;
 
 public class UserRequest
 {
@@ -12,7 +10,6 @@ public class UserRequest
     public string TCNo { get; set; }
     public string Phone { get; set; }
     public string VehiclePlateNumber { get; set; }
-
     public int Role { get; set; }
     public int Status { get; set; } = 1;
 

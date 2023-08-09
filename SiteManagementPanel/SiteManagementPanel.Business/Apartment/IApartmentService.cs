@@ -11,7 +11,8 @@ public interface IApartmentService:IGenericService<Apartment,ApartmentRequest,Ap
    ApiResponse<List<ApartmentResponse>> GetAllApartment();
     ApiResponse<ApartmentResponse> GetById(int id);
     ApiResponse InsertApartment(ApartmentRequest request);
-    ApiResponse UpdateApartment(int id, ApartmentRequest request);
+    ApiResponse UpdateApartment(int id, UpdateApartmentRequest request);
+    ApiResponse DeleteApartment(int apartmentId);
 
-    
+
 }

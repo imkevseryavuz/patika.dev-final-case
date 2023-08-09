@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LWKVvAY/5byiBlgTJYkmlnEmGjzqVdLxz/c1zSCMf3g08NshJldE0/410Q5X502YQNFHmNC8Ix3NLrtIZORBxQ==",
+  "dgSpecHash": "oBQvyWLibbXko3pArR+X090kHF5M4tAwdWd2JbUpRLswnx+DW+p83GWGJxyAjyElkDO3CJj/iqHit9dvxn1uiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj",
+  "projectFilePath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kevser\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",

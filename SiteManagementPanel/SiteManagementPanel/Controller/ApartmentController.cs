@@ -9,7 +9,7 @@ namespace SiteManagementPanel.Service.Controller;
 
 [Route("panel/api/[controller]")]
 [ApiController]
-[Authorize(Roles ="Admin")]
+[Authorize(Roles = "Admin")]
 public class ApartmentController : ControllerBase
 {
     private readonly IApartmentService service;
@@ -25,16 +25,14 @@ public class ApartmentController : ControllerBase
         return response;
     }
 
-
     [HttpPost]
     public ApiResponse Post([FromBody] ApartmentRequest request)
     {
         try
         {
-           
             var response = service.InsertApartment(request);
 
-            return response; 
+            return response;
         }
         catch (Exception ex)
         {
@@ -42,7 +40,6 @@ public class ApartmentController : ControllerBase
             return new ApiResponse(message: "An error occurred while inserting the apartment.");
         }
     }
-
 
     [HttpGet("{id}")]
     public ApiResponse<ApartmentResponse> Get(int id)
@@ -52,18 +49,16 @@ public class ApartmentController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public ApiResponse Put(int id, [FromBody] ApartmentRequest request)
+    public ApiResponse Put(int id, [FromBody] UpdateApartmentRequest request)
     {
-
         var response = service.UpdateApartment(id, request);
         return response;
     }
 
-
     [HttpDelete("{id}")]
     public ApiResponse Delete(int id)
     {
-        var response = service.Delete(id);
+        var response = service.DeleteApartment(id);
         return response;
     }
 

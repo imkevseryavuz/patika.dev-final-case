@@ -1,5 +1,4 @@
 ﻿namespace SiteManagementPanel.Schema;
-
 public class BillResponse
 {
     public int ApartmentUserId { get; set; }
@@ -7,7 +6,6 @@ public class BillResponse
     public int BillTypeId { get; set; }
     public decimal Amount { get; set; }
     public DateTime DueDate { get; set; }
-
 }
 public class PaidBillResponse
 {
@@ -15,5 +13,4 @@ public class PaidBillResponse
     public string BillType { get; set; }
     public decimal Amount { get; set; }
     public DateTime PaymentDate { get; set; }
-
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KXQOC0i+7FlBfDwHs4V6n41qYh0DPBLdI3saAR40zfFwjHHi+/egd+fAQ2pF3shg7OhoRI/JWoHCPMtJ3yZPDA==",
+  "dgSpecHash": "o5iWfMwnBvn2T1sAbp5rzTJrVuXXu+zUV8XE8kl7+b6uwttRyyMbfZ4SBPvzz4a8RYnpmVIZ7LWpiUwEYR78PQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj",
+  "projectFilePath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kevser\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",
     "C:\\Users\\Kevser\\.nuget\\packages\\linqkit\\1.2.4\\linqkit.1.2.4.nupkg.sha512",

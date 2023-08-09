@@ -1,6 +1,4 @@
-﻿
-using SiteManagementPanel.Data;
-
+﻿using SiteManagementPanel.Data;
 namespace SiteManagementPanel.Schema;
 
 public class ApartmentResponse
@@ -12,7 +10,4 @@ public class ApartmentResponse
     public string TypeName { get; set; }
     public int FloorNumber { get; set; }
     public int ApartmentNumber { get; set; }
-
- 
-
 }

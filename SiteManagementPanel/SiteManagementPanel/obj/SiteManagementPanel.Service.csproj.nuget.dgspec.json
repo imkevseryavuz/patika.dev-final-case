@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel\\SiteManagementPanel.Service.csproj": {}
+    "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel\\SiteManagementPanel.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {
+    "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj",
+        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj",
         "projectName": "SiteManagementPanel.Base",
-        "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj",
+        "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj",
         "packagesPath": "C:\\Users\\Kevser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\obj\\",
+        "outputPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj": {
+    "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj",
         "projectName": "SiteManagementPanel.Data",
-        "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj",
+        "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj",
         "packagesPath": "C:\\Users\\Kevser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\obj\\",
+        "outputPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagement.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -117,8 +117,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {
-                "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj"
+              "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {
+                "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj"
               }
             }
           }
@@ -178,14 +178,14 @@
         }
       }
     },
-    "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj": {
+    "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj",
         "projectName": "SiteManagementPanel.Business",
-        "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj",
+        "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj",
         "packagesPath": "C:\\Users\\Kevser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Business\\obj\\",
+        "outputPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -208,11 +208,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {
-                "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj"
+              "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {
+                "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj"
               },
-              "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj": {
-                "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj"
+              "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj": {
+                "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj"
               }
             }
           }
@@ -246,14 +246,14 @@
         }
       }
     },
-    "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj": {
+    "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj",
+        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj",
         "projectName": "SiteManagementPanel.Schema",
-        "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj",
+        "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Schema\\SiteManagementPanel.Schema.csproj",
         "packagesPath": "C:\\Users\\Kevser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Schema\\obj\\",
+        "outputPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Schema\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -276,8 +276,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj": {
-                "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj"
+              "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj": {
+                "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj"
               }
             }
           }
@@ -317,14 +317,14 @@
         }
       }
     },
-    "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel\\SiteManagementPanel.Service.csproj": {
+    "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel\\SiteManagementPanel.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel\\SiteManagementPanel.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel\\SiteManagementPanel.Service.csproj",
         "projectName": "SiteManagementPanel.Service",
-        "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel\\SiteManagementPanel.Service.csproj",
+        "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel\\SiteManagementPanel.Service.csproj",
         "packagesPath": "C:\\Users\\Kevser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel\\obj\\",
+        "outputPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -348,14 +348,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {
-                "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj"
+              "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj": {
+                "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagamentPanel.Base\\SiteManagementPanel.Base.csproj"
               },
-              "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj": {
-                "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj"
+              "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj": {
+                "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagement.Data\\SiteManagementPanel.Data.csproj"
               },
-              "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj": {
-                "projectPath": "C:\\Users\\Kevser\\Desktop\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj"
+              "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj": {
+                "projectPath": "C:\\Users\\Kevser\\Desktop\\patika.dev-final-case\\SiteManagementPanel\\SiteManagementPanel.Business\\SiteManagementPanel.Business.csproj"
               }
             }
           }

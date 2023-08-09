@@ -1,5 +1,4 @@
-﻿
-namespace SiteManagementPanel.Schema;
+﻿namespace SiteManagementPanel.Schema;
 
 public class CreditCardRequest
 {
