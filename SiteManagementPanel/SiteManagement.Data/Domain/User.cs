@@ -43,10 +43,15 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.Property(x => x.Phone).IsRequired(true).HasMaxLength(12);
         builder.Property(x => x.VehiclePlateNumber).IsRequired(true).HasMaxLength(12);
 
-        builder.Property(x => x.Role).IsRequired(true).HasMaxLength(10);
+        builder.Property(x => x.Role).IsRequired(true);
         builder.Property(x => x.LastActivity).IsRequired(true);
         builder.Property(x => x.PasswordRetryCount).IsRequired(true);
         builder.Property(x => x.Phone).IsRequired(true);
+
+
+        builder.HasMany(user => user.ApartmentUsers)
+               .WithOne(apartmentUser => apartmentUser.User)
+               .HasForeignKey(apartmentUser => apartmentUser.UserId);
 
         builder.HasIndex(x => x.UserName).IsUnique(true);
     }

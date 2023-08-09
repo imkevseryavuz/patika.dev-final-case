@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using SiteManagamentPanel.Base;
 using SiteManagementPanel.Business;
 using SiteManagementPanel.Schema;
@@ -21,10 +21,17 @@ namespace SiteManagementPanel.Service.Controller
         [HttpPost]
         public IActionResult SendMessage([FromBody] MessageRequest messageRequest)
         {
-            var response = _messageService.SendMessage(messageRequest);
-            return Ok(new ApiResponse<MessageResponse>(response.Message));
+            try
+            {
+                var response = _messageService.SendMessage(messageRequest);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                var errorResponse = new ApiResponse("An error occurred while sending message. Error details: " + ex.Message);
+                return BadRequest(errorResponse);
+            }
         }
-
         [HttpGet("user/{userId}")]
         public IActionResult GetMessagesByUserId(int userId)
         {
@@ -35,15 +42,36 @@ namespace SiteManagementPanel.Service.Controller
         [HttpGet("{messageId}")]
         public IActionResult GetMessageById(int messageId)
         {
-            var response = _messageService.GetMessageById(messageId);
-            return response.Success ? Ok(response.Message) : NotFound(response.Message);
+            try
+            {
+                var response = _messageService.GetMessageById(messageId);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+
+                Log.Error(ex, "An error occurred while marking message as read.");
+                var errorResponse = new ApiResponse("An error occurred while getting message. Error details: " + ex.Message);
+                return BadRequest(errorResponse);
+            }
+
         }
 
         [HttpPost("{messageId}/mark-as-read")]
         public IActionResult MarkMessageAsRead(int messageId)
         {
-            var response = _messageService.MarkMessageAsRead(messageId);
-            return response.Success ? Ok(response.Message) : NotFound(response.Message);
+            try
+            {
+                var response = _messageService.MarkMessageAsRead(messageId);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                
+                Log.Error(ex, "An error occurred while marking message as read.");            
+                var errorResponse = new ApiResponse("An error occurred while marking message as read. Error details: " + ex.Message);
+                return BadRequest(errorResponse);
+            }
         }
     }
 }

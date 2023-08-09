@@ -15,7 +15,7 @@ namespace SiteManagementPanel.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    TypeName = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
+                    TypeName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     InsertDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     InsertUser = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
@@ -68,7 +68,7 @@ namespace SiteManagementPanel.Data.Migrations
                     TCNo = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: false),
                     VehiclePlateNumber = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: false),
-                    Role = table.Column<int>(type: "int", maxLength: 10, nullable: false),
+                    Role = table.Column<int>(type: "int", nullable: false),
                     LastActivity = table.Column<DateTime>(type: "datetime2", nullable: false),
                     PasswordRetryCount = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
@@ -156,7 +156,7 @@ namespace SiteManagementPanel.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     BuildingId = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
-                    TypeId = table.Column<int>(type: "int", nullable: false),
+                    ApartmentTypeId = table.Column<int>(type: "int", nullable: false),
                     FloorNumber = table.Column<int>(type: "int", nullable: false),
                     ApartmentNumber = table.Column<int>(type: "int", nullable: false),
                     BillTypeId = table.Column<int>(type: "int", nullable: true),
@@ -167,8 +167,8 @@ namespace SiteManagementPanel.Data.Migrations
                 {
                     table.PrimaryKey("PK_Apartment", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Apartment_ApartmentType_TypeId",
-                        column: x => x.TypeId,
+                        name: "FK_Apartment_ApartmentType_ApartmentTypeId",
+                        column: x => x.ApartmentTypeId,
                         principalTable: "ApartmentType",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -193,7 +193,6 @@ namespace SiteManagementPanel.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
                     AparmentId = table.Column<int>(type: "int", nullable: false),
-                    ApartmentId = table.Column<int>(type: "int", nullable: false),
                     InsertDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     InsertUser = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
@@ -201,8 +200,8 @@ namespace SiteManagementPanel.Data.Migrations
                 {
                     table.PrimaryKey("PK_ApartmentUser", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ApartmentUser_Apartment_ApartmentId",
-                        column: x => x.ApartmentId,
+                        name: "FK_ApartmentUser_Apartment_AparmentId",
+                        column: x => x.AparmentId,
                         principalTable: "Apartment",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -221,11 +220,9 @@ namespace SiteManagementPanel.Data.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ApartmentUserId = table.Column<int>(type: "int", nullable: false),
-                    TypeId = table.Column<int>(type: "int", maxLength: 15, nullable: false),
                     BillTypeId = table.Column<int>(type: "int", nullable: false),
                     Amount = table.Column<decimal>(type: "decimal(15,4)", precision: 15, scale: 4, nullable: false, defaultValue: 0m),
-                    Month = table.Column<int>(type: "int", nullable: false),
-                    Year = table.Column<int>(type: "int", maxLength: 100, nullable: false),
+                    DueDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     PaymentId = table.Column<int>(type: "int", nullable: true),
                     InsertDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     InsertUser = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
@@ -277,6 +274,11 @@ namespace SiteManagementPanel.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Apartment_ApartmentTypeId",
+                table: "Apartment",
+                column: "ApartmentTypeId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Apartment_BillTypeId",
                 table: "Apartment",
                 column: "BillTypeId");
@@ -287,14 +289,9 @@ namespace SiteManagementPanel.Data.Migrations
                 column: "BuildingId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Apartment_TypeId",
-                table: "Apartment",
-                column: "TypeId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_ApartmentUser_ApartmentId",
+                name: "IX_ApartmentUser_AparmentId",
                 table: "ApartmentUser",
-                column: "ApartmentId");
+                column: "AparmentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ApartmentUser_UserId",

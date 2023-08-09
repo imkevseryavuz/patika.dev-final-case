@@ -1,0 +1,931 @@
+2023-08-09 00:15:08.156 [INF] Application is starting...
+2023-08-09 00:16:22.979 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 00:16:22.984 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 00:16:22.986 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 00:16:26.709 [INF] -------------Request-Begin------------
+2023-08-09 00:16:26.709 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=2 
+Request Body: {
+  "cardNumber": "1532",
+  "cardHolderName": "22222",
+  "expiryMonth": "22",
+  "expiryYear": "22",
+  "cvv": "222",
+  "apartmentUserId": 1,
+  "billId": 2
+}
+2023-08-09 00:16:26.709 [INF] 
+
+2023-08-09 00:16:26.710 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=2 
+StatusCode: 400 
+Response Body: Payment processed successfully
+2023-08-09 00:16:26.710 [INF] -------------Request-End------------
+2023-08-09 00:36:13.010 [INF] Application is starting...
+2023-08-09 00:38:26.176 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 00:38:26.181 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 00:38:26.183 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 00:38:29.851 [INF] -------------Request-Begin------------
+2023-08-09 00:38:29.851 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=3 
+Request Body: {
+  "cardNumber": "1",
+  "cardHolderName": "1",
+  "expiryMonth": "1",
+  "expiryYear": "1",
+  "cvv": "1",
+  "apartmentUserId": 1,
+  "billId": 3
+}
+2023-08-09 00:38:29.851 [INF] 
+
+2023-08-09 00:38:29.852 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=3 
+StatusCode: 400 
+Response Body: Payment processed successfully
+2023-08-09 00:38:29.852 [INF] -------------Request-End------------
+2023-08-09 00:45:21.985 [INF] Application is starting...
+2023-08-09 00:45:45.385 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 00:45:45.389 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 00:45:45.391 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 00:45:49.179 [INF] -------------Request-Begin------------
+2023-08-09 00:45:49.180 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+Request Body: 
+2023-08-09 00:45:49.181 [INF] 
+
+2023-08-09 00:45:49.181 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":"kev","lastName":"yav","apartmentNumber":1,"type":"Aidat","amount":200.0000,"paymentDate":"2023-08-08T23:33:22.7027459"},{"firstName":"kev","lastName":"yav","apartmentNumber":1,"type":"Aidat","amount":150.0000,"paymentDate":"2023-08-09T00:16:26.384251"},{"firstName":"kev","lastName":"yav","apartmentNumber":1,"type":"Elektrik","amount":300.0000,"paymentDate":"0001-01-01T00:00:00"}]}
+2023-08-09 00:45:49.181 [INF] -------------Request-End------------
+2023-08-09 00:46:31.857 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 00:46:31.857 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 00:46:31.857 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 00:46:32.431 [INF] -------------Request-Begin------------
+2023-08-09 00:46:32.431 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=4 
+Request Body: {
+  "cardNumber": "11",
+  "cardHolderName": "11",
+  "expiryMonth": "11",
+  "expiryYear": "11",
+  "cvv": "111",
+  "apartmentUserId": 1,
+  "billId": 4
+}
+2023-08-09 00:46:32.432 [INF] 
+
+2023-08-09 00:46:32.432 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=4 
+StatusCode: 400 
+Response Body: Payment processed successfully
+2023-08-09 00:46:32.432 [INF] -------------Request-End------------
+2023-08-09 00:49:01.557 [INF] Application is starting...
+2023-08-09 00:49:32.128 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 00:49:32.133 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 00:49:32.135 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 00:51:48.173 [ERR] Failed executing DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 50), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Payment] ([ApartmentUserId], [BillId], [InsertDate], [InsertUser], [PaymentDate])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Payment]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-09 00:51:48.516 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Payment' with unique index 'IX_Payment_BillId'. The duplicate key value is (4).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:b281f6f3-e759-4897-9e07-630c85f9be72
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Payment' with unique index 'IX_Payment_BillId'. The duplicate key value is (4).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:b281f6f3-e759-4897-9e07-630c85f9be72
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-09 00:53:10.137 [FTL] Path=/panel/api/Payment/process-credit-card-payment || Method=POST || Exception=An error occurred while saving the entity changes. See the inner exception for details.
+2023-08-09 00:53:10.280 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id bfe45029-9528-45bc-8d46-b3f99b1b5afe and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-09 00:53:10.537 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id bfe45029-9528-45bc-8d46-b3f99b1b5afe and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-09 00:53:10.545 [ERR] Connection ID "17798225737568747546", Request ID "8000001e-0002-f700-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id bfe45029-9528-45bc-8d46-b3f99b1b5afe and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SiteManagementPanel.Service.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SiteManagementPanel.Service.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-08-09 00:53:41.131 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 00:53:41.131 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 00:53:41.132 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 00:56:29.496 [INF] -------------Request-Begin------------
+2023-08-09 00:56:29.497 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=5 
+Request Body: {
+  "cardNumber": "1",
+  "cardHolderName": "1",
+  "expiryMonth": "1",
+  "expiryYear": "1",
+  "cvv": "1",
+  "apartmentUserId": 1,
+  "billId": 5
+}
+2023-08-09 00:56:29.498 [INF] 
+
+2023-08-09 00:56:29.498 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=5 
+StatusCode: 400 
+Response Body: Payment processed successfully
+2023-08-09 00:56:29.498 [INF] -------------Request-End------------
+2023-08-09 01:09:42.551 [INF] Application is starting...
+2023-08-09 01:11:52.549 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 01:11:52.554 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 01:11:52.556 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 01:13:51.654 [INF] -------------Request-Begin------------
+2023-08-09 01:13:51.655 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=1 
+Request Body: {
+  "cardNumber": "2",
+  "cardHolderName": "2",
+  "expiryMonth": "2",
+  "expiryYear": "2",
+  "cvv": "2",
+  "apartmentUserId": 1,
+  "billId": 1
+}
+2023-08-09 01:13:51.655 [INF] 
+
+2023-08-09 01:13:51.656 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=1 
+StatusCode: 400 
+Response Body: Error updating Bill PaymentId
+2023-08-09 01:13:51.657 [INF] -------------Request-End------------
+2023-08-09 01:14:08.552 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 01:14:08.552 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 01:14:08.552 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 01:14:08.896 [INF] -------------Request-Begin------------
+2023-08-09 01:14:08.896 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+Request Body: 
+2023-08-09 01:14:08.896 [INF] 
+
+2023-08-09 01:14:08.896 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":"kev","lastName":"yav","apartmentNumber":1,"type":"Aidat","amount":200.0000,"paymentDate":"0001-01-01T00:00:00"}]}
+2023-08-09 01:14:08.896 [INF] -------------Request-End------------
+2023-08-09 01:43:23.119 [INF] Application is starting...
+2023-08-09 01:43:32.803 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 01:43:32.808 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 01:43:32.810 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 01:43:36.191 [INF] -------------Request-Begin------------
+2023-08-09 01:43:36.191 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill/paid 
+QueryString:  
+Request Body: 
+2023-08-09 01:43:36.191 [INF] 
+
+2023-08-09 01:43:36.193 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill/paid 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"apartmentUserId":1,"billType":"Aidat","amount":200.0000,"paymentDate":"0001-01-01T00:00:00"},{"apartmentUserId":1,"billType":"Su","amount":1220.0000,"paymentDate":"0001-01-01T00:00:00"},{"apartmentUserId":1,"billType":"DoğalGaz","amount":522.0000,"paymentDate":"0001-01-01T00:00:00"}]}
+2023-08-09 01:43:36.193 [INF] -------------Request-End------------
+2023-08-09 01:44:14.993 [INF] Application is starting...
+2023-08-09 01:44:37.834 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 01:44:37.839 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 01:44:37.841 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 01:44:41.095 [INF] -------------Request-Begin------------
+2023-08-09 01:44:41.095 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill/paid 
+QueryString:  
+Request Body: 
+2023-08-09 01:44:41.095 [INF] 
+
+2023-08-09 01:44:41.096 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill/paid 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"apartmentUserId":1,"billType":"Aidat","amount":200.0000,"paymentDate":"0001-01-01T00:00:00"},{"apartmentUserId":1,"billType":"Su","amount":1220.0000,"paymentDate":"0001-01-01T00:00:00"},{"apartmentUserId":1,"billType":"DoğalGaz","amount":522.0000,"paymentDate":"0001-01-01T00:00:00"}]}
+2023-08-09 01:44:41.096 [INF] -------------Request-End------------
+2023-08-09 01:51:27.566 [INF] Application is starting...
+2023-08-09 01:52:31.911 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 01:52:31.917 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 01:52:31.919 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 01:52:35.557 [INF] -------------Request-Begin------------
+2023-08-09 01:52:35.557 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=2 
+Request Body: {
+  "cardNumber": "1",
+  "cardHolderName": "1",
+  "expiryMonth": "1",
+  "expiryYear": "1",
+  "cvv": "1",
+  "apartmentUserId": 1,
+  "billId": 2
+}
+2023-08-09 01:52:35.557 [INF] 
+
+2023-08-09 01:52:35.558 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=2 
+StatusCode: 400 
+Response Body: Error updating Bill PaymentId
+2023-08-09 01:52:35.558 [INF] -------------Request-End------------
+2023-08-09 01:52:48.126 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 01:52:48.126 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 01:52:48.126 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 01:52:48.431 [INF] -------------Request-Begin------------
+2023-08-09 01:52:48.431 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill/paid 
+QueryString:  
+Request Body: 
+2023-08-09 01:52:48.431 [INF] 
+
+2023-08-09 01:52:48.431 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill/paid 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"apartmentUserId":1,"billType":"Aidat","amount":200.0000,"paymentDate":"0001-01-01T00:00:00"},{"apartmentUserId":1,"billType":"Aidat","amount":150.0000,"paymentDate":"2023-08-08T00:00:00"},{"apartmentUserId":1,"billType":"Su","amount":1220.0000,"paymentDate":"0001-01-01T00:00:00"},{"apartmentUserId":1,"billType":"DoğalGaz","amount":522.0000,"paymentDate":"0001-01-01T00:00:00"}]}
+2023-08-09 01:52:48.431 [INF] -------------Request-End------------
+2023-08-09 01:54:04.423 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 01:54:04.428 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 01:54:04.429 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 01:54:04.470 [INF] -------------Request-Begin------------
+2023-08-09 01:54:04.470 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill/paid 
+QueryString:  
+Request Body: 
+2023-08-09 01:54:04.470 [INF] 
+
+2023-08-09 01:54:04.470 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill/paid 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"apartmentUserId":1,"billType":"Aidat","amount":200.0000,"paymentDate":"0001-01-01T00:00:00"},{"apartmentUserId":1,"billType":"Aidat","amount":150.0000,"paymentDate":"2023-08-08T00:00:00"}]}
+2023-08-09 01:54:04.470 [INF] -------------Request-End------------
+2023-08-09 02:27:19.812 [INF] Application is starting...
+2023-08-09 02:32:01.215 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:32:01.220 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:32:01.222 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:32:06.617 [INF] -------------Request-Begin------------
+2023-08-09 02:32:06.618 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "12"
+}
+2023-08-09 02:32:06.619 [INF] 
+
+2023-08-09 02:32:06.619 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-09T02:37:06.5970019+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IktldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImtldiB5YXYiLCJleHAiOjE2OTE1Mzc4MjUsImlzcyI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkiLCJhdWQiOiJTaXRlTWFuYWdlbWVudFBhbmVsQXBpIn0.AAxfdi-WQ6pd-VjJ8SxODxqF7AgYFJcPuBdrRy-zKLk","userName":"Kevser"}}
+2023-08-09 02:32:06.619 [INF] -------------Request-End------------
+2023-08-09 02:33:46.925 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:33:46.954 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:33:46.958 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:33:47.283 [INF] -------------Request-Begin------------
+2023-08-09 02:33:47.283 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+Request Body: {
+  "fromUserId": 1,
+  "toUserId": 2,
+  "content": "bu bir deneme mesajıdır."
+}
+2023-08-09 02:33:47.283 [INF] 
+
+2023-08-09 02:33:47.284 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"id":1,"fromUserName":null,"toUserName":null,"content":"bu bir deneme mesajıdır.","isRead":false}}
+2023-08-09 02:33:47.284 [INF] -------------Request-End------------
+2023-08-09 02:35:48.460 [INF] Application is starting...
+2023-08-09 02:36:06.007 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:36:06.013 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:36:06.015 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:36:09.833 [INF] -------------Request-Begin------------
+2023-08-09 02:36:09.834 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+Request Body: {
+  "userName": "Deneme",
+  "password": "1"
+}
+2023-08-09 02:36:09.834 [INF] 
+
+2023-08-09 02:36:09.834 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-09T02:41:09.8191795+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkRlbmVtZSIsIlVzZXJJZCI6IjIiLCJSb2xlVHlwZSI6IlVzZXIiLCJTdGF0dXMiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJkZW5lbWUgZGVuZSIsImV4cCI6MTY5MTUzODA2OSwiaXNzIjoiU2l0ZU1hbmFnZW1lbnRQYW5lbEFwaSIsImF1ZCI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkifQ.jQkDqJe6e1tUXIzVIdcDL0TtVA0W4k3jaVOcQo5ZgW4","userName":"Deneme"}}
+2023-08-09 02:36:09.834 [INF] -------------Request-End------------
+2023-08-09 02:37:04.599 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:37:04.623 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:37:04.624 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:37:04.839 [INF] -------------Request-Begin------------
+2023-08-09 02:37:04.840 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+Request Body: {
+  "fromUserId": 2,
+  "toUserId": 1,
+  "content": "Deneme mesajı 2"
+}
+2023-08-09 02:37:04.840 [INF] 
+
+2023-08-09 02:37:04.840 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Message Send","response":null}
+2023-08-09 02:37:04.840 [INF] -------------Request-End------------
+2023-08-09 02:37:34.594 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:37:34.599 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:37:34.600 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:37:34.715 [INF] -------------Request-Begin------------
+2023-08-09 02:37:34.715 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/1/mark-as-read 
+QueryString:  
+Request Body: 
+2023-08-09 02:37:34.715 [INF] 
+
+2023-08-09 02:37:34.715 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/1/mark-as-read 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Message is read"}
+2023-08-09 02:37:34.715 [INF] -------------Request-End------------
+2023-08-09 02:38:44.944 [INF] Application is starting...
+2023-08-09 02:38:53.520 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:38:53.525 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:38:53.527 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:38:53.702 [INF] -------------Request-Begin------------
+2023-08-09 02:38:53.702 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+Request Body: 
+2023-08-09 02:38:53.702 [INF] 
+
+2023-08-09 02:38:53.702 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-08-09 02:38:53.703 [INF] -------------Request-End------------
+2023-08-09 02:39:15.812 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:39:15.812 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:39:15.812 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:39:19.242 [INF] -------------Request-Begin------------
+2023-08-09 02:39:19.242 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "12"
+}
+2023-08-09 02:39:19.242 [INF] 
+
+2023-08-09 02:39:19.242 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-09T02:44:19.2305773+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IktldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImtldiB5YXYiLCJleHAiOjE2OTE1MzgyNTgsImlzcyI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkiLCJhdWQiOiJTaXRlTWFuYWdlbWVudFBhbmVsQXBpIn0.WnWjnDCt38btmMlqYSpkcK3lHKzqkx_xnF0m1fsDFh0","userName":"Kevser"}}
+2023-08-09 02:39:19.242 [INF] -------------Request-End------------
+2023-08-09 02:39:43.388 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:39:43.391 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:39:43.392 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:39:43.851 [INF] -------------Request-Begin------------
+2023-08-09 02:39:43.851 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+Request Body: 
+2023-08-09 02:39:43.851 [INF] 
+
+2023-08-09 02:39:43.852 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":"kev","lastName":"yav","apartmentNumber":1,"type":"Aidat","amount":200.0000,"paymentDate":"0001-01-01T00:00:00"},{"firstName":"kev","lastName":"yav","apartmentNumber":1,"type":"Aidat","amount":150.0000,"paymentDate":"2023-08-08T22:52:35.0993902"}]}
+2023-08-09 02:39:43.852 [INF] -------------Request-End------------
+2023-08-09 02:40:40.281 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:40:40.285 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:40:40.287 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:40:40.420 [INF] -------------Request-Begin------------
+2023-08-09 02:40:40.420 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=3 
+Request Body: {
+  "cardNumber": "111",
+  "cardHolderName": "111",
+  "expiryMonth": "11",
+  "expiryYear": "11",
+  "cvv": "11",
+  "apartmentUserId": 1,
+  "billId": 3
+}
+2023-08-09 02:40:40.420 [INF] 
+
+2023-08-09 02:40:40.420 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=3 
+StatusCode: 400 
+Response Body: Error updating Bill PaymentId
+2023-08-09 02:40:40.420 [INF] -------------Request-End------------
+2023-08-09 02:42:13.008 [INF] Application is starting...
+2023-08-09 02:43:14.673 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:43:14.678 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:43:14.680 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:43:18.271 [INF] -------------Request-Begin------------
+2023-08-09 02:43:18.271 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "12"
+}
+2023-08-09 02:43:18.271 [INF] 
+
+2023-08-09 02:43:18.271 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-09T02:48:18.2549342+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IktldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImtldiB5YXYiLCJleHAiOjE2OTE1Mzg0OTcsImlzcyI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkiLCJhdWQiOiJTaXRlTWFuYWdlbWVudFBhbmVsQXBpIn0.ov1vWA2EHf7Cv0ymLSS2Y92VshxS-QIWxbsmUyiCT9k","userName":"Kevser"}}
+2023-08-09 02:43:18.272 [INF] -------------Request-End------------
+2023-08-09 02:45:23.628 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:45:23.628 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:45:23.628 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:45:23.696 [INF] -------------Request-Begin------------
+2023-08-09 02:45:23.696 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=4 
+Request Body: {
+  "cardNumber": "123",
+  "cardHolderName": "123",
+  "expiryMonth": "123",
+  "expiryYear": "123",
+  "cvv": "123",
+  "apartmentUserId": 1,
+  "billId": 4
+}
+2023-08-09 02:45:23.696 [INF] 
+
+2023-08-09 02:45:23.696 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=4 
+StatusCode: 401 
+Response Body: 
+2023-08-09 02:45:23.696 [INF] -------------Request-End------------
+2023-08-09 02:45:37.113 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:45:37.113 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:45:37.114 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:45:37.440 [INF] -------------Request-Begin------------
+2023-08-09 02:45:37.440 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=4 
+Request Body: {
+  "cardNumber": "123",
+  "cardHolderName": "123",
+  "expiryMonth": "123",
+  "expiryYear": "123",
+  "cvv": "123",
+  "apartmentUserId": 1,
+  "billId": 4
+}
+2023-08-09 02:45:37.440 [INF] 
+
+2023-08-09 02:45:37.440 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=4 
+StatusCode: 400 
+Response Body: Error updating Bill PaymentId
+2023-08-09 02:45:37.440 [INF] -------------Request-End------------
+2023-08-09 02:50:13.665 [INF] Application is starting...
+2023-08-09 02:50:37.075 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:50:37.080 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:50:37.083 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:50:40.659 [INF] -------------Request-Begin------------
+2023-08-09 02:50:40.659 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "12"
+}
+2023-08-09 02:50:40.659 [INF] 
+
+2023-08-09 02:50:40.659 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-09T02:55:40.6450347+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IktldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImtldiB5YXYiLCJleHAiOjE2OTE1Mzg5NDAsImlzcyI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkiLCJhdWQiOiJTaXRlTWFuYWdlbWVudFBhbmVsQXBpIn0.UXWW2zA4tMJrnK8nwrwcEVl4CC8p9ejVz-v9wp4VJ1Q","userName":"Kevser"}}
+2023-08-09 02:50:40.659 [INF] -------------Request-End------------
+2023-08-09 02:51:26.120 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:51:26.121 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:51:26.122 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:51:26.445 [INF] -------------Request-Begin------------
+2023-08-09 02:51:26.446 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=5 
+Request Body: {
+  "cardNumber": "123",
+  "cardHolderName": "122",
+  "expiryMonth": "122",
+  "expiryYear": "122",
+  "cvv": "122",
+  "apartmentUserId": 1,
+  "billId": 5
+}
+2023-08-09 02:51:26.446 [INF] 
+
+2023-08-09 02:51:26.446 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Payment/process-credit-card-payment 
+QueryString: ?apartmentUserId=1&billId=5 
+StatusCode: 400 
+Response Body: Payment processed successfully
+2023-08-09 02:51:26.446 [INF] -------------Request-End------------
+2023-08-09 02:59:18.569 [INF] Application is starting...
+2023-08-09 02:59:27.223 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:59:27.227 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:59:27.230 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:59:27.447 [INF] -------------Request-Begin------------
+2023-08-09 02:59:27.447 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-09 02:59:27.447 [INF] 
+
+2023-08-09 02:59:27.447 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-08-09 02:59:27.447 [INF] -------------Request-End------------
+2023-08-09 02:59:51.889 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 02:59:51.889 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 02:59:51.889 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 02:59:55.727 [INF] -------------Request-Begin------------
+2023-08-09 02:59:55.727 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+Request Body: {
+  "userName": "Deneme",
+  "password": "1"
+}
+2023-08-09 02:59:55.727 [INF] 
+
+2023-08-09 02:59:55.727 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-09T03:04:55.7103607+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkRlbmVtZSIsIlVzZXJJZCI6IjIiLCJSb2xlVHlwZSI6IlVzZXIiLCJTdGF0dXMiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJkZW5lbWUgZGVuZSIsImV4cCI6MTY5MTUzOTQ5NSwiaXNzIjoiU2l0ZU1hbmFnZW1lbnRQYW5lbEFwaSIsImF1ZCI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkifQ.49P43BQnDrIW4zvrzgt683glhsfel2CT4OagcGuU8NU","userName":"Deneme"}}
+2023-08-09 02:59:55.728 [INF] -------------Request-End------------
+2023-08-09 03:00:13.651 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 03:00:13.652 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 03:00:13.652 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 03:00:13.840 [INF] -------------Request-Begin------------
+2023-08-09 03:00:13.840 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-09 03:00:13.840 [INF] 
+
+2023-08-09 03:00:13.840 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 403 
+Response Body: 
+2023-08-09 03:00:13.840 [INF] -------------Request-End------------
+2023-08-09 03:00:30.538 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 03:00:30.538 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 03:00:30.538 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 03:00:30.673 [INF] -------------Request-Begin------------
+2023-08-09 03:00:30.674 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+Request Body: {
+  "userName": "Kevser",
+  "password": "12"
+}
+2023-08-09 03:00:30.674 [INF] 
+
+2023-08-09 03:00:30.674 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-09T03:05:30.6730033+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IktldnNlciIsIlVzZXJJZCI6IjEiLCJSb2xlVHlwZSI6IkFkbWluIiwiU3RhdHVzIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImtldiB5YXYiLCJleHAiOjE2OTE1Mzk1MzAsImlzcyI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkiLCJhdWQiOiJTaXRlTWFuYWdlbWVudFBhbmVsQXBpIn0.kj_xI4wxZRlUgFYriTmgGwvHQykM9Ywni_H_u00846g","userName":"Kevser"}}
+2023-08-09 03:00:30.674 [INF] -------------Request-End------------
+2023-08-09 03:00:48.660 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 03:00:48.660 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 03:00:48.660 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 03:00:48.805 [INF] -------------Request-Begin------------
+2023-08-09 03:00:48.805 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+Request Body: 
+2023-08-09 03:00:48.805 [INF] 
+
+2023-08-09 03:00:48.805 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/UserLog 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"userName":"kevser","transactionDate":"2023-08-08T20:09:55.2831329","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-08T23:32:06.3988265","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-08T23:39:19.1149222","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-08T23:43:18.1399722","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-08T23:50:40.5293732","logType":"LogedIn"},{"userName":"kevser","transactionDate":"2023-08-09T00:00:30.6658036","logType":"LogedIn"}]}
+2023-08-09 03:00:48.805 [INF] -------------Request-End------------
+2023-08-09 03:01:24.388 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 03:01:24.389 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 03:01:24.389 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 03:01:24.482 [INF] -------------Request-Begin------------
+2023-08-09 03:01:24.483 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+Request Body: {
+  "userName": "Deneme",
+  "password": "1"
+}
+2023-08-09 03:01:24.483 [INF] 
+
+2023-08-09 03:01:24.483 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Login/login 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireTime":"2023-08-09T03:06:24.4823374+03:00","accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkRlbmVtZSIsIlVzZXJJZCI6IjIiLCJSb2xlVHlwZSI6IlVzZXIiLCJTdGF0dXMiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJkZW5lbWUgZGVuZSIsImV4cCI6MTY5MTUzOTU4NCwiaXNzIjoiU2l0ZU1hbmFnZW1lbnRQYW5lbEFwaSIsImF1ZCI6IlNpdGVNYW5hZ2VtZW50UGFuZWxBcGkifQ.QvFTpfBCqCyDrJxNhdJjLO_TtHzFdIG272ggV6krKfY","userName":"Deneme"}}
+2023-08-09 03:01:24.483 [INF] -------------Request-End------------
+2023-08-09 03:01:44.402 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 03:01:44.402 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 03:01:44.402 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 03:01:44.403 [INF] -------------Request-Begin------------
+2023-08-09 03:01:44.403 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-09 03:01:44.403 [INF] 
+
+2023-08-09 03:01:44.403 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 403 
+Response Body: 
+2023-08-09 03:01:44.404 [INF] -------------Request-End------------
+2023-08-09 03:02:13.749 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 03:02:13.749 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 03:02:13.753 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 03:02:13.755 [INF] -------------Request-Begin------------
+2023-08-09 03:02:13.755 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: {
+  "userId": 2,
+  "buildingId": 2,
+  "status": 1,
+  "apartmentTypeId": 1,
+  "floorNumber": 1,
+  "apartmentNumber": 1
+}
+2023-08-09 03:02:13.755 [INF] 
+
+2023-08-09 03:02:13.755 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 403 
+Response Body: 
+2023-08-09 03:02:13.755 [INF] -------------Request-End------------
+2023-08-09 03:02:40.061 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-09 03:02:40.061 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-09 03:02:40.065 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-09 03:02:49.249 [INF] -------------Request-Begin------------
+2023-08-09 03:02:49.250 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill 
+QueryString:  
+Request Body: 
+2023-08-09 03:02:49.250 [INF] 
+
+2023-08-09 03:02:49.250 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Bill 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"apartmentUserId":1,"billType":"Aidat","billTypeId":1,"amount":200.0000,"dueDate":"2023-08-10T18:54:19.318"},{"apartmentUserId":1,"billType":"Aidat","billTypeId":1,"amount":150.0000,"dueDate":"2023-08-10T18:56:17.426"},{"apartmentUserId":1,"billType":"Elektrik","billTypeId":2,"amount":300.0000,"dueDate":"2023-06-01T00:00:00"},{"apartmentUserId":1,"billType":"Su","billTypeId":3,"amount":1220.0000,"dueDate":"2023-06-01T00:00:00"},{"apartmentUserId":1,"billType":"DoğalGaz","billTypeId":4,"amount":522.0000,"dueDate":"2023-06-01T00:00:00"}]}
+2023-08-09 03:02:49.250 [INF] -------------Request-End------------

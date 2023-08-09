@@ -33,6 +33,9 @@ namespace SiteManagementPanel.Data.Migrations
                     b.Property<int>("ApartmentNumber")
                         .HasColumnType("int");
 
+                    b.Property<int>("ApartmentTypeId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("BillTypeId")
                         .HasColumnType("int");
 
@@ -53,16 +56,13 @@ namespace SiteManagementPanel.Data.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<int>("TypeId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("ApartmentTypeId");
 
                     b.HasIndex("BillTypeId");
 
                     b.HasIndex("BuildingId");
-
-                    b.HasIndex("TypeId");
 
                     b.ToTable("Apartment", (string)null);
                 });
@@ -85,8 +85,7 @@ namespace SiteManagementPanel.Data.Migrations
 
                     b.Property<string>("TypeName")
                         .IsRequired()
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -104,9 +103,6 @@ namespace SiteManagementPanel.Data.Migrations
                     b.Property<int>("AparmentId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ApartmentId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("InsertDate")
                         .HasColumnType("datetime2");
 
@@ -120,7 +116,7 @@ namespace SiteManagementPanel.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ApartmentId");
+                    b.HasIndex("AparmentId");
 
                     b.HasIndex("UserId");
 
@@ -147,6 +143,9 @@ namespace SiteManagementPanel.Data.Migrations
                     b.Property<int>("BillTypeId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("DueDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime>("InsertDate")
                         .HasColumnType("datetime2");
 
@@ -155,18 +154,7 @@ namespace SiteManagementPanel.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("Month")
-                        .HasColumnType("int");
-
                     b.Property<int?>("PaymentId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TypeId")
-                        .HasMaxLength(15)
-                        .HasColumnType("int");
-
-                    b.Property<int>("Year")
-                        .HasMaxLength(100)
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -376,7 +364,6 @@ namespace SiteManagementPanel.Data.Migrations
                         .HasColumnType("nvarchar(12)");
 
                     b.Property<int>("Role")
-                        .HasMaxLength(10)
                         .HasColumnType("int");
 
                     b.Property<int>("Status")
@@ -441,6 +428,12 @@ namespace SiteManagementPanel.Data.Migrations
 
             modelBuilder.Entity("SiteManagementPanel.Data.Domain.Apartment", b =>
                 {
+                    b.HasOne("SiteManagementPanel.Data.Domain.ApartmentType", "ApartmentType")
+                        .WithMany()
+                        .HasForeignKey("ApartmentTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("SiteManagementPanel.Data.Domain.BillType", null)
                         .WithMany("Apartments")
                         .HasForeignKey("BillTypeId");
@@ -451,22 +444,16 @@ namespace SiteManagementPanel.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiteManagementPanel.Data.Domain.ApartmentType", "Type")
-                        .WithMany()
-                        .HasForeignKey("TypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("ApartmentType");
 
                     b.Navigation("Building");
-
-                    b.Navigation("Type");
                 });
 
             modelBuilder.Entity("SiteManagementPanel.Data.Domain.ApartmentUser", b =>
                 {
                     b.HasOne("SiteManagementPanel.Data.Domain.Apartment", "Apartment")
                         .WithMany("ApartmentUsers")
-                        .HasForeignKey("ApartmentId")
+                        .HasForeignKey("AparmentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

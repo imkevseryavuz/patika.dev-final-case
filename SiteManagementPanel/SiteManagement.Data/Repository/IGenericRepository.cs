@@ -17,6 +17,4 @@ public interface IGenericRepository<Entity> where Entity : class
     IEnumerable<Entity> Where(Expression<Func<Entity, bool>> expression);
     IEnumerable<Entity> WhereWithInclude(Expression<Func<Entity, bool>> expression, params string[] includes);
     IQueryable<Entity> GetAllAsQueryable();
-
-
 }

@@ -19,7 +19,6 @@ namespace SiteManagementPanel.Service.Controller
             this.service = service;
         }
 
-
         [HttpGet]
         public ApiResponse<List<UserLogResponse>> GetAll()
         {
@@ -37,28 +36,5 @@ namespace SiteManagementPanel.Service.Controller
             return response;
         }
 
-
-        [HttpPost]
-        public ApiResponse Post([FromBody] UserLogRequest request)
-        {
-            var response = service.Insert(request);
-            return response;
-        }
-
-        [HttpPut("{id}")]
-        public ApiResponse Put(int id, [FromBody] UserLogRequest request)
-        {
-
-            var response = service.Update(id, request);
-            return response;
-        }
-
-
-        [HttpDelete("{id}")]
-        public ApiResponse Delete(int id)
-        {
-            var response = service.Delete(id);
-            return response;
-        }
     }
 }

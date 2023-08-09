@@ -1,8 +1,4 @@
-﻿
-
-using SiteManagamentPanel.Base;
-using SiteManagementPanel.Business.Generic;
-using SiteManagementPanel.Data.Domain;
+﻿using SiteManagamentPanel.Base;
 using SiteManagementPanel.Schema;
 
 namespace SiteManagementPanel.Business;

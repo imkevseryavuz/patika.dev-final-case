@@ -3,7 +3,7 @@ using SiteManagementPanel.Schema;
 
 namespace SiteManagementPanel.Busines;
 
-public interface ITokenService
+public interface ILoginService
 {
-    ApiResponse<TokenResponse> Login(TokenRequest request);
+    ApiResponse<LoginResponse> Login(LoginRequest request);
 }

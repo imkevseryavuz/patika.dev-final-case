@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using SiteManagamentPanel.Base;
 using SiteManagementPanel.Business;
 using SiteManagementPanel.Schema;
@@ -18,29 +19,43 @@ public class ApartmentController : ControllerBase
         this.service = service;
     }
     [HttpGet]
-    public ApiResponse<List<ApartmentResponse>> GetAll()
+    public ApiResponse<List<ApartmentResponse>> GetAllApartment()
     {
-        var response = service.GetAll();
+        var response = service.GetAllApartment();
         return response;
     }
+
 
     [HttpPost]
     public ApiResponse Post([FromBody] ApartmentRequest request)
     {
-        var response = service.Insert(request);
-        return response;
+        try
+        {
+           
+            var response = service.InsertApartment(request);
+
+            return response; 
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex, "Error while inserting an apartment.");
+            return new ApiResponse(message: "An error occurred while inserting the apartment.");
+        }
     }
+
+
     [HttpGet("{id}")]
     public ApiResponse<ApartmentResponse> Get(int id)
     {
         var response = service.GetById(id);
         return response;
     }
+
     [HttpPut("{id}")]
     public ApiResponse Put(int id, [FromBody] ApartmentRequest request)
     {
 
-        var response = service.Update(id, request);
+        var response = service.UpdateApartment(id, request);
         return response;
     }
 

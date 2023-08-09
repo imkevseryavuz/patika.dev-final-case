@@ -13,28 +13,28 @@ using System.Text;
 
 namespace SiteManagementPanel.Business;
 
-public class TokenService : ITokenService
+public class LoginService : ILoginService
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IUserLogService _userLogService;
     private readonly JwtConfig _jwtConfig;
-    public TokenService(IUnitOfWork unitOfWork, IUserLogService userLogService, IOptionsMonitor<JwtConfig> jwtConfig)
+    public LoginService(IUnitOfWork unitOfWork, IUserLogService userLogService, IOptionsMonitor<JwtConfig> jwtConfig)
     {
         _unitOfWork = unitOfWork;
         _userLogService = userLogService;
         _jwtConfig = jwtConfig.CurrentValue;
     }
 
-    public ApiResponse<TokenResponse> Login(TokenRequest request)
+    public ApiResponse<LoginResponse> Login(LoginRequest request)
     {
         if (request is null)
         {
-            return new ApiResponse<TokenResponse>("Request was null");
+            return new ApiResponse<LoginResponse>("Request was null");
         }
 
         if (string.IsNullOrEmpty(request.UserName) || string.IsNullOrEmpty(request.Password))
         {
-            return new ApiResponse<TokenResponse>("Request was null");
+            return new ApiResponse<LoginResponse>("Request was null");
         }
 
         request.UserName = request.UserName.Trim().ToLower();
@@ -45,25 +45,25 @@ public class TokenService : ITokenService
         if (user is null)
         {
             Log(request.UserName, LogType.InValidUserName);
-            return new ApiResponse<TokenResponse>("Invalid user informations");
+            return new ApiResponse<LoginResponse>("Invalid user informations");
         }
 
         if (user.Password != request.Password)
         {
             Log(request.UserName, LogType.InValidUserName);
-            return new ApiResponse<TokenResponse>("Invalid user informations");
+            return new ApiResponse<LoginResponse>("Invalid user informations");
         }
 
         if (user.Status != 1)
         {
             Log(request.UserName, LogType.InValidUserStatus);
-            return new ApiResponse<TokenResponse>("Invalid user status");
+            return new ApiResponse<LoginResponse>("Invalid user status");
         }
 
         if (user.PasswordRetryCount > 3)
         {
             Log(request.UserName, LogType.PasswordRetryCountExceded);
-            return new ApiResponse<TokenResponse>("Password retry count exceded");
+            return new ApiResponse<LoginResponse>("Password retry count exceded");
         }
 
         user.LastActivity = DateTime.UtcNow;
@@ -76,14 +76,14 @@ public class TokenService : ITokenService
 
         Log(request.UserName, LogType.LogedIn);
 
-        TokenResponse response = new()
+        LoginResponse response = new()
         {
             AccessToken = token,
             ExpireTime = DateTime.Now.AddMinutes(_jwtConfig.AccessTokenExpiration),
             UserName = user.UserName
         };
 
-        return new ApiResponse<TokenResponse>(response);
+        return new ApiResponse<LoginResponse>(response);
     }
 
     private string Token(User user)

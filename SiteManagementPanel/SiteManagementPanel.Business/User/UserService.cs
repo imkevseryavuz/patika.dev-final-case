@@ -54,5 +54,29 @@ public class UserService : GenericService<User, UserRequest, UserResponse>, IUse
             return new ApiResponse<List<UserResponse>>(ex.Message);
         }
     }
+
+    public ApiResponse UpdateUser(int id, UserRequest request)
+    {
+        try
+        {
+            var existingUser = _unitOfWork.UserRepository.GetById(id);
+            if (existingUser == null)
+            {
+                return new ApiResponse(message: "User not found.");
+            }
+            _mapper.Map(request, existingUser);
+            _unitOfWork.UserRepository.Update(existingUser);
+            _unitOfWork.Complete();
+
+            return new ApiResponse(message: "User updated successfully.");
+        }
+        catch (Exception ex)
+        {      
+            Log.Error(ex, "Error while updating an apartment.");
+
+            return new ApiResponse(message: "An error occurred while updating the apartment. Error Details: " + ex.Message);
+        }
+        
+    }
 }
 

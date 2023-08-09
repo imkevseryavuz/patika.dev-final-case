@@ -1,0 +1,22 @@
+2023-08-06 19:46:06.854 [INF] Application is starting...
+2023-08-06 19:49:19.169 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-06 19:49:19.176 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-06 19:49:19.178 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-06 19:49:20.061 [INF] -------------Request-Begin------------
+2023-08-06 19:49:20.061 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/user/1 
+QueryString:  
+Request Body: 
+2023-08-06 19:49:20.061 [INF] 
+
+2023-08-06 19:49:20.061 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Message/user/1 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-08-06 19:49:20.062 [INF] -------------Request-End------------
+2023-08-06 20:27:45.626 [INF] Application is starting...

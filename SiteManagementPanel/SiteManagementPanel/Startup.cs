@@ -58,7 +58,7 @@ public class Startup
         services.AddScoped<IApartmentService, ApartmentService>();
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IUserLogService, UserLogService>();
-        services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<ILoginService, LoginService>();
         services.AddScoped<IBillService, BillService>();
         services.AddScoped<IMessageService, MessageService>();
         services.AddScoped<IPaymentService, PaymentService>();

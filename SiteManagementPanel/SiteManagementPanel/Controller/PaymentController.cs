@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SiteManagamentPanel.Base;
 using SiteManagementPanel.Business;
@@ -29,16 +28,10 @@ namespace SiteManagementPanel.Service.Controller
         [HttpPost("process-credit-card-payment")]
         public IActionResult ProcessCreditCardPayment([FromBody] CreditCardRequest creditCardRequest, int apartmentUserId, int billId)
         {
-            ApiResponse<PaymentRequest> paymentResponse = _paymentService.ProcessCreditCardPayment(creditCardRequest, apartmentUserId, billId);
-
-            if (paymentResponse.Success)
-            {
-                return Ok(paymentResponse.Response);
-            }
-            else
-            {
-                return BadRequest(paymentResponse.Message);
-            }
+            ApiResponse paymentResponse = _paymentService.ProcessCreditCardPayment(creditCardRequest, apartmentUserId, billId);
+      
+                return Ok(paymentResponse.Message);
+           
         }
     }
 }

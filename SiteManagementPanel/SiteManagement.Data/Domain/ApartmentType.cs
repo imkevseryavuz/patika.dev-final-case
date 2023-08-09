@@ -8,6 +8,7 @@ namespace SiteManagementPanel.Data.Domain;
 public class ApartmentType : IdBaseModel
 {
     public string TypeName { get; set; }
+
 }
 public class ApartmentTypeConfiguration : IEntityTypeConfiguration<ApartmentType>
 {
@@ -17,6 +18,6 @@ public class ApartmentTypeConfiguration : IEntityTypeConfiguration<ApartmentType
         builder.Property(x => x.Id).IsRequired(true).UseIdentityColumn();
         builder.Property(x => x.InsertUser).IsRequired(true).HasMaxLength(50);
         builder.Property(x => x.InsertDate).IsRequired(true);
-        builder.Property(x => x.TypeName).IsRequired(true).HasMaxLength(5);
+        
     }
 }

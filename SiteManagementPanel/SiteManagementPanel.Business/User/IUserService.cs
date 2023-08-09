@@ -9,5 +9,6 @@ namespace SiteManagementPanel.Business;
 public interface IUserService : IGenericService<User, UserRequest, UserResponse>
 {
     ApiResponse<UserResponse> GetById(int id);
+    ApiResponse UpdateUser(int id,UserRequest request);
 
 }

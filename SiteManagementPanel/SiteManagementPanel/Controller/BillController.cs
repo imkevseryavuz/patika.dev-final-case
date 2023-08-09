@@ -8,7 +8,7 @@ namespace SiteManagementPanel.Service.Controller;
 
 [Route("panel/api/[controller]")]
 [ApiController]
-[Authorize]
+[Authorize(Roles ="Admin")]
 public class BillController : ControllerBase
 {
     private readonly IBillService _billService;
@@ -23,11 +23,16 @@ public class BillController : ControllerBase
         var response = _billService.GetAll();
         return response;
     }
-
+    [HttpGet("paid")]
+    public ApiResponse<List<PaidBillResponse>> GetPaidBills()
+    {
+        var response = _billService.GetPaidBills();
+        return response;
+    }
     [HttpPost]
     public ApiResponse Post([FromBody] BillRequest request)
     {
-        var response = _billService.Insert(request);
+        var response = _billService.InsertBill(request);
         return response;
     }
     [HttpGet("{id}")]

@@ -1,0 +1,1581 @@
+2023-08-07 19:59:01.655 [INF] Application is starting...
+2023-08-07 19:59:49.263 [INF] Application is starting...
+2023-08-07 19:59:59.988 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 19:59:59.994 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 19:59:59.998 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 20:00:08.409 [INF] -------------Request-Begin------------
+2023-08-07 20:00:08.412 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 20:00:08.413 [INF] 
+
+2023-08-07 20:00:08.414 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-07 20:00:08.415 [INF] -------------Request-End------------
+2023-08-07 20:00:50.999 [INF] Application is starting...
+2023-08-07 20:01:01.675 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 20:01:01.680 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 20:01:01.682 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 20:01:07.126 [INF] -------------Request-Begin------------
+2023-08-07 20:01:07.126 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+Request Body: 
+2023-08-07 20:01:07.127 [INF] 
+
+2023-08-07 20:01:07.127 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"email":"kevser@gmail.com","firstName":"Kevser","lastName":"yavuz","tcNo":"123456789","phone":"123456789","vehiclePlateNumber":"1"}]}
+2023-08-07 20:01:07.127 [INF] -------------Request-End------------
+2023-08-07 20:01:44.204 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 20:01:44.205 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 20:01:44.205 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 20:01:45.702 [ERR] Failed executing DbCommand (304ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (Size = 50), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Apartment] ([ApartmentNumber], [BillTypeId], [BuildingId], [FloorNumber], [InsertDate], [InsertUser], [Status], [TypeId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Apartment]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-07 20:01:45.886 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:eff1c5e5-6f1b-494e-b212-2c37302a5010
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:eff1c5e5-6f1b-494e-b212-2c37302a5010
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-07 20:01:46.180 [ERR] GenericService.Insert
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:eff1c5e5-6f1b-494e-b212-2c37302a5010
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.Save() in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 66
+   at SiteManagementPanel.Business.Generic.GenericService`3.Insert(TRequest request) in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 71
+2023-08-07 20:01:46.268 [INF] -------------Request-Begin------------
+2023-08-07 20:01:46.268 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: {
+  "userId": 3,
+  "buildingId": 3,
+  "statusId": 1,
+  "typeId": 1,
+  "floorNumber": 1,
+  "apartmentNumber": 1
+}
+2023-08-07 20:01:46.268 [INF] 
+
+2023-08-07 20:01:46.268 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error occurred while saving the entity changes. See the inner exception for details."}
+2023-08-07 20:01:46.268 [INF] -------------Request-End------------
+2023-08-07 20:05:37.711 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 20:05:37.711 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 20:05:37.711 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 20:05:37.894 [INF] -------------Request-Begin------------
+2023-08-07 20:05:37.894 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: {
+  "userId": 3,
+  "buildingId": 3,
+  "statusId": 1,
+  "typeId": 3,
+  "floorNumber": 1,
+  "apartmentNumber": 1
+}
+2023-08-07 20:05:37.894 [INF] 
+
+2023-08-07 20:05:37.894 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-08-07 20:05:37.894 [INF] -------------Request-End------------
+2023-08-07 20:07:05.839 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 20:07:05.840 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 20:07:05.840 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 20:07:06.500 [ERR] An exception occurred while iterating over the results of a query for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-07 20:07:06.590 [ERR] ApartmentService.GetAll
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 27
+2023-08-07 20:07:06.594 [INF] -------------Request-Begin------------
+2023-08-07 20:07:06.594 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 20:07:06.594 [INF] 
+
+2023-08-07 20:07:06.594 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Unable to cast object of type 'System.String' to type 'System.Int32'.","response":null}
+2023-08-07 20:07:06.594 [INF] -------------Request-End------------
+2023-08-07 20:08:02.492 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 20:08:02.498 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 20:08:02.498 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 20:08:02.517 [ERR] An exception occurred while iterating over the results of a query for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-07 20:08:02.578 [ERR] ApartmentService.GetAll
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 27
+2023-08-07 20:08:02.580 [INF] -------------Request-Begin------------
+2023-08-07 20:08:02.580 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 20:08:02.580 [INF] 
+
+2023-08-07 20:08:02.580 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Unable to cast object of type 'System.String' to type 'System.Int32'.","response":null}
+2023-08-07 20:08:02.580 [INF] -------------Request-End------------
+2023-08-07 20:08:04.179 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 20:08:04.179 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 20:08:04.179 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 20:08:04.198 [ERR] An exception occurred while iterating over the results of a query for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-07 20:08:04.250 [ERR] ApartmentService.GetAll
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 27
+2023-08-07 20:08:04.252 [INF] -------------Request-Begin------------
+2023-08-07 20:08:04.252 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 20:08:04.253 [INF] 
+
+2023-08-07 20:08:04.253 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Unable to cast object of type 'System.String' to type 'System.Int32'.","response":null}
+2023-08-07 20:08:04.253 [INF] -------------Request-End------------
+2023-08-07 20:08:04.527 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 20:08:04.527 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 20:08:04.527 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 20:08:04.544 [ERR] An exception occurred while iterating over the results of a query for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-07 20:08:04.594 [ERR] ApartmentService.GetAll
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 27
+2023-08-07 20:08:04.595 [INF] -------------Request-Begin------------
+2023-08-07 20:08:04.595 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 20:08:04.595 [INF] 
+
+2023-08-07 20:08:04.595 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Unable to cast object of type 'System.String' to type 'System.Int32'.","response":null}
+2023-08-07 20:08:04.595 [INF] -------------Request-End------------
+2023-08-07 20:08:07.169 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 20:08:07.169 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 20:08:07.169 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 20:08:07.213 [ERR] An exception occurred while iterating over the results of a query for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-07 20:08:07.261 [ERR] ApartmentService.GetAll
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method266(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 41
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\eski\Version 2\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 27
+2023-08-07 20:08:07.262 [INF] -------------Request-Begin------------
+2023-08-07 20:08:07.262 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 20:08:07.262 [INF] 
+
+2023-08-07 20:08:07.262 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Unable to cast object of type 'System.String' to type 'System.Int32'.","response":null}
+2023-08-07 20:08:07.262 [INF] -------------Request-End------------
+2023-08-07 21:42:41.117 [INF] Application is starting...
+2023-08-07 21:51:57.391 [INF] Application is starting...
+2023-08-07 21:52:09.508 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 21:52:09.515 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 21:52:09.518 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 21:52:21.466 [INF] -------------Request-Begin------------
+2023-08-07 21:52:21.467 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+Request Body: 
+2023-08-07 21:52:21.467 [INF] 
+
+2023-08-07 21:52:21.467 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/User 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"email":"kevser@mail.com","firstName":"kevser","lastName":"yavuz","tcNo":"236596565","phone":"236541256","vehiclePlateNumber":"5655"}]}
+2023-08-07 21:52:21.467 [INF] -------------Request-End------------
+2023-08-07 21:52:28.183 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 21:52:28.183 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 21:52:28.183 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 21:52:28.824 [INF] -------------Request-Begin------------
+2023-08-07 21:52:28.824 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 21:52:28.824 [INF] 
+
+2023-08-07 21:52:28.824 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-07 21:52:28.824 [INF] -------------Request-End------------
+2023-08-07 21:52:48.277 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 21:52:48.277 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 21:52:48.278 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 21:52:48.811 [ERR] Failed executing DbCommand (81ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (Size = 50), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Apartment] ([ApartmentNumber], [BillTypeId], [BuildingId], [FloorNumber], [InsertDate], [InsertUser], [Status], [TypeId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Apartment]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-07 21:52:48.968 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:78cc0c69-e438-459b-8788-980f341dfa2f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:78cc0c69-e438-459b-8788-980f341dfa2f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-07 21:52:49.239 [ERR] GenericService.Insert
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:78cc0c69-e438-459b-8788-980f341dfa2f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.Save() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 66
+   at SiteManagementPanel.Business.Generic.GenericService`3.Insert(TRequest request) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 71
+2023-08-07 21:52:49.320 [INF] -------------Request-Begin------------
+2023-08-07 21:52:49.321 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: {
+  "userId": 1,
+  "buildingId": 1,
+  "statusId": 1,
+  "typeId": 1,
+  "floorNumber": 1,
+  "apartmentNumber": 1
+}
+2023-08-07 21:52:49.321 [INF] 
+
+2023-08-07 21:52:49.321 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error occurred while saving the entity changes. See the inner exception for details."}
+2023-08-07 21:52:49.321 [INF] -------------Request-End------------
+2023-08-07 21:53:59.448 [INF] Application is starting...
+2023-08-07 21:54:07.891 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 21:54:07.895 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 21:54:07.897 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 21:54:11.226 [INF] -------------Request-Begin------------
+2023-08-07 21:54:11.226 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 21:54:11.226 [INF] 
+
+2023-08-07 21:54:11.227 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-08-07 21:54:11.227 [INF] -------------Request-End------------
+2023-08-07 21:55:31.111 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 21:55:31.112 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 21:55:31.112 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 21:56:52.642 [INF] -------------Request-Begin------------
+2023-08-07 21:56:53.114 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: {
+  "userId": 1,
+  "buildingId": 1,
+  "statusId": 1,
+  "typeId": 2,
+  "floorNumber": 2,
+  "apartmentNumber": 2
+}
+2023-08-07 21:56:53.532 [INF] 
+
+2023-08-07 21:56:53.999 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-08-07 21:56:54.387 [INF] -------------Request-End------------
+2023-08-07 21:57:19.545 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 21:57:19.545 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 21:57:19.545 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 21:57:19.632 [INF] -------------Request-Begin------------
+2023-08-07 21:57:19.632 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 21:57:19.632 [INF] 
+
+2023-08-07 21:57:19.633 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 21:57:19.633 [INF] -------------Request-End------------
+2023-08-07 22:13:12.846 [INF] Application is starting...
+2023-08-07 22:14:13.652 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 22:14:13.655 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 22:14:13.657 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 22:15:24.283 [ERR] Failed executing DbCommand (0ms) [Parameters=[@p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2), @p10='?' (Size = 50), @p11='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ApartmentUser] ([AparmentId], [InsertDate], [InsertUser], [UserId])
+VALUES (@p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [ApartmentUser]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-07 22:15:24.451 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.ApartmentUser'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:c3ef218d-5ec0-42b9-a520-ed9a3fe81b44
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.ApartmentUser'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:c3ef218d-5ec0-42b9-a520-ed9a3fe81b44
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-07 22:15:24.569 [ERR] Error while inserting an apartment.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.ApartmentUser'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:c3ef218d-5ec0-42b9-a520-ed9a3fe81b44
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SiteManagementPanel.Data.Uow.UnitOfWork.Complete() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Uow\UnitOfWork.cs:line 28
+   at SiteManagementPanel.Business.ApartmentService.InsertApartment(ApartmentRequest request) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 76
+2023-08-07 22:15:24.648 [INF] -------------Request-Begin------------
+2023-08-07 22:15:24.649 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: {
+  "userId": 1,
+  "buildingId": 1,
+  "statusId": 1,
+  "typeId": 2,
+  "floorNumber": 4,
+  "apartmentNumber": 5
+}
+2023-08-07 22:15:24.649 [INF] 
+
+2023-08-07 22:15:24.649 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 400 
+Response Body: {"success":false,"message":"Daire sakini eklenemedi"}
+2023-08-07 22:15:24.649 [INF] -------------Request-End------------
+2023-08-07 22:15:46.225 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 22:15:46.226 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 22:15:46.226 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 22:15:46.641 [INF] -------------Request-Begin------------
+2023-08-07 22:15:46.642 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 22:15:46.642 [INF] 
+
+2023-08-07 22:15:46.642 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 22:15:46.642 [INF] -------------Request-End------------
+2023-08-07 22:17:15.625 [INF] Application is starting...
+2023-08-07 22:18:50.734 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 22:18:50.741 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 22:18:50.743 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 22:20:05.178 [ERR] Failed executing DbCommand (0ms) [Parameters=[@p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2), @p10='?' (Size = 50), @p11='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ApartmentUser] ([AparmentId], [InsertDate], [InsertUser], [UserId])
+VALUES (@p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [ApartmentUser]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-07 22:20:05.258 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.ApartmentUser'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:1dfb9c28-7896-47bd-b897-7fa39f013055
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.ApartmentUser'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:1dfb9c28-7896-47bd-b897-7fa39f013055
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-07 22:20:13.266 [ERR] Error while inserting an apartment.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.ApartmentUser'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:1dfb9c28-7896-47bd-b897-7fa39f013055
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SiteManagementPanel.Data.Uow.UnitOfWork.Complete() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Uow\UnitOfWork.cs:line 28
+   at SiteManagementPanel.Business.ApartmentService.InsertApartment(ApartmentRequest request) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 76
+2023-08-07 22:20:13.303 [INF] -------------Request-Begin------------
+2023-08-07 22:20:13.303 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: {
+  "userId": 2,
+  "buildingId": 2,
+  "statusId": 1,
+  "typeId": 4,
+  "floorNumber": 2,
+  "apartmentNumber": 5
+}
+2023-08-07 22:20:13.303 [INF] 
+
+2023-08-07 22:20:13.303 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 400 
+Response Body: {"success":false,"message":"Daire sakini eklenemedi"}
+2023-08-07 22:20:13.303 [INF] -------------Request-End------------
+2023-08-07 22:21:11.025 [INF] Application is starting...
+2023-08-07 22:21:34.639 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 22:21:34.644 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 22:21:34.646 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 22:21:53.249 [ERR] Failed executing DbCommand (0ms) [Parameters=[@p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2), @p10='?' (Size = 50), @p11='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ApartmentUser] ([AparmentId], [InsertDate], [InsertUser], [UserId])
+VALUES (@p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [ApartmentUser]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-07 22:21:53.313 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.ApartmentUser'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:6d32e841-ed1d-4efe-8a15-b2bff0df2f34
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.ApartmentUser'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:6d32e841-ed1d-4efe-8a15-b2bff0df2f34
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-07 22:41:20.595 [INF] Application is starting...
+2023-08-07 22:43:13.724 [INF] Application is starting...
+2023-08-07 22:43:23.501 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 22:43:23.504 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 22:43:23.507 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 22:43:27.883 [INF] -------------Request-Begin------------
+2023-08-07 22:43:27.883 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 22:43:27.883 [INF] 
+
+2023-08-07 22:43:27.883 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 22:43:27.883 [INF] -------------Request-End------------
+2023-08-07 22:43:55.024 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 22:43:55.024 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 22:43:55.024 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 22:44:02.384 [ERR] Failed executing DbCommand (84ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (Size = 50), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Apartment] ([ApartmentNumber], [BillTypeId], [BuildingId], [FloorNumber], [InsertDate], [InsertUser], [Status], [TypeId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Apartment]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-07 22:44:02.517 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:be89331a-ff9e-43c3-9ba8-29046253c5e3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:be89331a-ff9e-43c3-9ba8-29046253c5e3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-07 22:44:02.625 [ERR] Error while inserting an apartment.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Apartment_ApartmentType_TypeId". The conflict occurred in database "SiteManagement", table "dbo.ApartmentType", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:be89331a-ff9e-43c3-9ba8-29046253c5e3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SiteManagementPanel.Data.Uow.UnitOfWork.Complete() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Uow\UnitOfWork.cs:line 28
+   at SiteManagementPanel.Business.ApartmentService.InsertApartment(ApartmentRequest request) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 63
+2023-08-07 22:44:07.997 [INF] -------------Request-Begin------------
+2023-08-07 22:44:07.999 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: {
+  "user": 2,
+  "buildingId": 3,
+  "statusId": 2,
+  "typeId": 1,
+  "floorNumber": 3,
+  "apartmentNumber": 3
+}
+2023-08-07 22:44:08.000 [INF] 
+
+2023-08-07 22:44:08.000 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error occurred while inserting the apartment."}
+2023-08-07 22:44:08.000 [INF] -------------Request-End------------
+2023-08-07 22:46:02.771 [INF] Application is starting...
+2023-08-07 22:46:24.072 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 22:46:24.080 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 22:46:24.082 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 22:47:03.609 [INF] -------------Request-Begin------------
+2023-08-07 22:47:03.610 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: {
+  "user": 2,
+  "buildingId": 2,
+  "statusId": 2,
+  "typeId": 2,
+  "floorNumber": 2,
+  "apartmentNumber": 2
+}
+2023-08-07 22:47:03.610 [INF] 
+
+2023-08-07 22:47:03.610 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Apartment inserted successfully."}
+2023-08-07 22:47:03.611 [INF] -------------Request-End------------
+2023-08-07 22:47:32.951 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 22:47:32.952 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 22:47:32.952 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 22:47:34.103 [INF] -------------Request-Begin------------
+2023-08-07 22:47:34.103 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 22:47:34.103 [INF] 
+
+2023-08-07 22:47:34.104 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 22:47:34.104 [INF] -------------Request-End------------
+2023-08-07 22:48:56.069 [INF] Application is starting...
+2023-08-07 22:50:36.893 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 22:50:36.899 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 22:50:36.901 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 22:50:40.597 [INF] -------------Request-Begin------------
+2023-08-07 22:50:40.598 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 22:50:40.598 [INF] 
+
+2023-08-07 22:50:40.598 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 22:50:40.599 [INF] -------------Request-End------------
+2023-08-07 23:09:09.085 [INF] Application is starting...
+2023-08-07 23:09:27.011 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:09:27.017 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:09:27.019 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:09:32.099 [INF] -------------Request-Begin------------
+2023-08-07 23:09:32.100 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:09:32.101 [INF] 
+
+2023-08-07 23:09:32.102 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:09:32.102 [INF] -------------Request-End------------
+2023-08-07 23:10:19.740 [INF] Application is starting...
+2023-08-07 23:13:13.979 [INF] Application is starting...
+2023-08-07 23:13:56.251 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:13:56.255 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:13:56.256 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:14:00.126 [INF] -------------Request-Begin------------
+2023-08-07 23:14:00.126 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:14:00.127 [INF] 
+
+2023-08-07 23:14:00.127 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:14:00.127 [INF] -------------Request-End------------
+2023-08-07 23:16:17.794 [INF] Application is starting...
+2023-08-07 23:16:42.132 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:16:42.138 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:16:42.141 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:16:45.621 [INF] -------------Request-Begin------------
+2023-08-07 23:16:45.622 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:16:45.622 [INF] 
+
+2023-08-07 23:16:45.622 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","statusName":"0","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:16:45.622 [INF] -------------Request-End------------
+2023-08-07 23:19:35.946 [INF] Application is starting...
+2023-08-07 23:19:44.920 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:19:44.928 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:19:44.932 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:19:48.475 [INF] -------------Request-Begin------------
+2023-08-07 23:19:48.475 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:19:48.476 [INF] 
+
+2023-08-07 23:19:48.477 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","statusName":null,"typeName":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","statusName":null,"typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:19:48.477 [INF] -------------Request-End------------
+2023-08-07 23:23:26.436 [INF] Application is starting...
+2023-08-07 23:23:34.031 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:23:34.036 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:23:34.038 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:23:37.777 [INF] -------------Request-Begin------------
+2023-08-07 23:23:37.777 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:23:37.777 [INF] 
+
+2023-08-07 23:23:37.777 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","statusName":null,"type":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","statusName":null,"type":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:23:37.777 [INF] -------------Request-End------------
+2023-08-07 23:25:02.932 [INF] Application is starting...
+2023-08-07 23:25:09.567 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:25:09.572 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:25:09.577 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:25:12.906 [INF] -------------Request-Begin------------
+2023-08-07 23:25:12.907 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:25:12.907 [INF] 
+
+2023-08-07 23:25:12.908 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","status":null,"type":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","status":null,"type":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:25:12.908 [INF] -------------Request-End------------
+2023-08-07 23:25:46.911 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:25:46.913 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:25:46.916 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:25:47.055 [INF] -------------Request-Begin------------
+2023-08-07 23:25:47.055 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:25:47.055 [INF] 
+
+2023-08-07 23:25:47.055 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","status":"Empty","type":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","status":"Empty","type":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:25:47.055 [INF] -------------Request-End------------
+2023-08-07 23:27:40.929 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:27:40.931 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:27:40.931 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:27:41.422 [ERR] Failed executing DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (Size = 50), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Apartment] ([ApartmentNumber], [BillTypeId], [BuildingId], [FloorNumber], [InsertDate], [InsertUser], [Status], [TypeId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Apartment]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-08-07 23:27:41.544 [ERR] An exception occurred in the database while saving changes for context type 'SiteManagementPanel.Data.SiteManagementDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.Apartment'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:fe433fcb-a988-4f00-aecc-6cb2be69268e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.Apartment'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:fe433fcb-a988-4f00-aecc-6cb2be69268e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-07 23:27:41.695 [ERR] GenericService.Update
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'SiteManagement.dbo.Apartment'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:fe433fcb-a988-4f00-aecc-6cb2be69268e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.Save() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 67
+   at SiteManagementPanel.Business.Generic.GenericService`3.Update(Int32 Id, TRequest request) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Generic\GenericService.cs:line 110
+2023-08-07 23:27:41.769 [INF] -------------Request-Begin------------
+2023-08-07 23:27:41.769 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/10 
+QueryString:  
+Request Body: {
+  "user": 2,
+  "buildingId": 2,
+  "statusId": 1,
+  "typeId": 1,
+  "floorNumber": 10,
+  "apartmentNumber": 10
+}
+2023-08-07 23:27:41.769 [INF] 
+
+2023-08-07 23:27:41.769 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment/10 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error occurred while saving the entity changes. See the inner exception for details."}
+2023-08-07 23:27:41.769 [INF] -------------Request-End------------
+2023-08-07 23:34:29.269 [INF] Application is starting...
+2023-08-07 23:35:18.228 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:35:18.233 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:35:18.236 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:38:56.545 [INF] -------------Request-Begin------------
+2023-08-07 23:38:56.546 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:38:56.546 [INF] 
+
+2023-08-07 23:38:56.547 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","status":"Empty","type":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","status":"Empty","type":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:38:56.547 [INF] -------------Request-End------------
+2023-08-07 23:40:13.802 [INF] Application is starting...
+2023-08-07 23:40:22.640 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:40:22.645 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:40:22.647 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:40:31.243 [ERR] ApartmentService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmenStatusType' specified in string based include path 'ApartmenStatusType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 42
+   at SiteManagementPanel.Business.ApartmentService.GetAll() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 29
+2023-08-07 23:40:31.408 [INF] -------------Request-Begin------------
+2023-08-07 23:40:31.409 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:40:31.409 [INF] 
+
+2023-08-07 23:40:31.410 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmenStatusType' specified in string based include path 'ApartmenStatusType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-07 23:40:31.410 [INF] -------------Request-End------------
+2023-08-07 23:44:59.071 [INF] Application is starting...
+2023-08-07 23:45:36.921 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:45:36.927 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:45:36.929 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:45:52.452 [INF] -------------Request-Begin------------
+2023-08-07 23:45:52.453 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:45:52.453 [INF] 
+
+2023-08-07 23:45:52.454 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","status":"Empty","type":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","status":"Empty","type":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:45:52.454 [INF] -------------Request-End------------
+2023-08-07 23:47:58.037 [INF] Application is starting...
+2023-08-07 23:48:04.618 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:48:04.623 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:48:04.625 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:48:10.244 [ERR] ApartmentService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentType' specified in string based include path 'ApartmentType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 42
+   at SiteManagementPanel.Business.ApartmentService.GetAllApartment() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 29
+2023-08-07 23:48:10.318 [INF] -------------Request-Begin------------
+2023-08-07 23:48:10.318 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:48:10.319 [INF] 
+
+2023-08-07 23:48:10.319 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentType' specified in string based include path 'ApartmentType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-07 23:48:10.319 [INF] -------------Request-End------------
+2023-08-07 23:49:00.773 [INF] Application is starting...
+2023-08-07 23:49:07.554 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:49:07.559 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:49:07.561 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:49:12.880 [ERR] ApartmentService.GetAll
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentType' specified in string based include path 'ApartmentType.TypeName'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SiteManagementPanel.Data.Repository.GenericRepository`1.GetAllWithInclude(String[] includes) in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagement.Data\Repository\GenericRepository.cs:line 42
+   at SiteManagementPanel.Business.ApartmentService.GetAllApartment() in C:\Users\Kevser\Desktop\SiteManagementPanel\SiteManagementPanel.Business\Apartment\ApartmentService.cs:line 29
+2023-08-07 23:49:12.943 [INF] -------------Request-Begin------------
+2023-08-07 23:49:12.943 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:49:12.943 [INF] 
+
+2023-08-07 23:49:12.943 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'ApartmentType' specified in string based include path 'ApartmentType.TypeName'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.","response":null}
+2023-08-07 23:49:12.944 [INF] -------------Request-End------------
+2023-08-07 23:49:30.850 [INF] Application is starting...
+2023-08-07 23:49:36.738 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:49:36.743 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:49:36.745 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:49:44.345 [INF] -------------Request-Begin------------
+2023-08-07 23:49:44.346 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:49:44.347 [INF] 
+
+2023-08-07 23:49:44.347 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","status":"Empty","type":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","status":"Empty","type":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:49:44.347 [INF] -------------Request-End------------
+2023-08-07 23:51:33.830 [INF] Application is starting...
+2023-08-07 23:51:39.269 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:51:39.274 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:51:39.278 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:51:50.866 [INF] -------------Request-Begin------------
+2023-08-07 23:51:50.866 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:51:50.867 [INF] 
+
+2023-08-07 23:51:50.868 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","status":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","status":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:51:50.868 [INF] -------------Request-End------------
+2023-08-07 23:58:10.275 [INF] Application is starting...
+2023-08-07 23:58:16.486 [INF] LogHeartBeatMiddleware.Invoke
+2023-08-07 23:58:16.490 [INF] LogErrorHandlerMiddleware.Invoke
+2023-08-07 23:58:16.493 [INF] LogRequestLoggingMiddleware.Invoke
+2023-08-07 23:58:25.103 [INF] -------------Request-Begin------------
+2023-08-07 23:58:25.103 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+Request Body: 
+2023-08-07 23:58:25.104 [INF] 
+
+2023-08-07 23:58:25.104 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:38104 
+Path: /panel/api/Apartment 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"firstName":null,"lastName":null,"blockName":"A","status":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2},{"firstName":null,"lastName":null,"blockName":"B","status":"Empty","typeName":null,"floorNumber":2,"apartmentNumber":2}]}
+2023-08-07 23:58:25.104 [INF] -------------Request-End------------

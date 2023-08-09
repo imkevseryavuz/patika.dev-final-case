@@ -20,6 +20,9 @@ public class UnitOfWork : IUnitOfWork
         UserRepository= new GenericRepository<User>(dbContext);
         UserLogRepository= new GenericRepository<UserLog>(dbContext);
         MessageRepository=new GenericRepository<Message>(dbContext);
+        ApartmentUserRepository= new GenericRepository<ApartmentUser>(dbContext);
+
+
     }
 
 
@@ -56,9 +59,9 @@ public class UnitOfWork : IUnitOfWork
     public IGenericRepository<Block> BlockRepository { get; private set; }
     public IGenericRepository<Bill> BillRepository { get; private set; }
     public IGenericRepository<Payment> PaymentRepository { get; private set; }
-
     public IGenericRepository<User> UserRepository { get; private set; }
     public IGenericRepository<UserLog> UserLogRepository { get; private set; }
-
     public IGenericRepository<Message> MessageRepository { get; private set; }
+    public IGenericRepository<ApartmentUser> ApartmentUserRepository { get; private set; }
+
 }

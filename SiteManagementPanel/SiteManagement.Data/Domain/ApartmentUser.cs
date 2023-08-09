@@ -23,8 +23,5 @@ public class ApartmentUserConfiguration : IEntityTypeConfiguration<ApartmentUser
         builder.Property(x => x.InsertUser).IsRequired(true).HasMaxLength(50);
         builder.Property(x => x.InsertDate).IsRequired(true);
 
-
-        builder.Property(x => x.UserId).IsRequired(true);
-        builder.Property(x => x.AparmentId).IsRequired(true);
     }
 }

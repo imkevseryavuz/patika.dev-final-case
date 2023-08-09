@@ -1,5 +1,4 @@
-﻿
-using AutoMapper;
+﻿using AutoMapper;
 using SiteManagementPanel.Data.Domain;
 
 namespace SiteManagementPanel.Schema;
@@ -11,23 +10,29 @@ public class MapperConfig : Profile
         //Apartman
         CreateMap<ApartmentRequest, Apartment>();
         CreateMap<Apartment, ApartmentResponse>()
-            .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.ApartmentUsers.Select(p => p.User.FirstName + " " + p.User.LastName).LastOrDefault()))
+            .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.ApartmentUsers.Select(p => p.User.FirstName).LastOrDefault()))
+            .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.ApartmentUsers.Select(p => p.User.LastName).LastOrDefault()))
             .ForMember(dest => dest.BlockName, opt => opt.MapFrom(src => src.Building.Block.BlockName))
-            .ForMember(dest => dest.TypeName, opt => opt.MapFrom(src => src.Type.TypeName))
-            .ForMember(dest => dest.StatusName, opt => opt.MapFrom(src => src.Status.ToString()));
+            .ForMember(dest => dest.TypeName, opt => opt.MapFrom(src => src.ApartmentType.TypeName))
+            .ForMember(dest => dest.Status, opt => opt.MapFrom(src =>src.Status));
 
         //Ortak Giderler
         CreateMap<BillRequest, Bill>();
         CreateMap<Bill, BillResponse>()
             .ForMember(dest => dest.ApartmentUserId, opt => opt.MapFrom(src => src.ApartmentUser.Apartment.ApartmentNumber))
-            .ForMember(dest => dest.Type, opt => opt.MapFrom(src => src.BillType.TypeName))
-            .ForMember(dest => dest.PaymentDate, opt => opt.MapFrom(src => src.Payment.PaymentDate.Date));
+            .ForMember(dest => dest.BillType, opt => opt.MapFrom(src => src.BillType.TypeName));
+        CreateMap<Bill, PaidBillResponse>()
+             .ForMember(dest => dest.ApartmentUserId, opt => opt.MapFrom(src => src.ApartmentUser.Apartment.ApartmentNumber)) 
+             .ForMember(dest => dest.BillType, opt => opt.MapFrom(src => src.BillType.TypeName))
+             .ForMember(dest=>dest.PaymentDate, opt=> opt.MapFrom(src=>src.Payment.PaymentDate.Date)); 
 
         //Ödemeler
-        CreateMap<PaymentRequest, Payment>();
         CreateMap<Payment, PaymentResponse>()
-            .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.ApartmentUser.User.FirstName + " " + src.ApartmentUser.User.LastName))
-            .ForMember(dest => dest.ApartmentNumber, opt => opt.MapFrom(src => src.ApartmentUser.Apartment.ApartmentNumber));
+            .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.ApartmentUser.User.FirstName))
+            .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.ApartmentUser.User.LastName))
+            .ForMember(dest => dest.ApartmentNumber, opt => opt.MapFrom(src => src.ApartmentUser.Apartment.ApartmentNumber))
+            .ForMember(dest => dest.Type, opt => opt.MapFrom(src => src.Bill.BillType.TypeName))
+            .ForMember(dest => dest.Amount, opt => opt.MapFrom(src => src.Bill.Amount));
         CreateMap<CreditCardRequest, Payment>();
         CreateMap<CreditCardRequest, PaymentResponse>();
         

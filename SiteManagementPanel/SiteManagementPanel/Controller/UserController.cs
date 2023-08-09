@@ -42,10 +42,9 @@ namespace SiteManagementPanel.Service.Controller
         public ApiResponse Put(int id, [FromBody] UserRequest request)
         {
 
-            var response = service.Update(id, request);
+            var response = service.UpdateUser(id, request);
             return response;
         }
-
 
         [HttpDelete("{id}")]
         public ApiResponse Delete(int id)

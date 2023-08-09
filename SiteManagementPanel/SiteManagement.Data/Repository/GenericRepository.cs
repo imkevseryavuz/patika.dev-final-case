@@ -34,6 +34,7 @@ public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity
         return dbContext.Set<Entity>().AsQueryable();
     }
 
+
     public List<Entity> GetAllWithInclude(params string[] includes)
     {
         var query = dbContext.Set<Entity>().AsQueryable();

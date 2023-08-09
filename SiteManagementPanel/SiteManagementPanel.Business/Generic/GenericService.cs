@@ -2,6 +2,7 @@
 using Serilog;
 using SiteManagamentPanel.Base;
 using SiteManagementPanel.Data.Uow;
+using static Dapper.SqlMapper;
 
 namespace SiteManagementPanel.Business.Generic;
 
@@ -51,6 +52,7 @@ public class GenericService<TEntity, TRequest, TResponse> : IGenericService<TEnt
             return new ApiResponse<List<TResponse>>(ex.Message);
         }
     }
+
 
     public ApiResponse<TResponse> GetById(int id, params string[] includes)
     {

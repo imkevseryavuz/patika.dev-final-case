@@ -2,7 +2,7 @@
 
 namespace SiteManagementPanel.Schema;
 
-public class TokenResponse
+public class LoginResponse
 {
     public DateTime ExpireTime { get; set; }
     public string AccessToken { get; set; }

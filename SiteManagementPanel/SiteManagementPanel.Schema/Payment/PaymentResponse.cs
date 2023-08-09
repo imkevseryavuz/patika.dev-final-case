@@ -1,5 +1,4 @@
 ﻿
-
 namespace SiteManagementPanel.Schema;
 
 public class PaymentResponse
@@ -9,7 +8,6 @@ public class PaymentResponse
 
     public int ApartmentNumber { get; set; }
     public string Type { get; set; } //"OrtakGider", "Aidat", "Elektrik", "Su", "Doğalgaz"
-    public decimal Amount { get; set; }
-    
+    public decimal Amount { get; set; }   
     public DateTime PaymentDate { get; set; }
 }

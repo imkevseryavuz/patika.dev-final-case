@@ -8,6 +8,7 @@ public class BillType : IdBaseModel
 {
     public string TypeName { get; set; }
     public virtual List<Apartment> Apartments { get; set; }
+  
 }
 public class BillTypeConfiguration : IEntityTypeConfiguration<BillType>
 {
@@ -17,7 +18,6 @@ public class BillTypeConfiguration : IEntityTypeConfiguration<BillType>
         builder.Property(x => x.Id).IsRequired(true).UseIdentityColumn();
         builder.Property(x => x.InsertUser).IsRequired(true).HasMaxLength(50);
         builder.Property(x => x.InsertDate).IsRequired(true);
-
         builder.Property(x => x.TypeName).IsRequired(true);
     }
 }

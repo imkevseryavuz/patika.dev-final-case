@@ -17,7 +17,6 @@ public class MessageService : IMessageService
         _mapper = mapper;
         _unitOfWork = unitOfWork;
     }
-
     public ApiResponse<MessageResponse> SendMessage(MessageRequest messageRequest)
     {
         try
@@ -35,13 +34,13 @@ public class MessageService : IMessageService
 
 
             var response = _mapper.Map<Message, MessageResponse>(message);
-            return new ApiResponse<MessageResponse>(response);
+            return new ApiResponse<MessageResponse>("Message Send");
         }
         catch (Exception ex)
         {
             Log.Error(ex, "MessageService.SendMessage");
 
-            // Check for inner exception and log it if available
+            
             if (ex.InnerException != null)
             {
                 Log.Error(ex.InnerException, "Inner Exception Details:");
@@ -50,7 +49,6 @@ public class MessageService : IMessageService
             return new ApiResponse<MessageResponse>("An error occurred while saving the entity changes.");
         }
     }
-
     public ApiResponse<List<MessageResponse>> GetMessagesByUserId(int userId)
     {
         try
@@ -67,7 +65,6 @@ public class MessageService : IMessageService
             return new ApiResponse<List<MessageResponse>>(ex.Message);
         }
     }
-
     public ApiResponse<MessageResponse> GetMessageById(int messageId)
     { 
         try
@@ -89,7 +86,6 @@ public class MessageService : IMessageService
             return new ApiResponse<MessageResponse>(ex.Message);
         }
     }
-
     public ApiResponse MarkMessageAsRead(int messageId)
     {
         try
@@ -102,11 +98,12 @@ public class MessageService : IMessageService
             }
 
             message.IsRead=!message.IsRead;
+
             _unitOfWork.MessageRepository.Update(message);
             _unitOfWork.Complete();
 
             
-            return new ApiResponse();
+            return new ApiResponse(message:"Message is read");
         }
         catch (Exception ex)
         {
