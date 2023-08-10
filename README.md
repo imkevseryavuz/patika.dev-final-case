@@ -5,7 +5,7 @@ Bir site yöneticisi, sitede yer alan dairelerin aidat ve ortak kullanım elektr
 
 ### Proje Hakkında
 Yönetici binada oturan kişileri `User` tablosuna ekleyip, oturan kişilere otomatik olarak oluşturduğu kullanıcı adı ve şifre sayesinde dairede oturan bina sakinleri kendilerine belirlenen faturaları `Bill` tablosundan alıp, sadece `CreditCartRequest` 'den aldığı kart bilgileriyle, ödeme yapıldığında `Payment` tablosuna ödediği tarih, ödeyen daire numarası ekleniyor ve ödeme bu şekilde sağlanıyor. Dairede oturan kullanıcı bu sistemde yöneticiye `Message` tablosunu kullanarak mesaj gönderiminde bulunabiliyor. Yapılan `Log`'lar sayesinde sistemde bulunan hatalar ve yapılan her işlem tutulmaktadır.
-
+`UpdateBillRequest` de ödenmiş olan faturaların Id si alınarak `Bill` için güncelleme işlemi yapılıyor. Bu sayede site yöneticisi ödenen faturaların sorgusuna `GetPaidBills` buradan ulaşabilmektedir.
 `ApartmentUser` ve `Building` ara katmanlardır. Many to Many ilişkisi bulunan tablolardaki ilişkiyi daha kolay yönetmek için eklenmiştir.`ApertmenUser` kısmında `Apartment` ve `User` arasında ilişki sağlarken, `Building` de içerisinde `Block` kısmını bulundurarak `Apartment` da ara katman oluşturması içindir.
 
 ---
